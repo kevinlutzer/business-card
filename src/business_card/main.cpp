@@ -5,12 +5,11 @@
  * Author : Kevin Lutzer
  */ 
 
-#define F_CPU 1000000UL
-
 #include <avr/io.h>
 #include <util/delay.h>
 #include "charlie_plexing.h"
 
+#define F_CPU 1000000UL
 
 #define LINE_A PB1
 #define LINE_B PB2
@@ -55,7 +54,7 @@ int main(void)
 				mux.shiftMessage( message1, image, j );
 				mux.ledOff();
 			}
-			for( uint8_t i = 0; i < 100; i ++  )
+			for( uint8_t i = 0; i < 200; i ++  )
 			{
 				mux.displayFrame(image);
 				mux.ledOff();

@@ -19,15 +19,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   7 .debug_abbrev 00000305  00000000  00000000  00000cc9  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   000002be  00000000  00000000  00000fce  2**0
+  8 .debug_line   00000388  00000000  00000000  00000fce  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  0000011c  00000000  00000000  0000128c  2**2
+  9 .debug_frame  0000011c  00000000  00000000  00001358  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000380  00000000  00000000  000013a8  2**0
+ 10 .debug_str    00000356  00000000  00000000  00001474  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    000005db  00000000  00000000  00001728  2**0
+ 11 .debug_loc    000005db  00000000  00000000  000017ca  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000068  00000000  00000000  00001d03  2**0
+ 12 .debug_ranges 00000068  00000000  00000000  00001da5  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -90,19 +90,18 @@ Disassembly of section .text:
   54:	d5 cf       	rjmp	.-86     	; 0x0 <__vectors>
 
 00000056 <_ZN11charliePlex6setLedEh>:
-	Inputs: 
-		number - the linear index of the led that will be turned on.
-*/
-void charliePlex::setLed(uint8_t number)
-{
-	PORTB = charlieOutput[number];
+		{
+			setLed( i );
+			_delay_ms( 100 );
+		}
+	}
+}
   56:	70 e0       	ldi	r23, 0x00	; 0
   58:	fb 01       	movw	r30, r22
   5a:	e0 56       	subi	r30, 0x60	; 96
   5c:	ff 4f       	sbci	r31, 0xFF	; 255
   5e:	80 81       	ld	r24, Z
   60:	88 bb       	out	0x18, r24	; 24
-	DDRB = charlieDir[number];
   62:	fb 01       	movw	r30, r22
   64:	ec 54       	subi	r30, 0x4C	; 76
   66:	ff 4f       	sbci	r31, 0xFF	; 255
@@ -111,14 +110,7 @@ void charliePlex::setLed(uint8_t number)
   6c:	08 95       	ret
 
 0000006e <_ZN11charliePlex6ledOffEv>:
-/*
-	Turn off all LEDs within the matrix.
-*/
-void charliePlex::ledOff()
-{
-	DDRB = 0;
   6e:	17 ba       	out	0x17, r1	; 23
-	PORTB = 0;
   70:	18 ba       	out	0x18, r1	; 24
   72:	08 95       	ret
 
@@ -293,13 +285,13 @@ void charliePlex::shiftMessage( uint64_t message[], uint8_t frame[], uint8_t pos
  130:	08 95       	ret
 
 00000132 <main>:
+
 int main(void)
 {
-		
 	while(1) 
     {
 		for( int j = 63; j >= -6; j -- )
- 132:	d4 e6       	ldi	r29, 0x64	; 100
+ 132:	d8 ec       	ldi	r29, 0xC8	; 200
  134:	0f e3       	ldi	r16, 0x3F	; 63
  136:	10 e0       	ldi	r17, 0x00	; 0
 		{
@@ -323,7 +315,6 @@ int main(void)
  152:	8d df       	rcall	.-230    	; 0x6e <_ZN11charliePlex6ledOffEv>
  154:	20 c0       	rjmp	.+64     	; 0x196 <__stack+0x37>
 			}
-			
 			else
 			{
 				mux.shiftMessage( message1, image, j );
@@ -341,8 +332,7 @@ int main(void)
  16a:	81 df       	rcall	.-254    	; 0x6e <_ZN11charliePlex6ledOffEv>
  16c:	14 c0       	rjmp	.+40     	; 0x196 <__stack+0x37>
 			}
-			
-			for( uint8_t i = 0; i < 100; i ++  )
+			for( uint8_t i = 0; i < 200; i ++  )
 			{
 				mux.displayFrame(image);
  16e:	69 ec       	ldi	r22, 0xC9	; 201
@@ -355,16 +345,16 @@ int main(void)
  17a:	90 e0       	ldi	r25, 0x00	; 0
  17c:	78 df       	rcall	.-272    	; 0x6e <_ZN11charliePlex6ledOffEv>
  17e:	c1 50       	subi	r28, 0x01	; 1
+			else
 			{
 				mux.shiftMessage( message1, image, j );
 				mux.ledOff();
 			}
-			
-			for( uint8_t i = 0; i < 100; i ++  )
+			for( uint8_t i = 0; i < 200; i ++  )
  180:	b1 f7       	brne	.-20     	; 0x16e <__stack+0xf>
+
 int main(void)
 {
-		
 	while(1) 
     {
 		for( int j = 63; j >= -6; j -- )
@@ -385,9 +375,9 @@ int main(void)
  192:	6d df       	rcall	.-294    	; 0x6e <_ZN11charliePlex6ledOffEv>
 	}
  194:	cf cf       	rjmp	.-98     	; 0x134 <main+0x2>
+
 int main(void)
 {
-		
 	while(1) 
     {
 		for( int j = 63; j >= -6; j -- )

@@ -1,7 +1,7 @@
 Archive member included to satisfy reference by file (symbol)
 
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr25\libgcc.a(_exit.o)
-                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o (exit)
+                              C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr25\libgcc.a(_copy_data.o)
                               charlie_plexing.o (__do_copy_data)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr25\libgcc.a(_clear_bss.o)
@@ -11,8 +11,8 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/..
 
 Discarded input sections
 
- .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
- .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+ .data          0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
+ .bss           0x00000000        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
  .text          0x00000000        0x0 charlie_plexing.o
  .data          0x00000000        0x0 charlie_plexing.o
  .bss           0x00000000        0x0 charlie_plexing.o
@@ -100,7 +100,7 @@ user_signatures  0x00850000         0x00000400         rw !x
 
 Linker script and memory map
 
-LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
 LOAD charlie_plexing.o
 LOAD main.o
 START GROUP
@@ -111,8 +111,15 @@ START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/avr25\libgcc.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr25\libm.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/4.9.2/../../../../avr/lib/avr25\libc.a
-LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25\libattiny45.a
+LOAD C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25\libattiny45.a
 END GROUP
+                0x00002000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x2000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                0x00000400                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
 
 .hash
  *(.hash)
@@ -206,7 +213,7 @@ END GROUP
 
 .text           0x00000000      0x1da
  *(.vectors)
- .vectors       0x00000000       0x1e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+ .vectors       0x00000000       0x1e C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
@@ -232,13 +239,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000001e        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+ .init0         0x0000001e        0x0 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
                 0x0000001e                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000001e        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+ .init2         0x0000001e        0xc C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -257,10 +264,10 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000050        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+ .init9         0x00000050        0x4 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
  *(.init9)
  *(.text)
- .text          0x00000054        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+ .text          0x00000054        0x2 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
                 0x00000054                __vector_1
                 0x00000054                __vector_12
                 0x00000054                __bad_interrupt
@@ -361,11 +368,11 @@ END GROUP
                 0x00000242                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008000cd        0x0
-                0x008000cd                PROVIDE (__noinit_start, .)
+                [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
-                0x008000cd                PROVIDE (__noinit_end, .)
+                [!provide]                PROVIDE (__noinit_end, .)
                 0x008000cd                _end = .
-                0x008000cd                PROVIDE (__heap_start, .)
+                [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0
  *(.eeprom*)
@@ -413,7 +420,7 @@ END GROUP
 .note.gnu.avr.deviceinfo
                 0x00000000       0x3c
  .note.gnu.avr.deviceinfo
-                0x00000000       0x3c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.78/gcc/dev/attiny45/avr25/crtattiny45.o
+                0x00000000       0x3c C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.0.79/gcc/dev/attiny45/avr25/crtattiny45.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -450,22 +457,22 @@ END GROUP
  .debug_abbrev  0x00000000      0x1cf charlie_plexing.o
  .debug_abbrev  0x000001cf      0x136 main.o
 
-.debug_line     0x00000000      0x2be
+.debug_line     0x00000000      0x388
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x1ea charlie_plexing.o
- .debug_line    0x000001ea       0xd4 main.o
+ .debug_line    0x00000000      0x278 charlie_plexing.o
+ .debug_line    0x00000278      0x110 main.o
 
 .debug_frame    0x00000000      0x11c
  *(.debug_frame)
  .debug_frame   0x00000000       0xf8 charlie_plexing.o
  .debug_frame   0x000000f8       0x24 main.o
 
-.debug_str      0x00000000      0x380
+.debug_str      0x00000000      0x356
  *(.debug_str)
- .debug_str     0x00000000      0x35b charlie_plexing.o
-                                0x38f (size before relaxing)
- .debug_str     0x0000035b       0x25 main.o
-                                0x336 (size before relaxing)
+ .debug_str     0x00000000      0x331 charlie_plexing.o
+                                0x365 (size before relaxing)
+ .debug_str     0x00000331       0x25 main.o
+                                0x30c (size before relaxing)
 
 .debug_loc      0x00000000      0x5db
  *(.debug_loc)
