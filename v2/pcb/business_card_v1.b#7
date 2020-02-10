@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1.27" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -140,13 +140,15 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="81" x2="0" y2="33.02" width="0" layer="20"/>
-<wire x1="0" y1="33.02" x2="3.81" y2="29.21" width="0" layer="20"/>
-<wire x1="3.81" y1="29.21" x2="89" y2="29.21" width="0" layer="20"/>
+<wire x1="0" y1="81" x2="0" y2="55.2" width="0" layer="20"/>
+<wire x1="0" y1="55.2" x2="25.99" y2="29.21" width="0" layer="20"/>
+<wire x1="25.99" y1="29.21" x2="89" y2="29.21" width="0" layer="20"/>
 <wire x1="89" y1="29.21" x2="89" y2="81" width="0" layer="20"/>
 <wire x1="89" y1="81" x2="0" y2="81" width="0" layer="20"/>
 <dimension x1="0" y1="81" x2="89" y2="81" x3="44.5" y3="86" textsize="1" layer="1"/>
 <dimension x1="89" y1="81" x2="89" y2="30" x3="94" y3="55.5" textsize="1" layer="1"/>
+<dimension x1="0" y1="52.5" x2="25.75" y2="26.85" x3="8.070521875" y3="34.851790625" textsize="1.778" layer="1" grouprefs="ASD"/>
+<dimension x1="0" y1="54.6" x2="25.39" y2="29.21" x3="9.92" y3="39.13" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -1575,6 +1577,9 @@ design rules under a new name.</description>
 <param name="cfChangeDir" value="25"/>
 </pass>
 </autorouter>
+<groups>
+<board_group name="ASD"/>
+</groups>
 <elements>
 <element name="C1" library="adafruit" package="C0603K" value="0.1uF" x="71.12" y="36.83" smashed="yes" rot="R90">
 <attribute name="NAME" x="70.47" y="36.03" size="1.016" layer="25" rot="R90"/>
@@ -2175,4 +2180,11 @@ design rules under a new name.</description>
 </mfgpreviewcolors>
 </board>
 </drawing>
+<compatibility>
+<note version="9.5" severity="warning">
+Since Version 9.5, EAGLE supports persistent groups with
+schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
