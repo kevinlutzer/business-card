@@ -8615,11 +8615,11 @@ DIN A4, landscape with location and doc. field</description>
 <part name="LED56" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="IC1" library="atmel_tiny24-44-84tiny48-88mega48-88-168-328" deviceset="ATTINY24/44/84" device="-SSU"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
-<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
+<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
+<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
+<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
+<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="POGO_PTH"/>
 </parts>
 <sheets>
 <sheet>
@@ -8976,8 +8976,8 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <label x="68.58" y="68.58" size="1.778" layer="95"/>
-<pinref part="TP5" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PIN0" class="0">
@@ -9629,66 +9629,6 @@ DIN A4, landscape with location and doc. field</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="113,1,102.87,160.342,LED1,,,,,"/>
-<approved hash="113,1,123.19,160.342,LED2,,,,,"/>
-<approved hash="113,1,143.51,160.342,LED3,,,,,"/>
-<approved hash="113,1,163.83,160.342,LED4,,,,,"/>
-<approved hash="113,1,184.15,160.342,LED5,,,,,"/>
-<approved hash="113,1,204.47,160.342,LED6,,,,,"/>
-<approved hash="113,1,224.79,160.342,LED7,,,,,"/>
-<approved hash="113,1,245.11,160.342,LED8,,,,,"/>
-<approved hash="113,1,102.87,145.102,LED9,,,,,"/>
-<approved hash="113,1,123.19,145.102,LED10,,,,,"/>
-<approved hash="113,1,143.51,145.102,LED11,,,,,"/>
-<approved hash="113,1,163.83,145.102,LED12,,,,,"/>
-<approved hash="113,1,184.15,145.102,LED13,,,,,"/>
-<approved hash="113,1,204.47,145.102,LED14,,,,,"/>
-<approved hash="113,1,224.79,145.102,LED15,,,,,"/>
-<approved hash="113,1,245.11,145.102,LED16,,,,,"/>
-<approved hash="113,1,102.87,129.862,LED17,,,,,"/>
-<approved hash="113,1,123.19,129.862,LED18,,,,,"/>
-<approved hash="113,1,143.51,129.862,LED19,,,,,"/>
-<approved hash="113,1,163.83,129.862,LED20,,,,,"/>
-<approved hash="113,1,184.15,129.862,LED21,,,,,"/>
-<approved hash="113,1,204.47,129.862,LED22,,,,,"/>
-<approved hash="113,1,224.79,129.862,LED23,,,,,"/>
-<approved hash="113,1,245.11,129.862,LED24,,,,,"/>
-<approved hash="113,1,102.87,114.622,LED25,,,,,"/>
-<approved hash="113,1,123.19,114.622,LED26,,,,,"/>
-<approved hash="113,1,143.51,114.622,LED27,,,,,"/>
-<approved hash="113,1,163.83,114.622,LED28,,,,,"/>
-<approved hash="113,1,184.15,114.622,LED29,,,,,"/>
-<approved hash="113,1,204.47,114.622,LED30,,,,,"/>
-<approved hash="113,1,224.79,114.622,LED31,,,,,"/>
-<approved hash="113,1,245.11,114.622,LED32,,,,,"/>
-<approved hash="113,1,102.87,99.3817,LED33,,,,,"/>
-<approved hash="113,1,123.19,99.3817,LED34,,,,,"/>
-<approved hash="113,1,143.51,99.3817,LED35,,,,,"/>
-<approved hash="113,1,163.83,99.3817,LED36,,,,,"/>
-<approved hash="113,1,184.15,99.3817,LED37,,,,,"/>
-<approved hash="113,1,204.47,99.3817,LED38,,,,,"/>
-<approved hash="113,1,224.79,99.3817,LED39,,,,,"/>
-<approved hash="113,1,245.11,99.3817,LED40,,,,,"/>
-<approved hash="113,1,102.87,84.1417,LED41,,,,,"/>
-<approved hash="113,1,123.19,84.1417,LED42,,,,,"/>
-<approved hash="113,1,143.51,84.1417,LED43,,,,,"/>
-<approved hash="113,1,163.83,84.1417,LED44,,,,,"/>
-<approved hash="113,1,184.15,84.1417,LED45,,,,,"/>
-<approved hash="113,1,204.47,84.1417,LED46,,,,,"/>
-<approved hash="113,1,224.79,84.1417,LED47,,,,,"/>
-<approved hash="113,1,245.11,84.1417,LED48,,,,,"/>
-<approved hash="113,1,102.87,68.9017,LED49,,,,,"/>
-<approved hash="113,1,123.19,68.9017,LED50,,,,,"/>
-<approved hash="113,1,143.51,68.9017,LED51,,,,,"/>
-<approved hash="113,1,163.83,68.9017,LED52,,,,,"/>
-<approved hash="113,1,184.15,68.9017,LED53,,,,,"/>
-<approved hash="113,1,204.47,68.9017,LED54,,,,,"/>
-<approved hash="113,1,224.79,68.9017,LED55,,,,,"/>
-<approved hash="113,1,245.11,68.9017,LED56,,,,,"/>
-<approved hash="113,1,53.34,52.07,IC1,,,,,"/>
-<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
