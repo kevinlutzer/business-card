@@ -151,16 +151,17 @@
 <wire x1="89" y1="51" x2="0" y2="51" width="0" layer="20"/>
 <dimension x1="0" y1="51.79" x2="89" y2="51.79" x3="44.5" y3="56.79" textsize="1" layer="1"/>
 <dimension x1="89" y1="51.79" x2="89" y2="0.79" x3="94" y3="26.29" textsize="1" layer="1"/>
-<text x="8.89" y="47.625" size="1.778" layer="121">v2</text>
-<text x="8.89" y="45.085" size="1.778" layer="121">Kevin Lutzer</text>
-<text x="1.905" y="40.005" size="1.778" layer="121">B.E. Electrical Engineering &amp;
+<text x="9.525" y="47.625" size="1.778" layer="121">v2</text>
+<text x="9.525" y="45.085" size="1.778" layer="121">Kevin Lutzer</text>
+<text x="2.54" y="39.37" size="1.524" layer="121">B.E. Electrical Engineering &amp;
 B.Sc. Computer Science</text>
-<text x="1.905" y="32.385" size="1.778" layer="121">Website: https://kevin.lutzer.ca
+<text x="2.54" y="29.845" size="1.524" layer="121">Website: https://kevin.lutzer.ca
 Email: kevin@lutzer.ca
-Github: https://github.com/kevinlutzer</text>
-<text x="1.905" y="24.13" size="1.778" layer="121">Plug the usb connector into any usb port,
-and watch! Project details can be found
-  at https://bit.ly/38gpalY.</text>
+Github: https://github.com/kevinlutzer
+Linkedin: www.linkedin.com/in/kevin-lutzer</text>
+<text x="2.54" y="22.86" size="1.524" layer="121">Plug the usb connector into any usb port,
+  and watch! Project details can be found
+      at https://bit.ly/38gpalY.</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -1860,7 +1861,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.4175" y="13.49375" size="1.27" layer="201" font="vector" ratio="12"/>
 <attribute name="VALUE" x="38.6715" y="12.3825" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="OSHWLOGO_TOP_0.2" package3d_urn="urn:adsk.eagle:package:6240813/1" value="" x="4.445" y="46.99" smashed="yes"/>
+<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="OSHWLOGO_TOP_0.2" package3d_urn="urn:adsk.eagle:package:6240813/1" value="" x="5.08" y="46.355" smashed="yes"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1869,8 +1870,8 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="GND"/>
 <contactref element="IC1" pad="14"/>
 <polygon width="0.6096" layer="16">
-<vertex x="3.175" y="22.86"/>
-<vertex x="45.72" y="22.86"/>
+<vertex x="6.35" y="19.685"/>
+<vertex x="45.72" y="19.685"/>
 <vertex x="45.72" y="0"/>
 <vertex x="26.035" y="0"/>
 </polygon>
@@ -1895,8 +1896,8 @@ design rules under a new name.</description>
 <wire x1="17.397375" y1="12.447628125" x2="17.864746875" y2="12.915" width="0.6096" layer="1"/>
 <wire x1="17.864746875" y1="12.915" x2="34.29" y2="12.915" width="0.6096" layer="1"/>
 <polygon width="0.6096" layer="1">
-<vertex x="3.175" y="22.86"/>
-<vertex x="45.72" y="22.86"/>
+<vertex x="6.35" y="19.685"/>
+<vertex x="45.72" y="19.685"/>
 <vertex x="45.72" y="0"/>
 <vertex x="26.035" y="0"/>
 </polygon>
