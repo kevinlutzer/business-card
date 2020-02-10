@@ -10,6 +10,20 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
@@ -53,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -77,8 +93,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -6371,6 +6392,76 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="6.1849" y1="-2.032" x2="6.1849" y2="-4.064" width="0" layer="51"/>
 <rectangle x1="5.6642" y1="-4.064" x2="5.9944" y2="-2.032" layer="51" rot="R180"/>
 </package>
+<package name="PAD.02X.02">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.02" Square&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.02" x 0.02"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.03" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.03" x 0.03"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.05" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.05" x 0.05"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.04">
+<description>&lt;h3&gt;Electrically Conductive Pad 0.04" Circle&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area: 0.04" x 0.04"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH">
+<description>&lt;h3&gt;Electrically Conductive Via 0.015" Drill&lt;/h3&gt;
+Used as a test point connection for pogo pins or other debugging tools. 
+&lt;p&gt;Specifications:
+&lt;li&gt;Area:0.015"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;TEST_POINT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
+<package name="1X01_NO_SILK">
+<description>&lt;h3&gt;Plated Through Hole - No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -6384,6 +6475,13 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pin name="GND" x="-2.54" y="0" visible="pad" length="short"/>
 <text x="0" y="9.525" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" font="vector">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6596,6 +6694,68 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <connect gate="G$1" pin="D-" pad="D-1"/>
 <connect gate="G$1" pin="GND" pad="GND1"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="TP">
+<description>&lt;h3&gt;SparkFun Test Points&lt;/h3&gt;
+&lt;p&gt;Bare copper test points for troubleshooting or In-Circuit-Testing. These are used by our Production team for verifying production board runs using pogo-pins on test beds.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13284”&gt;SparkFun LSM9DS1 Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13714”&gt;SparkFun PSOC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13879"&gt;SparkFun Load Cell Amplifier&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4" package="PAD.03X.04">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TP_15TH_THRU" package="TP_15TH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="POGO_PTH" package="1X01_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8455,6 +8615,11 @@ DIN A4, landscape with location and doc. field</description>
 <part name="LED56" library="led" deviceset="LED" device="CHIPLED_0805"/>
 <part name="IC1" library="atmel_tiny24-44-84tiny48-88mega48-88-168-328" deviceset="ATTINY24/44/84" device="-SSU"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
+<part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP3" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP4" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP5" library="SparkFun-Connectors" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -8751,6 +8916,21 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
 </instance>
+<instance part="TP1" gate="G$1" x="38.1" y="76.2" smashed="yes">
+<attribute name="NAME" x="35.56" y="78.74" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP2" gate="G$1" x="58.42" y="76.2" smashed="yes">
+<attribute name="NAME" x="55.88" y="78.74" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP3" gate="G$1" x="78.74" y="76.2" smashed="yes">
+<attribute name="NAME" x="76.2" y="78.74" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP4" gate="G$1" x="58.42" y="68.58" smashed="yes">
+<attribute name="NAME" x="55.88" y="71.12" size="1.778" layer="95" font="vector"/>
+</instance>
+<instance part="TP5" gate="G$1" x="78.74" y="68.58" smashed="yes">
+<attribute name="NAME" x="76.2" y="71.12" size="1.778" layer="95" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8770,6 +8950,11 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="45.72" y1="15.24" x2="35.56" y2="15.24" width="0.1524" layer="91"/>
 <junction x="45.72" y="15.24"/>
 </segment>
+<segment>
+<wire x1="38.1" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
+<label x="27.94" y="76.2" size="1.778" layer="95"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="GND" class="0">
 <segment>
@@ -8788,6 +8973,11 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="20.32" y1="20.32" x2="25.4" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="25.4" y1="20.32" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="68.58" y="68.58" size="1.778" layer="95"/>
+<pinref part="TP5" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PIN0" class="0">
@@ -9379,6 +9569,11 @@ DIN A4, landscape with location and doc. field</description>
 <label x="10.16" y="48.26" size="1.778" layer="95"/>
 <pinref part="IC1" gate="IC" pin="PA5(ADC5/MISO/DO/OC1B/PCINT5)"/>
 </segment>
+<segment>
+<wire x1="58.42" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<label x="48.26" y="76.2" size="1.778" layer="95"/>
+<pinref part="TP2" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="PIN6" class="0">
 <segment>
@@ -9390,6 +9585,11 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="17.78" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="10.16" y="45.72" size="1.778" layer="95"/>
 <pinref part="IC1" gate="IC" pin="PA6(ADC6/MOSI/SDA/OC1A/PCINT6)"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="68.58" x2="48.26" y2="68.58" width="0.1524" layer="91"/>
+<label x="48.26" y="68.58" size="1.778" layer="95"/>
+<pinref part="TP4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PIN7" class="0">
@@ -9420,10 +9620,75 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="45.72" y1="30.48" x2="45.72" y2="38.1" width="0.1524" layer="91"/>
 <label x="45.72" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<wire x1="78.74" y1="76.2" x2="68.58" y2="76.2" width="0.1524" layer="91"/>
+<label x="68.58" y="76.2" size="1.778" layer="95"/>
+<pinref part="TP3" gate="G$1" pin="1"/>
+</segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,102.87,160.342,LED1,,,,,"/>
+<approved hash="113,1,123.19,160.342,LED2,,,,,"/>
+<approved hash="113,1,143.51,160.342,LED3,,,,,"/>
+<approved hash="113,1,163.83,160.342,LED4,,,,,"/>
+<approved hash="113,1,184.15,160.342,LED5,,,,,"/>
+<approved hash="113,1,204.47,160.342,LED6,,,,,"/>
+<approved hash="113,1,224.79,160.342,LED7,,,,,"/>
+<approved hash="113,1,245.11,160.342,LED8,,,,,"/>
+<approved hash="113,1,102.87,145.102,LED9,,,,,"/>
+<approved hash="113,1,123.19,145.102,LED10,,,,,"/>
+<approved hash="113,1,143.51,145.102,LED11,,,,,"/>
+<approved hash="113,1,163.83,145.102,LED12,,,,,"/>
+<approved hash="113,1,184.15,145.102,LED13,,,,,"/>
+<approved hash="113,1,204.47,145.102,LED14,,,,,"/>
+<approved hash="113,1,224.79,145.102,LED15,,,,,"/>
+<approved hash="113,1,245.11,145.102,LED16,,,,,"/>
+<approved hash="113,1,102.87,129.862,LED17,,,,,"/>
+<approved hash="113,1,123.19,129.862,LED18,,,,,"/>
+<approved hash="113,1,143.51,129.862,LED19,,,,,"/>
+<approved hash="113,1,163.83,129.862,LED20,,,,,"/>
+<approved hash="113,1,184.15,129.862,LED21,,,,,"/>
+<approved hash="113,1,204.47,129.862,LED22,,,,,"/>
+<approved hash="113,1,224.79,129.862,LED23,,,,,"/>
+<approved hash="113,1,245.11,129.862,LED24,,,,,"/>
+<approved hash="113,1,102.87,114.622,LED25,,,,,"/>
+<approved hash="113,1,123.19,114.622,LED26,,,,,"/>
+<approved hash="113,1,143.51,114.622,LED27,,,,,"/>
+<approved hash="113,1,163.83,114.622,LED28,,,,,"/>
+<approved hash="113,1,184.15,114.622,LED29,,,,,"/>
+<approved hash="113,1,204.47,114.622,LED30,,,,,"/>
+<approved hash="113,1,224.79,114.622,LED31,,,,,"/>
+<approved hash="113,1,245.11,114.622,LED32,,,,,"/>
+<approved hash="113,1,102.87,99.3817,LED33,,,,,"/>
+<approved hash="113,1,123.19,99.3817,LED34,,,,,"/>
+<approved hash="113,1,143.51,99.3817,LED35,,,,,"/>
+<approved hash="113,1,163.83,99.3817,LED36,,,,,"/>
+<approved hash="113,1,184.15,99.3817,LED37,,,,,"/>
+<approved hash="113,1,204.47,99.3817,LED38,,,,,"/>
+<approved hash="113,1,224.79,99.3817,LED39,,,,,"/>
+<approved hash="113,1,245.11,99.3817,LED40,,,,,"/>
+<approved hash="113,1,102.87,84.1417,LED41,,,,,"/>
+<approved hash="113,1,123.19,84.1417,LED42,,,,,"/>
+<approved hash="113,1,143.51,84.1417,LED43,,,,,"/>
+<approved hash="113,1,163.83,84.1417,LED44,,,,,"/>
+<approved hash="113,1,184.15,84.1417,LED45,,,,,"/>
+<approved hash="113,1,204.47,84.1417,LED46,,,,,"/>
+<approved hash="113,1,224.79,84.1417,LED47,,,,,"/>
+<approved hash="113,1,245.11,84.1417,LED48,,,,,"/>
+<approved hash="113,1,102.87,68.9017,LED49,,,,,"/>
+<approved hash="113,1,123.19,68.9017,LED50,,,,,"/>
+<approved hash="113,1,143.51,68.9017,LED51,,,,,"/>
+<approved hash="113,1,163.83,68.9017,LED52,,,,,"/>
+<approved hash="113,1,184.15,68.9017,LED53,,,,,"/>
+<approved hash="113,1,204.47,68.9017,LED54,,,,,"/>
+<approved hash="113,1,224.79,68.9017,LED55,,,,,"/>
+<approved hash="113,1,245.11,68.9017,LED56,,,,,"/>
+<approved hash="113,1,53.34,52.07,IC1,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
