@@ -33,7 +33,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -100,7 +100,7 @@
 <layer number="119" name="PF_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="120" name="WFL_Ref" color="7" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -171,17 +171,17 @@
 <wire x1="26.092240625" y1="0" x2="89" y2="0" width="0" layer="20"/>
 <wire x1="89" y1="0" x2="89" y2="51" width="0" layer="20"/>
 <wire x1="89" y1="51" x2="0" y2="51" width="0" layer="20"/>
-<text x="8.89" y="46.99" size="2.032" layer="121">v2</text>
-<text x="8.89" y="44.45" size="2.032" layer="121">Kevin Lutzer</text>
-<text x="2.54" y="38.735" size="2.032" layer="121">B.E. Electrical Engineering &amp;
+<text x="8.89" y="47.625" size="1.27" layer="25">v2</text>
+<text x="8.89" y="44.45" size="2.54" layer="25">Kevin Lutzer</text>
+<text x="1.905" y="39.37" size="1.778" layer="25">B.E. Electrical Engineering &amp;
 B.Sc. Computer Science</text>
-<text x="2.54" y="26.67" size="2.032" layer="121">https://kevin.lutzer.ca
-kevin@lutzer.ca
-https://github.com/kevinlutzer
-https://linkedin.com/in/kevin-lutzer</text>
-<text x="54.61" y="41.275" size="2.032" layer="122" rot="MR0">Plug the usb connector into any usb port, 
-and watch! Project details can be found at
-https://bit.ly/38gpalY</text>
+<text x="2.54" y="27.94" size="1.778" layer="25">Website: kevin.lutzer.ca
+Email: kevin@lutzer.ca
+Github: github.com/kevinlutzer
+Linkedin: linkedin.com/in/kevin-lutzer</text>
+<text x="54.61" y="41.275" size="2.032" layer="26" rot="MR0">Plug the usb connector into any usb port, 
+and watch the LED display! Project details
+can be found at https://bit.ly/38gpalY</text>
 <wire x1="0.01081875" y1="0.00856875" x2="0.01073125" y2="0.008740625" width="0.025" layer="121"/>
 <wire x1="0.01073125" y1="0.008740625" x2="0.0104" y2="0.009209375" width="0.025" layer="121"/>
 <wire x1="0.0104" y1="0.009209375" x2="0.009909375" y2="0.00976875" width="0.025" layer="121"/>
@@ -2135,8 +2135,8 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="GND"/>
 <contactref element="IC1" pad="14"/>
 <polygon width="0.6096" layer="16">
-<vertex x="0" y="24.13"/>
-<vertex x="45.72" y="24.13"/>
+<vertex x="-1.27" y="25.4"/>
+<vertex x="45.72" y="25.4"/>
 <vertex x="45.72" y="0"/>
 <vertex x="24.13" y="0"/>
 </polygon>
@@ -2159,8 +2159,8 @@ design rules under a new name.</description>
 <contactref element="R1" pad="2"/>
 <contactref element="IC1" pad="1"/>
 <polygon width="0.6096" layer="1">
-<vertex x="0" y="24.13"/>
-<vertex x="45.72" y="24.13"/>
+<vertex x="-1.27" y="25.4"/>
+<vertex x="45.72" y="25.4"/>
 <vertex x="45.72" y="0"/>
 <vertex x="24.13" y="0"/>
 </polygon>
