@@ -1,7 +1,7 @@
 {
     "author": {
-        "email": "support.eagle@autodesk.com",
-        "name": "Autodesk EAGLE"
+        "email": "kevinlutzer9@gmail.com",
+        "name": "Kevin Lutzer"
     },
     "description": {
         "EN": "EAGLE default 2 layer CAM job."
@@ -192,7 +192,8 @@
                     "filename_format": "%PREFIX/silkscreen_top.gbr",
                     "layers": [
                         21,
-                        25
+                        25,
+                        121
                     ],
                     "milling": false,
                     "name": "Silkscreen Top",
@@ -216,39 +217,11 @@
                     "filename_format": "%PREFIX/silkscreen_bottom.gbr",
                     "layers": [
                         22,
-                        26
+                        26,
+                        122
                     ],
                     "milling": false,
                     "name": "Silkscreen Bottom",
-                    "polarity": "positive",
-                    "type": "gerber_layer"
-                },
-                {
-                    "board_outline": false,
-                    "config": {
-                        "description": "Other",
-                        "file_function": "Other"
-                    },
-                    "filename_format": "%PREFIX/%FF.gbr",
-                    "layers": [
-                    ],
-                    "milling": false,
-                    "name": "",
-                    "polarity": "positive",
-                    "type": "gerber_layer"
-                },
-                {
-                    "board_outline": false,
-                    "config": {
-                        "description": "Other",
-                        "file_function": "Other"
-                    },
-                    "filename_format": "%PREFIX/vias.gbr",
-                    "layers": [
-                        18
-                    ],
-                    "milling": false,
-                    "name": "Vias",
                     "polarity": "positive",
                     "type": "gerber_layer"
                 }
@@ -272,7 +245,7 @@
                         "upside_down": false
                     },
                     "filename_format": "%DRILLPREFIX/drill_%FROM_%TO.xln",
-                    "name": "Excellon",
+                    "name": "Auto Drill",
                     "type": "autodrills"
                 }
             ]
@@ -304,7 +277,7 @@
             ]
         }
     ],
-    "timestamp": "2019-07-17T17:48:33",
+    "timestamp": "2020-02-10T18:43:59",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
