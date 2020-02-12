@@ -160,7 +160,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z21haWw2MzI2NTA" projecturn="a.YnVzaW5lc3M6Z21haWw2MzI2NTAjRDIwMjAwMjEwMjY0MjM4OTU2" f3durn="urn:adsk.wipprod:dm.lineage:MxCqwunHQxeFU_tUqpG4nw" pcbguid="0d241578-93df-45ca-9b52-236efa617452" lastpulledtime="" lastsyncedchangeguid="3520421c-ad52-13c7-2dce-f34972939733"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWw2MzI2NTA" projecturn="a.YnVzaW5lc3M6Z21haWw2MzI2NTAjRDIwMjAwMjEwMjY0MjM4OTU2" f3durn="urn:adsk.wipprod:dm.lineage:MxCqwunHQxeFU_tUqpG4nw" pcbguid="0d241578-93df-45ca-9b52-236efa617452" lastpulledtime="" lastsyncedchangeguid="3345b6c5-e338-11f4-5cf6-9e303d0a1403"/>
 <plain>
 <wire x1="0" y1="51" x2="0" y2="26.092240625" width="0" layer="20"/>
 <wire x1="0" y1="26.092240625" x2="8.773853125" y2="17.394828125" width="0" layer="20"/>
@@ -180,7 +180,7 @@ Email: kevin@lutzer.ca
 Github: github.com/kevinlutzer
 Linkedin: linkedin.com/in/kevin-lutzer</text>
 <text x="45.72" y="38.735" size="1.778" layer="26" rot="MR0">Plug the usb connector into any usb
-port, and watch the LED display!
+port, and watch the LED display.
 Project details can be found at 
 https://bit.ly/38gpalY</text>
 <wire x1="0.01081875" y1="0.00856875" x2="0.01073125" y2="0.008740625" width="0.025" layer="121"/>
@@ -2244,14 +2244,13 @@ design rules under a new name.</description>
 <via x="42.545" y="15.24" extent="1-16" drill="0.35"/>
 <wire x1="42.6085" y1="12.7" x2="44.45" y2="12.7" width="0.3048" layer="1"/>
 <via x="44.45" y="12.7" extent="1-16" drill="0.35"/>
-<wire x1="5.333703125" y1="10.413703125" x2="5.333703125" y2="10.28345" width="0.8128" layer="1"/>
-<wire x1="5.333703125" y1="10.413703125" x2="8.89" y2="13.97" width="0.3048" layer="1"/>
-<via x="8.89" y="13.97" extent="1-16" drill="0.35"/>
-<wire x1="8.89" y1="13.97" x2="10.16" y2="15.24" width="0.3048" layer="16"/>
 <contactref element="TP5" pad="1"/>
 <contactref element="SW1" pad="4"/>
 <wire x1="32.22" y1="8.985" x2="30.41" y2="10.795" width="0.3048" layer="1"/>
 <wire x1="30.41" y1="10.795" x2="29.21" y2="10.795" width="0.3048" layer="1"/>
+<wire x1="5.333703125" y1="10.28345" x2="9.525" y2="14.474746875" width="0.6096" layer="1"/>
+<wire x1="9.525" y1="14.474746875" x2="9.525" y2="14.605" width="0.6096" layer="1"/>
+<via x="9.525" y="14.605" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="UCC">
 <contactref element="JP1" pad="5V"/>
@@ -2264,9 +2263,10 @@ design rules under a new name.</description>
 <vertex x="45.72" y="0"/>
 <vertex x="24.13" y="0"/>
 </polygon>
-<wire x1="10.413703125" y1="5.333703125" x2="15.24" y2="10.16" width="0.3048" layer="1"/>
 <contactref element="TP3" pad="1"/>
-<wire x1="10.413703125" y1="5.333703125" x2="10.28345" y2="5.333703125" width="0" layer="19" extent="1-1"/>
+<wire x1="10.28345" y1="5.333703125" x2="15.744746875" y2="10.795" width="0.6096" layer="1"/>
+<wire x1="15.744746875" y1="10.795" x2="15.875" y2="10.795" width="0.6096" layer="1"/>
+<wire x1="15.875" y1="10.795" x2="15.875" y2="10.16" width="0.6096" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="R1" pad="1"/>

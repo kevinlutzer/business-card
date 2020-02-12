@@ -33,7 +33,7 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -179,9 +179,10 @@ B.Sc. Computer Science</text>
 Email: kevin@lutzer.ca
 Github: github.com/kevinlutzer
 Linkedin: linkedin.com/in/kevin-lutzer</text>
-<text x="54.61" y="41.275" size="2.032" layer="26" rot="MR0">Plug the usb connector into any usb port, 
-and watch the LED display! Project details
-can be found at https://bit.ly/38gpalY</text>
+<text x="45.72" y="38.735" size="1.778" layer="26" rot="MR0">Plug the usb connector into any usb
+port, and watch the LED display!
+Project details can be found at 
+https://bit.ly/38gpalY</text>
 <wire x1="0.01081875" y1="0.00856875" x2="0.01073125" y2="0.008740625" width="0.025" layer="121"/>
 <wire x1="0.01073125" y1="0.008740625" x2="0.0104" y2="0.009209375" width="0.025" layer="121"/>
 <wire x1="0.0104" y1="0.009209375" x2="0.009909375" y2="0.00976875" width="0.025" layer="121"/>

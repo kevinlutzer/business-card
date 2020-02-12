@@ -173,9 +173,9 @@
 <wire x1="89" y1="51" x2="0" y2="51" width="0" layer="20"/>
 <text x="8.89" y="47.625" size="1.27" layer="25">v2</text>
 <text x="8.89" y="44.45" size="2.54" layer="25">Kevin Lutzer</text>
-<text x="1.905" y="39.37" size="1.778" layer="25">B.E. Electrical Engineering &amp;
+<text x="2.54" y="39.37" size="1.778" layer="25">B.E. Electrical Engineering &amp;
 B.Sc. Computer Science</text>
-<text x="2.54" y="27.94" size="1.778" layer="25">Website: kevin.lutzer.ca
+<text x="2.54" y="28.575" size="1.778" layer="25">Website: kevin.lutzer.ca
 Email: kevin@lutzer.ca
 Github: github.com/kevinlutzer
 Linkedin: linkedin.com/in/kevin-lutzer</text>
