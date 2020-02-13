@@ -1,6 +1,6 @@
 # Overview 
 
-The original intention of this project was to be able to demonstrate some of my skills as an Electrical Engineer to potential employers. This project required me to build and prototype a tri-state analog circuit, add controls with a ATMEL microcontroller and design manufacture a customer printed circuit board. This would display my website url across a custom LED matrix when the device was plugged into a USB port. I designed this device to cost about $2.50 CAD with the most expensive part being the microcontroller.  
+The original intention of this project was to be able to demonstrate some of my skills as an Electrical Engineer to potential employers. This project required me to build and prototype a tri-state circuit, add controls with a ATMEL microcontroller and design manufacture a customer printed circuit board. This would display my website url across a custom LED matrix when the device was plugged into a USB port. I designed this device to cost about $2.50 CAD with the most expensive part being the microcontroller.  
 
 <b>What does it do?</b> Well when you plug the device it, it scrolls my website url across the matrix display.
 
