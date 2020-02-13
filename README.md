@@ -8,7 +8,7 @@ Its usage would be for interviews or meet-and-greet type events. I can give the 
 
 The first prototype of this device came in late 2016, early 2017. The image of it operating is bellow.  
 
-![](https://storage.cloud.google.com/website-klutzer-images/projects/business_card_446x298.jpg)
+![](./v1_board_image.jpg)
 
 One of the main problems with this iterating is that I wasn't able to incorporate the standard 7 bit dot matrix alphabet, so I had to make my own. The result was a display that was hard to read. 
 
@@ -16,7 +16,7 @@ One of the main problems with this iterating is that I wasn't able to incorporat
 
 Enter V2, I redesigned the device to have a slightly larger display so that users could actually clearly see the text scroll across the screen. At the time of this writing the boards are being manufatured. Bellow is an image demonstrating what it will look like: 
 
-![](https://storage.cloud.google.com/website-klutzer-images/projects/business_card_website_446x298.png)
+![](./v2_board_image.png)
 
 
 
