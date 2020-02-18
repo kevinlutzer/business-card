@@ -3,7 +3,7 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
@@ -160,7 +160,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z21haWw2MzI2NTA" projecturn="a.YnVzaW5lc3M6Z21haWw2MzI2NTAjRDIwMjAwMjEwMjY0MjM4OTU2" f3durn="urn:adsk.wipprod:dm.lineage:MxCqwunHQxeFU_tUqpG4nw" pcbguid="0d241578-93df-45ca-9b52-236efa617452" lastpulledtime="" lastsyncedchangeguid="91d2657b-8700-2b72-a14c-066d0613f0df"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWw2MzI2NTA" projecturn="a.YnVzaW5lc3M6Z21haWw2MzI2NTAjRDIwMjAwMjEwMjY0MjM4OTU2" f3durn="urn:adsk.wipprod:dm.lineage:MxCqwunHQxeFU_tUqpG4nw" pcbguid="0d241578-93df-45ca-9b52-236efa617452" lastpulledtime="" lastsyncedchangeguid="3345b6c5-e338-11f4-5cf6-9e303d0a1403"/>
 <plain>
 <wire x1="0" y1="51" x2="0" y2="26.092240625" width="0" layer="20"/>
 <wire x1="0" y1="26.092240625" x2="8.773853125" y2="17.394828125" width="0" layer="20"/>
@@ -180,7 +180,7 @@ Email: kevin@lutzer.ca
 Github: github.com/kevinlutzer
 Linkedin: linkedin.com/in/kevin-lutzer</text>
 <text x="45.72" y="38.735" size="1.778" layer="26" rot="MR0">Plug the usb connector into any usb
-port, and watch the LED display!
+port, and watch the LED display.
 Project details can be found at 
 https://bit.ly/38gpalY</text>
 <wire x1="0.01081875" y1="0.00856875" x2="0.01073125" y2="0.008740625" width="0.025" layer="121"/>
@@ -409,35 +409,6 @@ https://bit.ly/38gpalY</text>
 <dimension x1="89" y1="0" x2="89" y2="51" x3="94.615" y3="25.5" textsize="1.778" layer="48"/>
 </plain>
 <libraries>
-<library name="adafruit">
-<packages>
-<package name="KMR2" urn="urn:adsk.eagle:footprint:15955146/1">
-<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="1.4" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="2.1" y1="-1.4" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
-<wire x1="-0.5" y1="-0.8" x2="-1.1" y2="-0.2" width="0.127" layer="21" curve="-90"/>
-<wire x1="-1.1" y1="-0.2" x2="-1.1" y2="0.2" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="0.2" x2="-0.5" y2="0.8" width="0.127" layer="21" curve="-90"/>
-<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.127" layer="21"/>
-<wire x1="0.5" y1="0.8" x2="1.1" y2="0.2" width="0.127" layer="21" curve="-90"/>
-<wire x1="1.1" y1="0.2" x2="1.1" y2="-0.2" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-0.2" x2="0.5" y2="-0.8" width="0.127" layer="21" curve="-90"/>
-<wire x1="0.5" y1="-0.8" x2="-0.5" y2="-0.8" width="0.127" layer="21"/>
-<smd name="1" x="2" y="0.8" dx="1" dy="1" layer="1"/>
-<smd name="2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
-<smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
-<smd name="4" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="KMR2" urn="urn:adsk.eagle:package:6240885/1" locally_modified="yes" type="box">
-<packageinstances>
-<packageinstance name="KMR2"/>
-</packageinstances>
-</package3d>
-</packages3d>
-</library>
 <library name="SparkFun-Connectors">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
@@ -476,38 +447,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="-1.27" y="1.143" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-</packages>
-</library>
-<library name="led">
-<description>&lt;b&gt;LEDs&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;br&gt;
-Extended by Federico Battaglin &lt;author&gt;&amp;lt;federico.rd@fdpinternational.com&amp;gt;&lt;/author&gt; with DUOLED</description>
-<packages>
-<package name="CHIPLED_0805">
-<description>&lt;b&gt;CHIPLED&lt;/b&gt;&lt;p&gt;
-Source: http://www.osram.convergy.de/ ... LG_R971.pdf</description>
-<wire x1="-0.35" y1="0.925" x2="0.35" y2="0.925" width="0.1016" layer="51" curve="162.394521"/>
-<wire x1="-0.35" y1="-0.925" x2="0.35" y2="-0.925" width="0.1016" layer="51" curve="-162.394521"/>
-<wire x1="0.575" y1="0.525" x2="0.575" y2="-0.525" width="0.1016" layer="51"/>
-<wire x1="-0.575" y1="-0.5" x2="-0.575" y2="0.925" width="0.1016" layer="51"/>
-<circle x="-0.45" y="0.85" radius="0.103" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.05" dx="1.2" dy="1.2" layer="1"/>
-<smd name="A" x="0" y="-1.05" dx="1.2" dy="1.2" layer="1"/>
-<text x="-1.27" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="0.3" y1="0.5" x2="0.625" y2="1" layer="51"/>
-<rectangle x1="-0.325" y1="0.5" x2="-0.175" y2="0.75" layer="51"/>
-<rectangle x1="0.175" y1="0.5" x2="0.325" y2="0.75" layer="51"/>
-<rectangle x1="-0.2" y1="0.5" x2="0.2" y2="0.675" layer="51"/>
-<rectangle x1="0.3" y1="-1" x2="0.625" y2="-0.5" layer="51"/>
-<rectangle x1="-0.625" y1="-1" x2="-0.3" y2="-0.5" layer="51"/>
-<rectangle x1="0.175" y1="-0.75" x2="0.325" y2="-0.5" layer="51"/>
-<rectangle x1="-0.325" y1="-0.75" x2="-0.175" y2="-0.5" layer="51"/>
-<rectangle x1="-0.2" y1="-0.675" x2="0.2" y2="-0.5" layer="51"/>
-<rectangle x1="-0.1" y1="0" x2="0.1" y2="0.2" layer="21"/>
-<rectangle x1="-0.6" y1="0.5" x2="-0.3" y2="0.8" layer="51"/>
-<rectangle x1="-0.625" y1="0.925" x2="-0.3" y2="1" layer="51"/>
 </package>
 </packages>
 </library>
@@ -1783,6 +1722,35 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package3d>
 </packages3d>
 </library>
+<library name="adafruit">
+<packages>
+<package name="KMR2" urn="urn:adsk.eagle:footprint:6240242/1">
+<wire x1="-2.1" y1="1.4" x2="2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="1.4" x2="2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="2.1" y1="-1.4" x2="-2.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-2.1" y1="-1.4" x2="-2.1" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-0.8" x2="-1.1" y2="-0.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="-1.1" y1="-0.2" x2="-1.1" y2="0.2" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="0.2" x2="-0.5" y2="0.8" width="0.127" layer="21" curve="-90"/>
+<wire x1="-0.5" y1="0.8" x2="0.5" y2="0.8" width="0.127" layer="21"/>
+<wire x1="0.5" y1="0.8" x2="1.1" y2="0.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="1.1" y1="0.2" x2="1.1" y2="-0.2" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-0.2" x2="0.5" y2="-0.8" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.5" y1="-0.8" x2="-0.5" y2="-0.8" width="0.127" layer="21"/>
+<smd name="1" x="2" y="0.8" dx="1" dy="1" layer="1"/>
+<smd name="2" x="2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="4" x="-2" y="-0.8" dx="1" dy="1" layer="1"/>
+<smd name="3" x="-2" y="0.8" dx="1" dy="1" layer="1"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="KMR2" urn="urn:adsk.eagle:package:17215455/2" type="model">
+<packageinstances>
+<packageinstance name="KMR2"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1983,7 +1951,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="88" x="40.005" y="15.24" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="40.005" y="15.24" size="1.778" layer="27" display="off"/>
 </element>
-<element name="JP1" library="SparkFun-Connectors" package="USB-A-PCB" value="USBPCB" x="7.95" y="7.95" smashed="yes" rot="R45">
+<element name="JP1" library="SparkFun-Connectors" package="USB-A-PCB" override_package3d_urn="urn:adsk.eagle:package:17231587/2" override_package_urn="urn:adsk.eagle:footprint:17231589/1" value="USBPCB" x="7.95" y="7.95" smashed="yes" rot="R45">
 <attribute name="VALUE" x="10.644075" y="3.459871875" size="0.4064" layer="27" rot="R45"/>
 </element>
 <element name="LED10" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="" x="54.61" y="41.91" smashed="yes" rot="R270">
@@ -2131,7 +2099,8 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="52" x="54.61" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="53.34" y="19.05" size="1.27" layer="27"/>
 </element>
-<element name="LED43" library="led" package="CHIPLED_0805" value="" x="59.69" y="21.59" smashed="yes" rot="R270">
+<element name="LED43" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="" x="59.69" y="21.59" smashed="yes" rot="R270">
+<attribute name="POPULARITY" value="52" x="59.69" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="58.42" y="19.05" size="1.27" layer="27"/>
 </element>
 <element name="LED44" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="" x="64.77" y="21.59" smashed="yes" rot="R270">
@@ -2174,7 +2143,8 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="52" x="64.77" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="63.5" y="13.97" size="1.27" layer="27"/>
 </element>
-<element name="LED53" library="led" package="CHIPLED_0805" value="" x="69.85" y="16.51" smashed="yes" rot="R270">
+<element name="LED53" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="" x="69.85" y="16.51" smashed="yes" rot="R270">
+<attribute name="POPULARITY" value="52" x="69.85" y="16.51" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="68.58" y="13.97" size="1.27" layer="27"/>
 </element>
 <element name="LED54" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="" x="74.93" y="16.51" smashed="yes" rot="R270">
@@ -2241,12 +2211,11 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="86" x="84.455" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="84.455" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="SW1" library="adafruit" package="KMR2" package3d_urn="urn:adsk.eagle:package:6240885/1" value="SPST_TACT-KMR2" x="33.655" y="6.985" smashed="yes" rot="R270"/>
-<element name="IC1" library="atmel_tiny24-44-84tiny48-88mega48-88-168-328" package="SOIC14" value="" x="40.005" y="8.89" smashed="yes" rot="R270">
+<element name="IC1" library="atmel_tiny24-44-84tiny48-88mega48-88-168-328" package="SOIC14" override_package3d_urn="urn:adsk.eagle:package:17222566/2" override_package_urn="urn:adsk.eagle:footprint:17222567/1" value="" x="40.005" y="8.89" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.4175" y="13.49375" size="1.27" layer="201" font="vector" ratio="12"/>
 <attribute name="VALUE" x="38.6715" y="12.3825" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="OSHWLOGO_TOP_0.2" package3d_urn="urn:adsk.eagle:package:6240813/1" value="" x="5.08" y="46.355" smashed="yes"/>
+<element name="U$1" library="adafruit" library_urn="urn:adsk.eagle:library:420" package="OSHWLOGO_TOP_0.2" package3d_urn="urn:adsk.eagle:package:6240813/1" override_package3d_urn="urn:adsk.eagle:package:17231582/2" override_package_urn="urn:adsk.eagle:footprint:6240168/1" value="" x="5.08" y="46.355" smashed="yes"/>
 <element name="TP1" library="SparkFun-Connectors" package="1X01_NO_SILK" value="TEST-POINTPOGO_PTH" x="29.21" y="8.255" smashed="yes"/>
 <element name="TP2" library="SparkFun-Connectors" package="1X01_NO_SILK" value="TEST-POINTPOGO_PTH" x="29.21" y="3.175" smashed="yes">
 <attribute name="VALUE" x="27.94" y="1.397" size="0.6096" layer="27" font="vector" ratio="20"/>
@@ -2255,15 +2224,14 @@ design rules under a new name.</description>
 <element name="TP4" library="SparkFun-Connectors" package="1X01_NO_SILK" value="TEST-POINTPOGO_PTH" x="29.21" y="5.715" smashed="yes"/>
 <element name="TP5" library="SparkFun-Connectors" package="1X01_NO_SILK" value="TEST-POINTPOGO_PTH" x="29.21" y="10.795" smashed="yes"/>
 <element name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" package="CHIPLED_0805" package3d_urn="urn:adsk.eagle:package:15821/2" value="" x="49.53" y="46.99" smashed="yes" rot="R270">
-<attribute name="NAME" x="48.26" y="48.26" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="52" x="49.53" y="46.99" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="48.26" y="44.45" size="1.27" layer="27"/>
 </element>
+<element name="SW1" library="adafruit" package="KMR2" package3d_urn="urn:adsk.eagle:package:17215455/2" value="SPST_TACT-KMR2" x="33.02" y="6.985" smashed="yes" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
 <contactref element="C1" pad="2"/>
-<contactref element="SW1" pad="4"/>
 <contactref element="JP1" pad="GND"/>
 <contactref element="IC1" pad="14"/>
 <polygon width="0.6096" layer="16">
@@ -2272,18 +2240,17 @@ design rules under a new name.</description>
 <vertex x="45.72" y="0"/>
 <vertex x="24.13" y="0"/>
 </polygon>
-<wire x1="32.855" y1="8.985" x2="32.76" y2="8.89" width="0.3048" layer="1"/>
-<wire x1="32.76" y1="8.89" x2="31.75" y2="8.89" width="0.3048" layer="1"/>
-<via x="31.75" y="8.89" extent="1-16" drill="0.35"/>
 <wire x1="40.955" y1="15.24" x2="42.545" y2="15.24" width="0.3048" layer="1"/>
 <via x="42.545" y="15.24" extent="1-16" drill="0.35"/>
 <wire x1="42.6085" y1="12.7" x2="44.45" y2="12.7" width="0.3048" layer="1"/>
 <via x="44.45" y="12.7" extent="1-16" drill="0.35"/>
-<wire x1="5.333703125" y1="10.413703125" x2="5.333703125" y2="10.28345" width="0.8128" layer="1"/>
-<wire x1="5.333703125" y1="10.413703125" x2="8.89" y2="13.97" width="0.3048" layer="1"/>
-<via x="8.89" y="13.97" extent="1-16" drill="0.35"/>
-<wire x1="8.89" y1="13.97" x2="10.16" y2="15.24" width="0.3048" layer="16"/>
 <contactref element="TP5" pad="1"/>
+<contactref element="SW1" pad="4"/>
+<wire x1="32.22" y1="8.985" x2="30.41" y2="10.795" width="0.3048" layer="1"/>
+<wire x1="30.41" y1="10.795" x2="29.21" y2="10.795" width="0.3048" layer="1"/>
+<wire x1="5.333703125" y1="10.28345" x2="9.525" y2="14.474746875" width="0.6096" layer="1"/>
+<wire x1="9.525" y1="14.474746875" x2="9.525" y2="14.605" width="0.6096" layer="1"/>
+<via x="9.525" y="14.605" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="UCC">
 <contactref element="JP1" pad="5V"/>
@@ -2296,24 +2263,25 @@ design rules under a new name.</description>
 <vertex x="45.72" y="0"/>
 <vertex x="24.13" y="0"/>
 </polygon>
-<wire x1="10.413703125" y1="5.333703125" x2="15.24" y2="10.16" width="0.3048" layer="1"/>
 <contactref element="TP3" pad="1"/>
-<wire x1="10.413703125" y1="5.333703125" x2="10.28345" y2="5.333703125" width="0" layer="19" extent="1-1"/>
+<wire x1="10.28345" y1="5.333703125" x2="15.744746875" y2="10.795" width="0.6096" layer="1"/>
+<wire x1="15.744746875" y1="10.795" x2="15.875" y2="10.795" width="0.6096" layer="1"/>
+<wire x1="15.875" y1="10.795" x2="15.875" y2="10.16" width="0.6096" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="R1" pad="1"/>
-<contactref element="SW1" pad="3"/>
 <contactref element="IC1" pad="4"/>
 <wire x1="37.4015" y1="8.89" x2="35.56" y2="8.89" width="0.3048" layer="1"/>
-<wire x1="35.56" y1="8.89" x2="34.55" y2="8.89" width="0.3048" layer="1"/>
-<wire x1="34.55" y1="8.89" x2="34.455" y2="8.985" width="0.3048" layer="1"/>
-<wire x1="34.455" y1="8.985" x2="34.29" y2="9.15" width="0.3048" layer="1"/>
-<wire x1="34.29" y1="9.15" x2="34.29" y2="11.115" width="0.3048" layer="1"/>
 <wire x1="29.845" y1="7.62" x2="35.56" y2="7.62" width="0.3048" layer="16"/>
 <wire x1="35.56" y1="7.62" x2="35.56" y2="8.89" width="0.3048" layer="16"/>
 <via x="35.56" y="8.89" extent="1-16" drill="0.35"/>
 <contactref element="TP1" pad="1"/>
 <wire x1="29.21" y1="8.255" x2="29.845" y2="7.62" width="0.3048" layer="16"/>
+<contactref element="SW1" pad="3"/>
+<wire x1="35.56" y1="8.89" x2="34.29" y2="8.89" width="0.3048" layer="1"/>
+<wire x1="34.29" y1="8.89" x2="33.915" y2="8.89" width="0.3048" layer="1"/>
+<wire x1="33.915" y1="8.89" x2="33.82" y2="8.985" width="0.3048" layer="1"/>
+<wire x1="34.29" y1="11.115" x2="34.29" y2="8.89" width="0.3048" layer="1"/>
 </signal>
 <signal name="PIN0">
 <contactref element="R2" pad="1"/>
@@ -2768,13 +2736,13 @@ design rules under a new name.</description>
 <signal name="PIN5">
 <contactref element="R7" pad="1"/>
 <contactref element="IC1" pad="8"/>
-<wire x1="42.6085" y1="5.08" x2="45.72" y2="5.08" width="0.3048" layer="1"/>
-<wire x1="45.72" y1="5.08" x2="69.215" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="42.6085" y1="5.08" x2="44.45" y2="5.08" width="0.3048" layer="1"/>
+<wire x1="44.45" y1="5.08" x2="69.215" y2="5.08" width="0.3048" layer="1"/>
 <wire x1="69.215" y1="5.08" x2="74.295" y2="10.16" width="0.3048" layer="1"/>
 <wire x1="74.295" y1="10.16" x2="74.295" y2="11.75" width="0.3048" layer="1"/>
-<wire x1="29.845" y1="2.54" x2="43.18" y2="2.54" width="0.3048" layer="16"/>
-<wire x1="43.18" y1="2.54" x2="45.72" y2="5.08" width="0.3048" layer="16"/>
-<via x="45.72" y="5.08" extent="1-16" drill="0.35"/>
+<wire x1="29.845" y1="2.54" x2="44.45" y2="2.54" width="0.3048" layer="16"/>
+<wire x1="44.45" y1="2.54" x2="44.45" y2="5.08" width="0.3048" layer="16"/>
+<via x="44.45" y="5.08" extent="1-16" drill="0.35"/>
 <contactref element="TP2" pad="1"/>
 <wire x1="29.21" y1="3.175" x2="29.845" y2="2.54" width="0.3048" layer="16"/>
 </signal>
@@ -2801,8 +2769,8 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8FFFFFF"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFF000000"/>
 <mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
@@ -2837,6 +2805,11 @@ packages will not be understood (or retained) with this version.
 <note version="9.5" severity="warning">
 Since Version 9.5, EAGLE supports persistent groups with
 schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
 will not be understood (or retained) with this version.
 </note>
 </compatibility>
