@@ -90,11 +90,10 @@ void CharliePlex::displayRow( uint8_t image[], uint8_t row )
 	Inputs:
 		image - a 4 element array each with an 8 bit number in it that specifies a greyscale value
 */
-void CharliePlex::displayFrame( uint8_t image[][] )
+void CharliePlex::displayFrame( uint8_t image[][8] )
 {
-	// displayRow(image, 0);
 	for( int row = 0; row < 7; row ++ ) {
-		displayRow( image, row );
+		displayRow( image[row], row );
 	}
 }
 

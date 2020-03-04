@@ -320,7 +320,7 @@ class CharliePlex{
 
 		// scrolling and fram operations
 		void scrollLed( bool dir );
-		void displayFrame( uint8_t image[] );
+		void displayFrame( uint8_t image[][8] );
 		void displayRow( uint8_t image[], uint8_t row );
 		void shiftMessage(uint64_t message[], uint8_t frame[], uint8_t pos);
 };
