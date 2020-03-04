@@ -51,6 +51,7 @@ int main(void)
 	// }
 
 	while(1) {
+		// mux.setLed(12);
 		mux.scrollLed(true);
 	}
 	

@@ -18,6 +18,12 @@ void CharliePlex::setLed(uint8_t number)
 	DDRA = charlieDir[number];
 }
 
+void CharliePlex::setLedN(uint8_t row, uint8_t column)
+{
+	PORTA = ncharlieOut[row][column];
+	DDRA = ncharlieDir[row][column];
+}
+
 /*
 	Turn on all LEDs within the matrix. Call this function within a loop to turn all LEDs constantly
 */
@@ -46,19 +52,9 @@ void CharliePlex::ledOff()
 */
 void CharliePlex::scrollLed( bool dir )
 {
-	if( dir ) {
-		for( uint8_t i = 0; i <= 15; i ++ )
-		{
-			setLed( i );
-			_delay_ms( 500 );
-		}
-	}
-	else {
-		for( uint8_t i = sizeof(charlieDir); i >= 0 ; i -- )
-		{
-			setLed( i );
-			_delay_ms( 500 );
-		}
+	for( uint8_t j = 0; j < 8; j ++ ) {
+		setLedN( 2, j );
+		_delay_ms( 500 );
 	}
 }
 

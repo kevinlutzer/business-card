@@ -30,9 +30,7 @@ const uint8_t charlieDir[] =
 	( ( 1 << LINEE ) | ( 1 << LINEH ) ),
 	( ( 1 << LINEF ) | ( 1 << LINEH ) ), 
 	( ( 1 << LINEG ) | ( 1 << LINEH ) ), 
-	( ( 1 << LINEG ) | ( 1 << LINEH ) ), 
-
-
+	( ( 1 << LINEH ) | ( 1 << LINEG ) ), 
 
 
 	( ( 1 << LINEA ) | ( 1 << LINEG ) ),
@@ -92,18 +90,7 @@ const uint8_t charlieDir[] =
 	( ( 1 << LINEH ) | ( 1 << LINEA ) ), 
 };
 
-const uint8_t charlieOut[7][8] = {
-	( ( 1 << LINEA ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEB ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEC ) | ( 0 << LINEH ) ),
-	( ( 1 << LINED ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEE ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEF ) | ( 0 << LINEH ) ), 
-	( ( 1 << LINEG ) | ( 0 << LINEH ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEG ) ), 
-}
-
-// mapping for led to pin connections for the data direction
+// // mapping for led to pin connections for the data direction
 const uint8_t charlieOutput[] =
 {
 	( ( 1 << LINEA ) | ( 0 << LINEH ) ),
@@ -175,11 +162,70 @@ const uint8_t charlieOutput[] =
 	( ( 1 << LINEH ) | ( 0 << LINEA ) ), 
 };
 
+const uint8_t ncharlieOut[7][8] = {
+	( ( 1 << LINEA ) | ( 0 << LINEH ) ),
+	( ( 1 << LINEB ) | ( 0 << LINEH ) ),
+	( ( 1 << LINEC ) | ( 0 << LINEH ) ),
+	( ( 1 << LINED ) | ( 0 << LINEH ) ),
+	( ( 1 << LINEE ) | ( 0 << LINEH ) ),
+	( ( 1 << LINEF ) | ( 0 << LINEH ) ), 
+	( ( 1 << LINEG ) | ( 0 << LINEH ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINEG ) ), 
+
+	( ( 1 << LINEA ) | ( 0 << LINEG ) ),
+	( ( 1 << LINEB ) | ( 0 << LINEG ) ),
+	( ( 1 << LINEC ) | ( 0 << LINEG ) ),
+	( ( 1 << LINED ) | ( 0 << LINEG ) ),
+	( ( 1 << LINEE ) | ( 0 << LINEG ) ),
+	( ( 1 << LINEF ) | ( 0 << LINEG ) ),
+	( ( 1 << LINEG ) | ( 0 << LINEF ) ),
+	( ( 1 << LINEG ) | ( 0 << LINEH ) ),
+	( ( 1 << LINEH ) | ( 0 << LINEF ) ),
+
+	( ( 1 << LINEA ) | ( 0 << LINEF ) ),
+	( ( 1 << LINEB ) | ( 0 << LINEF ) ),
+	( ( 1 << LINEC ) | ( 0 << LINEF ) ),
+	( ( 1 << LINED ) | ( 0 << LINEF ) ),
+	( ( 1 << LINEE ) | ( 0 << LINEF ) ),
+	( ( 1 << LINEG ) | ( 0 << LINEF ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINEF ) ), 
+};
+
+const uint8_t ncharlieDir[7][8] = {
+	( ( 1 << LINEA ) | ( 1 << LINEH ) ),
+	( ( 1 << LINEB ) | ( 1 << LINEH ) ),
+	( ( 1 << LINEC ) | ( 1 << LINEH ) ),
+	( ( 1 << LINED ) | ( 1 << LINEH ) ),
+	( ( 1 << LINEE ) | ( 1 << LINEH ) ),
+	( ( 1 << LINEF ) | ( 1 << LINEH ) ), 
+	( ( 1 << LINEG ) | ( 1 << LINEH ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINEG ) ), 
+
+	( ( 1 << LINEA ) | ( 1 << LINEG ) ),
+	( ( 1 << LINEB ) | ( 1 << LINEG ) ),
+	( ( 1 << LINEC ) | ( 1 << LINEG ) ),
+	( ( 1 << LINED ) | ( 1 << LINEG ) ),
+
+	( ( 1 << LINEE ) | ( 1 << LINEG ) ),
+	( ( 1 << LINEF ) | ( 1 << LINEG ) ), 
+	( ( 1 << LINEF ) | ( 1 << LINEG ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINEF ) ), 
+
+	( ( 1 << LINEA ) | ( 1 << LINEF ) ),
+	( ( 1 << LINEB ) | ( 1 << LINEF ) ),
+	( ( 1 << LINEC ) | ( 1 << LINEF ) ),
+	( ( 1 << LINED ) | ( 1 << LINEF ) ),
+	( ( 1 << LINEE ) | ( 1 << LINEF ) ),
+	( ( 1 << LINEG ) | ( 1 << LINEF ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINEF ) ), 
+};
+
 class CharliePlex{
 
 	public:
 		// basic led operations
 		void setLed(uint8_t number);
+		void setLedN(uint8_t row, uint8_t column);
 		void allLedOn();
 		void ledOff();
 
