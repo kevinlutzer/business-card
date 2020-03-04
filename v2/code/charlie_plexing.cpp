@@ -29,9 +29,10 @@ void CharliePlex::setLedN(uint8_t row, uint8_t column)
 */
 void CharliePlex::allLedOn()
 {
-	for( uint8_t i = 0; i <= sizeof(charlieDir); i ++ )
-	{
-		setLed(i);
+	for( uint8_t i = 0; i < 7; i ++ ) {
+		for( uint8_t j = 0; j < 8; j ++ ) {
+			setLedN( i, j );
+		}
 	}
 }
 
@@ -52,10 +53,13 @@ void CharliePlex::ledOff()
 */
 void CharliePlex::scrollLed( bool dir )
 {
-	for( uint8_t j = 0; j < 8; j ++ ) {
-		setLedN( 4, j );
-		_delay_ms( 200 );
+	for( uint8_t i = 0; i < 7; i ++ ) {
+		for( uint8_t j = 0; j < 8; j ++ ) {
+			setLedN( i, j );
+			_delay_ms( 100 );
+		}
 	}
+	
 
 	// for( uint8_t j = 0; j <= sizeof(charlieOutput) ; j ++ ) {
 	// 	setLed( j );
@@ -74,9 +78,8 @@ void CharliePlex::displayRow( uint8_t image[], uint8_t row )
 {
 	for( uint8_t i = 0; i < 8; i ++ )
 	{
-		if( image[row] << i & 0b10000000 )
-		{
-			setLed( i + row * 8 );
+		if( image[i] ) {
+			setLedN(row, i);
 		}
 	}
 }
@@ -87,7 +90,7 @@ void CharliePlex::displayRow( uint8_t image[], uint8_t row )
 	Inputs:
 		image - a 4 element array each with an 8 bit number in it that specifies a greyscale value
 */
-void CharliePlex::displayFrame( uint8_t image[] )
+void CharliePlex::displayFrame( uint8_t image[][] )
 {
 	// displayRow(image, 0);
 	for( int row = 0; row < 7; row ++ ) {
