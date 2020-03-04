@@ -6,7 +6,7 @@
 TARGET= main.hex
 
 # config stuff
-ARCH=attiny45
+ARCH=attiny44
 CPU=1000000UL
 
 # tools
@@ -26,7 +26,7 @@ API_FILE=charlie_plexing
 # flags
 AVR_FLAGS=-Os -DF_CPU=$(CPU) -mmcu=$(ARCH)
 HEX_FLAGS=-O ihex
-PROG_FLAGS=-c avrisp2 -p t45
+PROG_FLAGS=-c avrisp2 -p t44
 
 # all
 all: $(HEX_DIR)/$(TEST_FILE).hex
@@ -44,7 +44,7 @@ $(HEX_DIR)/$(TEST_FILE).hex:	$(BIN_DIR)/$(TEST_FILE)
 	$(OBJ_CREATOR) $(HEX_FLAGS) -R .eeprom $^ $@
 
 program: $(HEX_DIR)/$(TEST_FILE).hex
-	$(PROG) $(PROG_FLAGS) -U flash:w:$(HEX_DIR)/$(TEST_FILE).hex
+	avrdude $(PROG_FLAGS) -U flash:w:$(HEX_DIR)/$(TEST_FILE).hex
 
-# clean:
-	# @rm -rf $(BIN_DIR)/$(TEST_FILE).* $(HEX_DIR)/$(TEST_FILE).*
+cleanup:
+	rm -rf $(HEX_DIR) $(BIN_DIR)

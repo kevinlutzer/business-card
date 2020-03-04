@@ -42,24 +42,25 @@ int main(void)
 {
 	while(1)
     {
-		for( int j = 63; j >= -6; j -- )
-		{
-			if( j < 0 )
-			{
-				mux.shiftMessage( message2, image, j + 58 );
-				mux.ledOff();
-			}
-			else
-			{
-				mux.shiftMessage( message1, image, j );
-				mux.ledOff();
-			}
-			for( uint8_t i = 0; i < 250; i ++  )
-			{
-				mux.displayFrame(image);
-				mux.ledOff();
-			}
-		}
-		mux.ledOff();
+		// for( int j = 63; j >= -6; j -- )
+		// {
+		// 	if( j < 0 )
+		// 	{
+		// 		mux.shiftMessage( message2, image, j + 58 );
+		// 		mux.ledOff();
+		// 	}
+		// 	else
+		// 	{
+		// 		mux.shiftMessage( message1, image, j );
+		// 		mux.ledOff();
+		// 	}
+		// 	for( uint8_t i = 0; i < 250; i ++  )
+		// 	{
+		// 		mux.displayFrame(image);
+		// 		mux.ledOff();
+		// 	}
+		// }
+		// mux.ledOff();
+		mux.scrollLed(true);
 	}
 }
