@@ -35,21 +35,33 @@ uint64_t message1[] = {
 	0b0000000000000000000000000000000000000000000000000000000000000000,
 };
 
+uint8_t message3[] = {
+	0b10101010,
+	0b10101010,
+	0b11101110,
+	0b00000000,
+	0b00000000,
+	0b00000000,
+	0b00000000,
+};
+
 int main(void)
 {
 	while(1)
     {
+		//mux.shiftMessage(message1, image, 0 );
+		mux.displayRow(message3, 4);
 		// mux.shiftMessage( message1, image, 0 );
 		// for( uint8_t i = 0; i < 250; i ++ ) {
 		// 	mux.displayFrame(image);
 		// 	mux.ledOff();
 		// }
-		uint8_t msg[] = {
-			1, 0, 1, 0, 1, 0, 1, 0
-		};
-		for( uint8_t i = 0; i < 7; i ++ ) {
-			mux.displayRow(msg, i);
-		}
+		// uint8_t msg[] = {
+		// 	1, 0, 1, 0, 1, 0, 1, 0
+		// };
+		// for( uint8_t i = 0; i < 7; i ++ ) {
+		// 	mux.displayRow(msg, i);
+		// }
 		
 	}
 

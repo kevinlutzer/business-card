@@ -12,10 +12,10 @@
 	Inputs:
 		number - the linear index of the led that will be turned on.
 */
-void CharliePlex::setLedN(uint8_t row, uint8_t column)
+void CharliePlex::setLed(uint8_t number)
 {
-	PORTA = ncharlieOut[row][column];
-	DDRA = ncharlieDir[row][column];
+	PORTA = charlieOut[number];
+	DDRA = charlieDir[number];
 }
 
 /*
@@ -23,10 +23,8 @@ void CharliePlex::setLedN(uint8_t row, uint8_t column)
 */
 void CharliePlex::allLedOn()
 {
-	for( uint8_t i = 0; i < 7; i ++ ) {
-		for( uint8_t j = 0; j < 8; j ++ ) {
-			setLedN( i, j );
-		}
+	for( uint8_t i = 0; i < sizeof(charlieDir); i ++ ) {
+		setLed( i );
 	}
 }
 
@@ -35,8 +33,8 @@ void CharliePlex::allLedOn()
 */
 void CharliePlex::ledOff()
 {
-	DDRB = 0;
-	PORTB = 0;
+	DDRA = 0;
+	PORTA = 0;
 }
 
 /*
@@ -47,11 +45,9 @@ void CharliePlex::ledOff()
 */
 void CharliePlex::scrollLed( bool dir )
 {
-	for( uint8_t i = 0; i < 7; i ++ ) {
-		for( uint8_t j = 0; j < 8; j ++ ) {
-			setLedN( i, j );
-			_delay_ms( 100 );
-		}
+	for( uint8_t i = 0; i < sizeof(charlieDir); i ++ ) {
+		setLed( i );
+		_delay_ms( 100 );
 	}
 }
 
@@ -62,30 +58,30 @@ void CharliePlex::scrollLed( bool dir )
 		image - a 4 element array containing binary values
 		row - the row that image should be displayed in the matrix
 */
-void CharliePlex::displayRow( uint8_t row[], uint8_t row )
+void CharliePlex::displayRow( uint8_t image[], uint8_t row )
 {
 	for( uint8_t i = 0; i < 8; i ++ )
 	{
-		if( image[row] )
+		if( image[row] << i & 0b10000000 )
 		{
-			setLedN( row, i );
+			setLed( i + row * 8 );
 		}
 	}
 }
 
-/*
-	Displays one frame of a message
+// /*
+// 	Displays one frame of a message
 
-	Inputs:
-		image - a 4 element array each with an 8 bit number in it that specifies a greyscale value
-*/
-void CharliePlex::displayFrame( uint8_t image[] )
-{
-	for( int row = 0; row < 7; row ++ )
-	{
-		displayRow( image, row );
-	}
-}
+// 	Inputs:
+// 		image - a 4 element array each with an 8 bit number in it that specifies a greyscale value
+// */
+// void CharliePlex::displayFrame( uint8_t image[] )
+// {
+// 	for( int row = 0; row < 7; row ++ )
+// 	{
+// 		displayRow( image, row );
+// 	}
+// }
 
 /*
 	function shifts a message over by position and then saves a frame into frame
