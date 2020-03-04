@@ -23,39 +23,40 @@
 // mapping for led to pin connections for the data direction
 const uint8_t charlieDir[] =
 {
-	( ( 1 << LINEA ) | ( 1 << LINEH ) ),
-	( ( 1 << LINEB ) | ( 1 << LINEH ) ),
-	( ( 1 << LINEC ) | ( 1 << LINEH ) ),
-	( ( 1 << LINED ) | ( 1 << LINEH ) ),
-	( ( 1 << LINEE ) | ( 1 << LINEH ) ),
-	( ( 1 << LINEF ) | ( 1 << LINEH ) ), 
-	( ( 1 << LINEG ) | ( 1 << LINEH ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEG ) ), 
+	// ( ( 1 << LINEA ) | ( 1 << LINEH ) ),
+	// ( ( 1 << LINEB ) | ( 1 << LINEH ) ),
+	// ( ( 1 << LINEC ) | ( 1 << LINEH ) ),
+	// ( ( 1 << LINED ) | ( 1 << LINEH ) ),
+	// ( ( 1 << LINEE ) | ( 1 << LINEH ) ),
+	// ( ( 1 << LINEF ) | ( 1 << LINEH ) ), 
+	// ( ( 1 << LINEG ) | ( 1 << LINEH ) ), 
+	// ( ( 1 << LINEH ) | ( 1 << LINEG ) ), 
 
+	
+	// ( ( 1 << LINEA ) | ( 1 << LINEG ) ),
+	// ( ( 1 << LINEB ) | ( 1 << LINEG ) ),
+	// ( ( 1 << LINEC ) | ( 1 << LINEG ) ),
+	// ( ( 1 << LINED ) | ( 1 << LINEG ) ),
+	// ( ( 1 << LINEE ) | ( 1 << LINEG ) ),
+	// ( ( 1 << LINEF ) | ( 1 << LINEG ) ),
+	// ( ( 1 << LINEG ) | ( 1 << LINEH ) ),
+	// ( ( 1 << LINEH ) | ( 1 << LINEA ) ),
 
-	( ( 1 << LINEA ) | ( 1 << LINEG ) ),
-	( ( 1 << LINEB ) | ( 1 << LINEG ) ),
-	( ( 1 << LINEC ) | ( 1 << LINEG ) ),
-	( ( 1 << LINED ) | ( 1 << LINEG ) ),
-	( ( 1 << LINEE ) | ( 1 << LINEG ) ),
-	( ( 1 << LINEF ) | ( 1 << LINEG ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEG ) ), 
+	// ( ( 1 << LINEA ) | ( 1 << LINEF ) ),
+	// ( ( 1 << LINEB ) | ( 1 << LINEF ) ),
+	// ( ( 1 << LINEC ) | ( 1 << LINEF ) ),
+	// ( ( 1 << LINED ) | ( 1 << LINEF ) ),
+	// ( ( 1 << LINEE ) | ( 1 << LINEF ) ),
+	// ( ( 1 << LINEG ) | ( 1 << LINEF ) ), 
+	// ( ( 1 << LINEH ) | ( 1 << LINEF ) ), 
 
-	( ( 1 << LINEA ) | ( 1 << LINEF ) ),
-	( ( 1 << LINEB ) | ( 1 << LINEF ) ),
-	( ( 1 << LINEC ) | ( 1 << LINEF ) ),
-	( ( 1 << LINED ) | ( 1 << LINEF ) ),
-	( ( 1 << LINEE ) | ( 1 << LINEF ) ),
-	( ( 1 << LINEG ) | ( 1 << LINEF ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEF ) ), 
-
-	( ( 1 << LINEA ) | ( 1 << LINEE ) ),
-	( ( 1 << LINEB ) | ( 1 << LINEE ) ),
-	( ( 1 << LINEC ) | ( 1 << LINEE ) ),
-	( ( 1 << LINED ) | ( 1 << LINEE ) ),
-	( ( 1 << LINEF ) | ( 1 << LINEE ) ),
-	( ( 1 << LINEG ) | ( 1 << LINEE ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEE ) ), 
+	// ( ( 1 << LINEA ) | ( 1 << LINEE ) ),
+	// ( ( 1 << LINEB ) | ( 1 << LINEE ) ),
+	// ( ( 1 << LINEC ) | ( 1 << LINEE ) ),
+	// ( ( 1 << LINED ) | ( 1 << LINEE ) ),
+	// ( ( 1 << LINEF ) | ( 1 << LINEE ) ),
+	// ( ( 1 << LINEG ) | ( 1 << LINEE ) ), 
+	// ( ( 1 << LINEH ) | ( 1 << LINEE ) ), 
 
 	( ( 1 << LINEA ) | ( 1 << LINED ) ),
 	( ( 1 << LINEB ) | ( 1 << LINED ) ),
@@ -87,47 +88,46 @@ const uint8_t charlieDir[] =
 	( ( 1 << LINEE ) | ( 1 << LINEA ) ),
 	( ( 1 << LINEF ) | ( 1 << LINEA ) ),
 	( ( 1 << LINEG ) | ( 1 << LINEA ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEA ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINEA ) ),  
 };
 
 // // mapping for led to pin connections for the data direction
 const uint8_t charlieOutput[] =
 {
-	( ( 1 << LINEA ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEB ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEC ) | ( 0 << LINEH ) ),
-	( ( 1 << LINED ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEE ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEF ) | ( 0 << LINEH ) ), 
-	( ( 1 << LINEG ) | ( 0 << LINEH ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEG ) ), 
+	// ( ( 1 << LINEA ) | ( 0 << LINEH ) ),
+	// ( ( 1 << LINEB ) | ( 0 << LINEH ) ),
+	// ( ( 1 << LINEC ) | ( 0 << LINEH ) ),
+	// ( ( 1 << LINED ) | ( 0 << LINEH ) ),
+	// ( ( 1 << LINEE ) | ( 0 << LINEH ) ),
+	// ( ( 1 << LINEF ) | ( 0 << LINEH ) ), 
+	// ( ( 1 << LINEG ) | ( 0 << LINEH ) ), 
+	// ( ( 1 << LINEH ) | ( 0 << LINEG ) ), 
 
 	
-	( ( 1 << LINEA ) | ( 0 << LINEG ) ),
-	( ( 1 << LINEB ) | ( 0 << LINEG ) ),
-	( ( 1 << LINEC ) | ( 0 << LINEG ) ),
-	( ( 1 << LINED ) | ( 0 << LINEG ) ),
-	( ( 1 << LINEE ) | ( 0 << LINEG ) ),
-	( ( 1 << LINEF ) | ( 0 << LINEG ) ),
-	( ( 1 << LINEG ) | ( 0 << LINEH ) ),
-	( ( 1 << LINEH ) | ( 0 << LINEA ) ),
+	// ( ( 1 << LINEA ) | ( 0 << LINEG ) ),
+	// ( ( 1 << LINEB ) | ( 0 << LINEG ) ),
+	// ( ( 1 << LINEC ) | ( 0 << LINEG ) ),
+	// ( ( 1 << LINED ) | ( 0 << LINEG ) ),
+	// ( ( 1 << LINEE ) | ( 0 << LINEG ) ),
+	// ( ( 1 << LINEF ) | ( 0 << LINEG ) ),
+	// ( ( 1 << LINEG ) | ( 0 << LINEH ) ),
+	// ( ( 1 << LINEH ) | ( 0 << LINEA ) ),
 
-// ( ( 1 << LINEH ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEA ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEB ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEC ) | ( 0 << LINEF ) ),
-	( ( 1 << LINED ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEE ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEG ) | ( 0 << LINEF ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEF ) ), 
+	// ( ( 1 << LINEA ) | ( 0 << LINEF ) ),
+	// ( ( 1 << LINEB ) | ( 0 << LINEF ) ),
+	// ( ( 1 << LINEC ) | ( 0 << LINEF ) ),
+	// ( ( 1 << LINED ) | ( 0 << LINEF ) ),
+	// ( ( 1 << LINEE ) | ( 0 << LINEF ) ),
+	// ( ( 1 << LINEG ) | ( 0 << LINEF ) ), 
+	// ( ( 1 << LINEH ) | ( 0 << LINEF ) ), 
 
-	( ( 1 << LINEA ) | ( 0 << LINEE ) ),
-	( ( 1 << LINEB ) | ( 0 << LINEE ) ),
-	( ( 1 << LINEC ) | ( 0 << LINEE ) ),
-	( ( 1 << LINED ) | ( 0 << LINEE ) ),
-	( ( 1 << LINEF ) | ( 0 << LINEE ) ),
-	( ( 1 << LINEG ) | ( 0 << LINEE ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEE ) ), 
+	// ( ( 1 << LINEA ) | ( 0 << LINEE ) ),
+	// ( ( 1 << LINEB ) | ( 0 << LINEE ) ),
+	// ( ( 1 << LINEC ) | ( 0 << LINEE ) ),
+	// ( ( 1 << LINED ) | ( 0 << LINEE ) ),
+	// ( ( 1 << LINEF ) | ( 0 << LINEE ) ),
+	// ( ( 1 << LINEG ) | ( 0 << LINEE ) ), 
+	// ( ( 1 << LINEH ) | ( 0 << LINEE ) ), 
 
 	( ( 1 << LINEA ) | ( 0 << LINED ) ),
 	( ( 1 << LINEB ) | ( 0 << LINED ) ),
@@ -163,6 +163,8 @@ const uint8_t charlieOutput[] =
 };
 
 const uint8_t ncharlieOut[7][8] = {
+
+	// Row 0
 	( ( 1 << LINEA ) | ( 0 << LINEH ) ),
 	( ( 1 << LINEB ) | ( 0 << LINEH ) ),
 	( ( 1 << LINEC ) | ( 0 << LINEH ) ),
@@ -170,8 +172,9 @@ const uint8_t ncharlieOut[7][8] = {
 	( ( 1 << LINEE ) | ( 0 << LINEH ) ),
 	( ( 1 << LINEF ) | ( 0 << LINEH ) ), 
 	( ( 1 << LINEG ) | ( 0 << LINEH ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEG ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINEG ) ),
 
+	// Row 1
 	( ( 1 << LINEA ) | ( 0 << LINEG ) ),
 	( ( 1 << LINEB ) | ( 0 << LINEG ) ),
 	( ( 1 << LINEC ) | ( 0 << LINEG ) ),
@@ -179,19 +182,41 @@ const uint8_t ncharlieOut[7][8] = {
 	( ( 1 << LINEE ) | ( 0 << LINEG ) ),
 	( ( 1 << LINEF ) | ( 0 << LINEG ) ),
 	( ( 1 << LINEG ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEG ) | ( 0 << LINEH ) ),
 	( ( 1 << LINEH ) | ( 0 << LINEF ) ),
 
+	// Row 2
 	( ( 1 << LINEA ) | ( 0 << LINEF ) ),
 	( ( 1 << LINEB ) | ( 0 << LINEF ) ),
 	( ( 1 << LINEC ) | ( 0 << LINEF ) ),
 	( ( 1 << LINED ) | ( 0 << LINEF ) ),
 	( ( 1 << LINEE ) | ( 0 << LINEF ) ),
-	( ( 1 << LINEG ) | ( 0 << LINEF ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEF ) ), 
+	( ( 1 << LINEF ) | ( 0 << LINEE ) ), 
+	( ( 1 << LINEG ) | ( 0 << LINEE ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINEE ) ), 
+
+	// Row 3
+	( ( 1 << LINEA ) | ( 0 << LINEE ) ),
+	( ( 1 << LINEB ) | ( 0 << LINEE ) ),
+	( ( 1 << LINEC ) | ( 0 << LINEE ) ),
+	( ( 1 << LINED ) | ( 0 << LINEE ) ),
+	( ( 1 << LINEF ) | ( 0 << LINED ) ),
+	( ( 1 << LINEG ) | ( 0 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINED ) ), 
+
+	// Row 4
+	( ( 1 << LINEA ) | ( 0 << LINED ) ),
+	( ( 1 << LINEB ) | ( 0 << LINED ) ),
+	( ( 1 << LINEC ) | ( 0 << LINED ) ),
+	( ( 1 << LINEE ) | ( 0 << LINED ) ),
+	( ( 1 << LINEF ) | ( 0 << LINED ) ),
+	( ( 1 << LINEG ) | ( 0 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINED ) ),
 };
 
 const uint8_t ncharlieDir[7][8] = {
+
+	// Row 0
 	( ( 1 << LINEA ) | ( 1 << LINEH ) ),
 	( ( 1 << LINEB ) | ( 1 << LINEH ) ),
 	( ( 1 << LINEC ) | ( 1 << LINEH ) ),
@@ -201,23 +226,45 @@ const uint8_t ncharlieDir[7][8] = {
 	( ( 1 << LINEG ) | ( 1 << LINEH ) ), 
 	( ( 1 << LINEH ) | ( 1 << LINEG ) ), 
 
+	// Row 1
 	( ( 1 << LINEA ) | ( 1 << LINEG ) ),
 	( ( 1 << LINEB ) | ( 1 << LINEG ) ),
 	( ( 1 << LINEC ) | ( 1 << LINEG ) ),
 	( ( 1 << LINED ) | ( 1 << LINEG ) ),
-
 	( ( 1 << LINEE ) | ( 1 << LINEG ) ),
-	( ( 1 << LINEF ) | ( 1 << LINEG ) ), 
-	( ( 1 << LINEF ) | ( 1 << LINEG ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEF ) ), 
+	( ( 1 << LINEF ) | ( 1 << LINEG ) ),
+	( ( 1 << LINEG ) | ( 1 << LINEF ) ),
+	( ( 1 << LINEH ) | ( 1 << LINEF ) ),
 
+	// Row 2
 	( ( 1 << LINEA ) | ( 1 << LINEF ) ),
 	( ( 1 << LINEB ) | ( 1 << LINEF ) ),
 	( ( 1 << LINEC ) | ( 1 << LINEF ) ),
 	( ( 1 << LINED ) | ( 1 << LINEF ) ),
 	( ( 1 << LINEE ) | ( 1 << LINEF ) ),
-	( ( 1 << LINEG ) | ( 1 << LINEF ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEF ) ), 
+	( ( 1 << LINEF ) | ( 1 << LINEE ) ), 
+	( ( 1 << LINEG ) | ( 1 << LINEE ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINEE ) ), 
+
+	// Row 3
+	( ( 1 << LINEA ) | ( 1 << LINEE ) ),
+	( ( 1 << LINEB ) | ( 1 << LINEE ) ),
+	( ( 1 << LINEC ) | ( 1 << LINEE ) ),
+	( ( 1 << LINED ) | ( 1 << LINEE ) ),
+	( ( 1 << LINEF ) | ( 1 << LINED ) ),
+	( ( 1 << LINEG ) | ( 1 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINED ) ), 
+
+	// Row 4
+	( ( 1 << LINEA ) | ( 0 << LINED ) ),
+	( ( 1 << LINEB ) | ( 0 << LINED ) ),
+	( ( 1 << LINEC ) | ( 0 << LINED ) ),
+	( ( 1 << LINEE ) | ( 0 << LINED ) ),
+	( ( 1 << LINEF ) | ( 0 << LINED ) ),
+	( ( 1 << LINEG ) | ( 0 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINED ) ),
+
 };
 
 class CharliePlex{

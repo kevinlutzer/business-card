@@ -53,9 +53,14 @@ void CharliePlex::ledOff()
 void CharliePlex::scrollLed( bool dir )
 {
 	for( uint8_t j = 0; j < 8; j ++ ) {
-		setLedN( 2, j );
-		_delay_ms( 500 );
+		setLedN( 3, j );
+		_delay_ms( 200 );
 	}
+
+	// for( uint8_t j = 0; j <= sizeof(charlieOutput) ; j ++ ) {
+	// 	setLed( j );
+	// 	_delay_ms( 500 );
+	// }
 }
 
 /*
