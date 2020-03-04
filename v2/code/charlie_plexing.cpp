@@ -12,12 +12,6 @@
 	Inputs:
 		number - the linear index of the led that will be turned on.
 */
-void CharliePlex::setLed(uint8_t number)
-{
-	PORTA = charlieOutput[number];
-	DDRA = charlieDir[number];
-}
-
 void CharliePlex::setLedN(uint8_t row, uint8_t column)
 {
 	PORTA = ncharlieOut[row][column];
@@ -59,12 +53,6 @@ void CharliePlex::scrollLed( bool dir )
 			_delay_ms( 100 );
 		}
 	}
-	
-
-	// for( uint8_t j = 0; j <= sizeof(charlieOutput) ; j ++ ) {
-	// 	setLed( j );
-	// 	_delay_ms( 500 );
-	// }
 }
 
 /*
@@ -74,12 +62,13 @@ void CharliePlex::scrollLed( bool dir )
 		image - a 4 element array containing binary values
 		row - the row that image should be displayed in the matrix
 */
-void CharliePlex::displayRow( uint8_t image[], uint8_t row )
+void CharliePlex::displayRow( uint8_t row[], uint8_t row )
 {
 	for( uint8_t i = 0; i < 8; i ++ )
 	{
-		if( image[i] ) {
-			setLedN(row, i);
+		if( image[row] )
+		{
+			setLedN( row, i );
 		}
 	}
 }
@@ -90,10 +79,10 @@ void CharliePlex::displayRow( uint8_t image[], uint8_t row )
 	Inputs:
 		image - a 4 element array each with an 8 bit number in it that specifies a greyscale value
 */
-void CharliePlex::displayFrame( uint8_t image[][] )
+void CharliePlex::displayFrame( uint8_t image[] )
 {
-	// displayRow(image, 0);
-	for( int row = 0; row < 7; row ++ ) {
+	for( int row = 0; row < 7; row ++ )
+	{
 		displayRow( image, row );
 	}
 }
