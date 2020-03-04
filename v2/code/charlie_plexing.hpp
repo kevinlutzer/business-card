@@ -208,10 +208,11 @@ const uint8_t ncharlieOut[7][8] = {
 	( ( 1 << LINEA ) | ( 0 << LINED ) ),
 	( ( 1 << LINEB ) | ( 0 << LINED ) ),
 	( ( 1 << LINEC ) | ( 0 << LINED ) ),
-	( ( 1 << LINEE ) | ( 0 << LINED ) ),
-	( ( 1 << LINEF ) | ( 0 << LINED ) ),
-	( ( 1 << LINEG ) | ( 0 << LINED ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINED ) ),
+	( ( 1 << LINEE ) | ( 0 << LINEC ) ),
+	( ( 1 << LINEF ) | ( 0 << LINEC ) ),
+	( ( 1 << LINEG ) | ( 0 << LINEC ) ), 
+	( ( 1 << LINEH ) | ( 0 << LINEC ) ),
+	( ( 1 << LINEH ) | ( 0 << LINEC ) ),
 };
 
 const uint8_t ncharlieDir[7][8] = {
@@ -254,16 +255,17 @@ const uint8_t ncharlieDir[7][8] = {
 	( ( 1 << LINEF ) | ( 1 << LINED ) ),
 	( ( 1 << LINEG ) | ( 1 << LINED ) ), 
 	( ( 1 << LINEH ) | ( 1 << LINED ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINED ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINED ) ), 
 
 	// Row 4
-	( ( 1 << LINEA ) | ( 0 << LINED ) ),
-	( ( 1 << LINEB ) | ( 0 << LINED ) ),
-	( ( 1 << LINEC ) | ( 0 << LINED ) ),
-	( ( 1 << LINEE ) | ( 0 << LINED ) ),
-	( ( 1 << LINEF ) | ( 0 << LINED ) ),
-	( ( 1 << LINEG ) | ( 0 << LINED ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINED ) ),
+	( ( 1 << LINEA ) | ( 1 << LINED ) ),
+	( ( 1 << LINEB ) | ( 1 << LINED ) ),
+	( ( 1 << LINEC ) | ( 1 << LINED ) ),
+	( ( 1 << LINEE ) | ( 1 << LINEC ) ),
+	( ( 1 << LINEF ) | ( 1 << LINEC ) ),
+	( ( 1 << LINEG ) | ( 1 << LINEC ) ), 
+	( ( 1 << LINEH ) | ( 1 << LINEC ) ),
+	( ( 1 << LINEH ) | ( 1 << LINEC ) ),
 
 };
 
