@@ -12,13 +12,7 @@
 	Inputs:
 		number - the linear index of the led that will be turned on.
 */
-void CharliePlex::setLed(uint8_t number)
-{
-	PORTA = charlieOutput[number];
-	DDRA = charlieDir[number];
-}
-
-void CharliePlex::setLedN(uint8_t row, uint8_t column)
+void CharliePlex::setLed(uint8_t row, uint8_t column)
 {
 	PORTA = ncharlieOut[row][column];
 	DDRA = ncharlieDir[row][column];
@@ -31,7 +25,7 @@ void CharliePlex::allLedOn()
 {
 	for( uint8_t i = 0; i < 7; i ++ ) {
 		for( uint8_t j = 0; j < 8; j ++ ) {
-			setLedN( i, j );
+			setLed( i, j );
 		}
 	}
 }
@@ -51,20 +45,17 @@ void CharliePlex::ledOff()
 	Inputs:
 		dir - the boolean direction to determine if the scrolling starts from top to bottom or bottom to top
 */
-void CharliePlex::scrollLed( bool dir )
+void CharliePlex::scrollLed(bool dir)
 {
-	for( uint8_t i = 0; i < 7; i ++ ) {
-		for( uint8_t j = 0; j < 8; j ++ ) {
-			setLedN( i, j );
-			_delay_ms( 100 );
+	if (dir) {
+		for( uint8_t i = 0; i < 7; i ++ ) {
+			for( uint8_t j = 0; j < 8; j ++ ) {
+				setLed( i, j );
+				_delay_ms( 200 );
+			}
 		}
 	}
-	
 
-	// for( uint8_t j = 0; j <= sizeof(charlieOutput) ; j ++ ) {
-	// 	setLed( j );
-	// 	_delay_ms( 500 );
-	// }
 }
 
 /*
@@ -79,7 +70,7 @@ void CharliePlex::displayRow( uint8_t image[], uint8_t row )
 	for( uint8_t i = 0; i < 8; i ++ )
 	{
 		if( image[i] ) {
-			setLedN(row, i);
+			setLed(row, i);
 		}
 	}
 }
@@ -97,17 +88,3 @@ void CharliePlex::displayFrame( uint8_t image[][8] )
 	}
 }
 
-/*
-	function shifts a message over by position and then saves a frame into frame
-
-	Inputs:
-		message -  The overall message that is to be displayed on the matrix
-		frame - The resultant array containing 7 8-bit numbers
-*/
-void CharliePlex::shiftMessage( uint64_t message[], uint8_t frame[], uint8_t pos )
-{
-	for( uint8_t i = 0; i < 7; i ++ )
-	{
-		 frame[i] = message[i] >> pos;
-	}
-}
