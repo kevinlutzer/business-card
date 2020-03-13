@@ -68,8 +68,8 @@ const uint8_t ncharlieOut[7][8] = {
 	( ( 1 << LINEC ) | ( 0 << LINED ) ),
 	( ( 1 << LINED ) | ( 0 << LINEC ) ),
 	( ( 1 << LINEE ) | ( 0 << LINEC ) ),
-	( ( 1 << LINEG ) | ( 0 << LINEC ) ), 
-	( ( 1 << LINEH ) | ( 0 << LINEC ) ),
+	( ( 1 << LINEF ) | ( 0 << LINEC ) ), 
+	( ( 1 << LINEG ) | ( 0 << LINEC ) ),
 	( ( 1 << LINEH ) | ( 0 << LINEC ) ),
 
 	// Row 5
@@ -141,8 +141,8 @@ const uint8_t ncharlieDir[7][8] = {
 	( ( 1 << LINEC ) | ( 1 << LINED ) ),
 	( ( 1 << LINED ) | ( 1 << LINEC ) ),
 	( ( 1 << LINEE ) | ( 1 << LINEC ) ),
-	( ( 1 << LINEG ) | ( 1 << LINEC ) ), 
-	( ( 1 << LINEH ) | ( 1 << LINEC ) ),
+	( ( 1 << LINEF ) | ( 1 << LINEC ) ), 
+	( ( 1 << LINEG ) | ( 1 << LINEC ) ),
 	( ( 1 << LINEH ) | ( 1 << LINEC ) ),
 
 	// Row 5

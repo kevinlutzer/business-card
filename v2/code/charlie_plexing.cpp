@@ -51,11 +51,10 @@ void CharliePlex::scrollLed(bool dir)
 		for( uint8_t i = 0; i < 7; i ++ ) {
 			for( uint8_t j = 0; j < 8; j ++ ) {
 				setLed( i, j );
-				_delay_ms( 200 );
+				_delay_ms( 50 );
 			}
-		}
+		}	
 	}
-
 }
 
 /*
