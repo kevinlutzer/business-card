@@ -46,5 +46,5 @@ $(HEX_DIR)/$(TEST_FILE).hex:	$(BIN_DIR)/$(TEST_FILE)
 program: $(HEX_DIR)/$(TEST_FILE).hex
 	$(PROG) $(PROG_FLAGS) -U flash:w:$(HEX_DIR)/$(TEST_FILE).hex
 
-# clean:
-	# @rm -rf $(BIN_DIR)/$(TEST_FILE).* $(HEX_DIR)/$(TEST_FILE).*
+clean:
+	@rm -rf $(BIN_DIR)/$(TEST_FILE).* $(HEX_DIR)/$(TEST_FILE).*
