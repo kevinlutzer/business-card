@@ -178,8 +178,8 @@ B.Sc. Computer Science</text>
 <text x="2.54" y="27.305" size="1.778" layer="25">Website: kevin.lutzer.ca
 Email: kevin@lutzer.ca
 Github: github.com/kevinlutzer
-Linkedin: linkedin.com/in/kevin-lutzer</text>
-<text x="45.72" y="38.735" size="1.778" layer="26" rot="MR0">Plug the USB connector into any usb
+LinkedIn: linkedin.com/in/kevin-lutzer</text>
+<text x="45.72" y="38.735" size="1.778" layer="26" rot="MR0">Plug the USB connector into any USB
 port, and watch the LED display.
 Project details can be found at 
 github.com/kevinlutzer/business-card</text>
@@ -2240,8 +2240,6 @@ design rules under a new name.</description>
 </polygon>
 <wire x1="40.955" y1="15.24" x2="42.545" y2="15.24" width="0.3048" layer="1"/>
 <via x="42.545" y="15.24" extent="1-16" drill="0.35"/>
-<wire x1="42.6085" y1="12.7" x2="44.45" y2="12.7" width="0.3048" layer="1"/>
-<via x="44.45" y="12.7" extent="1-16" drill="0.35"/>
 <contactref element="TP5" pad="1"/>
 <contactref element="SW1" pad="4"/>
 <wire x1="32.22" y1="8.985" x2="30.41" y2="10.795" width="0.3048" layer="1"/>
@@ -2249,6 +2247,8 @@ design rules under a new name.</description>
 <wire x1="5.333703125" y1="10.28345" x2="9.525" y2="14.474746875" width="0.6096" layer="1"/>
 <wire x1="9.525" y1="14.474746875" x2="9.525" y2="14.605" width="0.6096" layer="1"/>
 <via x="9.525" y="14.605" extent="1-16" drill="0.35"/>
+<wire x1="42.545" y1="12.7" x2="42.545" y2="15.24" width="0.3048" layer="1"/>
+<wire x1="42.6085" y1="12.7" x2="42.545" y2="12.7" width="0.3048" layer="1"/>
 </signal>
 <signal name="UCC">
 <contactref element="JP1" pad="5V"/>
@@ -2264,7 +2264,7 @@ design rules under a new name.</description>
 <contactref element="TP3" pad="1"/>
 <wire x1="10.28345" y1="5.333703125" x2="15.744746875" y2="10.795" width="0.6096" layer="1"/>
 <wire x1="15.744746875" y1="10.795" x2="15.875" y2="10.795" width="0.6096" layer="1"/>
-<wire x1="15.875" y1="10.795" x2="15.875" y2="10.16" width="0.6096" layer="1"/>
+<wire x1="15.875" y1="10.16" x2="15.875" y2="10.795" width="0.6096" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="R1" pad="1"/>
