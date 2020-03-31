@@ -80,7 +80,7 @@
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -148,6 +148,15 @@
 <wire x1="0" y1="80" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="0" y1="0" x2="100" y2="0" x3="50" y3="-8.89" textsize="1.778" layer="51"/>
 <dimension x1="100" y1="80" x2="100" y2="0" x3="110.49" y3="40" textsize="1.778" layer="51"/>
+<wire x1="0" y1="0.129540625" x2="0" y2="0.06626875" width="0.025" layer="121"/>
+<wire x1="0" y1="0.06626875" x2="0.022290625" y2="0.04418125" width="0.025" layer="121"/>
+<wire x1="0.022290625" y1="0.04418125" x2="0" y2="0.022090625" width="0.025" layer="121"/>
+<wire x1="0" y1="0.022090625" x2="0.022090625" y2="0" width="0.025" layer="121"/>
+<wire x1="0.022090625" y1="0" x2="0.04418125" y2="0.022090625" width="0.025" layer="121"/>
+<wire x1="0.04418125" y1="0.022090625" x2="0.06626875" y2="0" width="0.025" layer="121"/>
+<wire x1="0.06626875" y1="0" x2="0.226059375" y2="0" width="0.025" layer="121"/>
+<wire x1="0.226059375" y1="0" x2="0.226059375" y2="0.129540625" width="0.025" layer="121"/>
+<wire x1="0.226059375" y1="0.129540625" x2="0" y2="0.129540625" width="0.025" layer="121"/>
 </plain>
 <libraries>
 <library name="testpad" urn="urn:adsk.eagle:library:385">
