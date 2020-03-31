@@ -407,6 +407,8 @@ github.com/kevinlutzer/business-card</text>
 <wire x1="0.01155" y1="0.006440625" x2="0.011409375" y2="0.00718125" width="0.025" layer="121"/>
 <dimension x1="89" y1="51" x2="0" y2="51" x3="44.5" y3="55.88" textsize="1.778" layer="48"/>
 <dimension x1="89" y1="0" x2="89" y2="51" x3="94.615" y3="25.5" textsize="1.778" layer="48"/>
+<dimension x1="29.21" y1="3.175" x2="88.9" y2="3.175" x3="59.055" y3="-5.715" textsize="1.778" layer="51"/>
+<dimension x1="29.21" y1="3.175" x2="29.21" y2="0" x3="21.59" y3="1.5875" textsize="1.778" layer="51"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
