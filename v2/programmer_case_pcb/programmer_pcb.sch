@@ -19302,7 +19302,7 @@ DIN A5, portrait with doc field</description>
 <part name="R1" library="adafruit" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:6240566/1"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SW1" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SPST_TACT" device="-EVQQ2" package3d_urn="urn:adsk.eagle:package:6240643/1"/>
+<part name="RST" library="adafruit" library_urn="urn:adsk.eagle:library:420" deviceset="SPST_TACT" device="-EVQQ2" package3d_urn="urn:adsk.eagle:package:6240643/1"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="adafruit" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:6240566/1" value="220"/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -19394,7 +19394,7 @@ DIN A5, portrait with doc field</description>
 <instance part="GND4" gate="1" x="48.26" y="71.12" smashed="yes">
 <attribute name="VALUE" x="45.72" y="68.58" size="1.778" layer="96"/>
 </instance>
-<instance part="SW1" gate="G$1" x="68.58" y="83.82" smashed="yes" rot="R270">
+<instance part="RST" gate="G$1" x="68.58" y="83.82" smashed="yes" rot="R270">
 <attribute name="NAME" x="66.04" y="90.17" size="1.778" layer="95"/>
 </instance>
 <instance part="GND5" gate="1" x="60.96" y="76.2" smashed="yes">
@@ -19481,11 +19481,11 @@ DIN A5, portrait with doc field</description>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="60.96" y1="78.74" x2="60.96" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="P1"/>
+<pinref part="RST" gate="G$1" pin="P1"/>
 <wire x1="60.96" y1="81.28" x2="63.5" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="81.28" x2="60.96" y2="83.82" width="0.1524" layer="91"/>
 <junction x="60.96" y="81.28"/>
-<pinref part="SW1" gate="G$1" pin="P"/>
+<pinref part="RST" gate="G$1" pin="P"/>
 <wire x1="60.96" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -19513,11 +19513,11 @@ DIN A5, portrait with doc field</description>
 <label x="12.7" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SW1" gate="G$1" pin="S"/>
+<pinref part="RST" gate="G$1" pin="S"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="73.66" y1="83.82" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="83.82" x2="76.2" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="S1"/>
+<pinref part="RST" gate="G$1" pin="S1"/>
 <wire x1="73.66" y1="81.28" x2="76.2" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="81.28" x2="76.2" y2="83.82" width="0.1524" layer="91"/>
 <junction x="76.2" y="83.82"/>
