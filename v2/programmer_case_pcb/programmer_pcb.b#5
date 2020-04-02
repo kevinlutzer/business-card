@@ -147,15 +147,15 @@
 <wire x1="100" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="100" y1="100" x2="100" y2="0" x3="110.49" y3="50" textsize="1.778" layer="51"/>
-<wire x1="5.5" y1="71.5" x2="5.5" y2="46.5922" width="0.001" layer="121"/>
-<wire x1="5.5" y1="46.5922" x2="14.2739" y2="37.8948" width="0.001" layer="121"/>
-<wire x1="14.2739" y1="37.8948" x2="5.5" y2="29.1974" width="0.001" layer="121"/>
-<wire x1="5.5" y1="29.1974" x2="14.1974" y2="20.5" width="0.001" layer="121"/>
-<wire x1="14.1974" y1="20.5" x2="22.8948" y2="29.1974" width="0.001" layer="121"/>
-<wire x1="22.8948" y1="29.1974" x2="31.5922" y2="20.5" width="0.001" layer="121"/>
-<wire x1="31.5922" y1="20.5" x2="94.5" y2="20.5" width="0.001" layer="121"/>
-<wire x1="94.5" y1="20.5" x2="94.5" y2="71.5" width="0.001" layer="121"/>
-<wire x1="94.5" y1="71.5" x2="5.5" y2="71.5" width="0.001" layer="121"/>
+<wire x1="5.5" y1="75.5" x2="5.5" y2="50.5922" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="5.5" y1="50.5922" x2="14.2739" y2="41.8948" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="14.2739" y1="41.8948" x2="5.5" y2="33.1974" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="5.5" y1="33.1974" x2="14.1974" y2="24.5" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="14.1974" y1="24.5" x2="22.8948" y2="33.1974" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="22.8948" y1="33.1974" x2="31.5922" y2="24.5" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="31.5922" y1="24.5" x2="94.5" y2="24.5" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="94.5" y1="24.5" x2="94.5" y2="75.5" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
+<wire x1="94.5" y1="75.5" x2="5.5" y2="75.5" width="0.001" layer="121" grouprefs="PCB_FRAME"/>
 </plain>
 <libraries>
 <library name="testpad" urn="urn:adsk.eagle:library:385">
@@ -1731,6 +1731,9 @@ design rules under a new name.</description>
 <param name="cfChangeDir" value="25"/>
 </pass>
 </autorouter>
+<groups>
+<board_group name="PCB_FRAME"/>
+</groups>
 <elements>
 <element name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" package="P1-17Y" package3d_urn="urn:adsk.eagle:package:27953/1" value="PTR1PAD1-17Y" x="80.656" y="87.528" smashed="yes">
 <attribute name="NAME" x="79.513" y="89.814" size="1.27" layer="25" ratio="10"/>
@@ -1930,6 +1933,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.5" severity="warning">
+Since Version 9.5, EAGLE supports persistent groups with
+schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>
