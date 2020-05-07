@@ -1,0 +1,74 @@
+14298368302643
+business_card_v1
+1X01_NO_SILK
+<h3>Plated Through Hole - No Silk Outline</h3>
+<p>Specifications:
+<ul><li>Pin count:1</li>
+<li>Pin pitch:0.1"</li>
+</ul></p>
+<p>Example device(s):
+<ul><li>CONN_01</li>
+</ul></p>
+
+0
+1
+1
+business_card_v1
+C0805
+<b>CAPACITOR</b><p>
+
+0
+2
+2
+business_card_v1
+CHIPLED_0805
+<b>CHIPLED</b><p>
+Source: http://www.osram.convergy.de/ ... LG_R971.pdf
+
+0
+2
+2
+business_card_v1
+KMR2
+
+
+0
+4
+4
+business_card_v1
+OSHWLOGO_TOL_0.2
+
+
+0
+0
+0
+business_card_v1
+OSHWLOGO_TOP_0.2
+
+
+0
+0
+0
+business_card_v1
+R0805
+<b>RESISTOR</b><p>
+
+0
+2
+2
+business_card_v1
+SOIC14
+<b>Small Outline Package</b>
+
+0
+14
+14
+business_card_v1
+USB-A-PCB
+Card-edge USB A connector.
+
+For boards designed to be plugged directly into a USB slot. If possible, ensure that your PCB is about 2.4mm thick to fit snugly.
+
+0
+4
+4
