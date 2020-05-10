@@ -14,80 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 5EB64044
-P 6200 5500
-F 0 "H1" H 6300 5549 50  0000 L CNN
-F 1 "MountingHole_Pad" H 6050 5700 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 6200 5500 50  0001 C CNN
-F 3 "~" H 6200 5500 50  0001 C CNN
-	1    6200 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 5EB64B63
-P 6600 5500
-F 0 "H3" H 6700 5549 50  0000 L CNN
-F 1 "MountingHole_Pad" H 6800 5700 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 6600 5500 50  0001 C CNN
-F 3 "~" H 6600 5500 50  0001 C CNN
-	1    6600 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 5EB64DA3
-P 6800 5500
-F 0 "H4" H 6900 5549 50  0000 L CNN
-F 1 "MountingHole_Pad" H 6800 5300 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 6800 5500 50  0001 C CNN
-F 3 "~" H 6800 5500 50  0001 C CNN
-	1    6800 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 5EB6488B
-P 6400 5500
-F 0 "H2" H 6500 5549 50  0000 L CNN
-F 1 "MountingHole_Pad" H 6050 5300 50  0001 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 6400 5500 50  0001 C CNN
-F 3 "~" H 6400 5500 50  0001 C CNN
-	1    6400 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0101
-U 1 1 5EB65E32
-P 6500 5700
-F 0 "#PWR0101" H 6500 5450 50  0001 C CNN
-F 1 "GND" H 6505 5527 50  0000 C CNN
-F 2 "" H 6500 5700 50  0001 C CNN
-F 3 "" H 6500 5700 50  0001 C CNN
-	1    6500 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6200 5600 6200 5700
-Wire Wire Line
-	6200 5700 6400 5700
-Wire Wire Line
-	6500 5700 6600 5700
-Wire Wire Line
-	6800 5700 6800 5600
-Connection ~ 6500 5700
-Wire Wire Line
-	6400 5600 6400 5700
-Connection ~ 6400 5700
-Wire Wire Line
-	6400 5700 6500 5700
-Wire Wire Line
-	6600 5600 6600 5700
-Connection ~ 6600 5700
-Wire Wire Line
-	6600 5700 6800 5700
-$Comp
 L Amplifier_Operational:LM2904 U1
 U 1 1 5EB83165
 P 1750 3350
@@ -113,8 +39,8 @@ $Comp
 L Amplifier_Operational:LM2904 U1
 U 3 1 5EB879B3
 P 2550 3550
-F 0 "U1" V 2225 3550 50  0000 C CNN
-F 1 "LM2904" V 2316 3550 50  0000 C CNN
+F 0 "U1" V 2250 3550 50  0000 C CNN
+F 1 "LM2904" V 2350 3550 50  0000 C CNN
 F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 2550 3550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 2550 3550 50  0001 C CNN
 	3    2550 3550
@@ -154,13 +80,13 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0103
 U 1 1 5EB8F728
-P 2650 5450
-F 0 "#PWR0103" H 2650 5300 50  0001 C CNN
-F 1 "+3.3V" H 2665 5623 50  0000 C CNN
-F 2 "" H 2650 5450 50  0001 C CNN
-F 3 "" H 2650 5450 50  0001 C CNN
-	1    2650 5450
-	1    0    0    -1  
+P 2650 5950
+F 0 "#PWR0103" H 2650 5800 50  0001 C CNN
+F 1 "+3.3V" H 2665 6123 50  0000 C CNN
+F 2 "" H 2650 5950 50  0001 C CNN
+F 3 "" H 2650 5950 50  0001 C CNN
+	1    2650 5950
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2600 5500 2650 5500
@@ -169,13 +95,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0104
 U 1 1 5EB90733
-P 2650 5950
-F 0 "#PWR0104" H 2650 5700 50  0001 C CNN
-F 1 "GND" H 2655 5777 50  0000 C CNN
-F 2 "" H 2650 5950 50  0001 C CNN
-F 3 "" H 2650 5950 50  0001 C CNN
-	1    2650 5950
-	1    0    0    -1  
+P 2650 5450
+F 0 "#PWR0104" H 2650 5200 50  0001 C CNN
+F 1 "GND" H 2655 5277 50  0000 C CNN
+F 2 "" H 2650 5450 50  0001 C CNN
+F 3 "" H 2650 5450 50  0001 C CNN
+	1    2650 5450
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	2600 5900 2650 5900
@@ -304,82 +230,55 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0110
 U 1 1 5EB9E378
-P 2200 3500
-F 0 "#PWR0110" H 2200 3250 50  0001 C CNN
-F 1 "GND" H 2205 3327 50  0000 C CNN
-F 2 "" H 2200 3500 50  0001 C CNN
-F 3 "" H 2200 3500 50  0001 C CNN
-	1    2200 3500
+P 2200 3650
+F 0 "#PWR0110" H 2200 3400 50  0001 C CNN
+F 1 "GND" V 2100 3600 50  0000 C CNN
+F 2 "" H 2200 3650 50  0001 C CNN
+F 3 "" H 2200 3650 50  0001 C CNN
+	1    2200 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2250 3450 2200 3450
-Wire Wire Line
-	2200 3450 2200 3500
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5EB9F754
-P 1250 5800
-F 0 "J3" H 1300 6217 50  0000 C CNN
-F 1 "Programmer_Conn" H 1300 6126 50  0000 C CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_2x05_P1.27mm_Vertical" H 1250 5800 50  0001 C CNN
-F 3 "~" H 1250 5800 50  0001 C CNN
-	1    1250 5800
-	1    0    0    -1  
+P 1350 5800
+F 0 "J3" H 1400 6200 50  0000 C CNN
+F 1 "Programmer_Conn" H 1550 6100 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_2x05_P1.27mm_Vertical" H 1350 5800 50  0001 C CNN
+F 3 "~" H 1350 5800 50  0001 C CNN
+	1    1350 5800
+	-1   0    0    1   
 $EndComp
-Text GLabel 1600 5600 2    50   Input ~ 0
+Text GLabel 1000 5600 0    50   Input ~ 0
 SWDIO
-Text GLabel 1600 5700 2    50   Input ~ 0
+Text GLabel 1000 5700 0    50   Input ~ 0
 SWCLK
-Text GLabel 1600 6000 2    50   Input ~ 0
+Text GLabel 1000 6000 0    50   Input ~ 0
 RST
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5EBA0E25
-P 1000 5550
-F 0 "#PWR0111" H 1000 5400 50  0001 C CNN
-F 1 "+3.3V" H 1015 5723 50  0000 C CNN
-F 2 "" H 1000 5550 50  0001 C CNN
-F 3 "" H 1000 5550 50  0001 C CNN
-	1    1000 5550
+P 1600 5550
+F 0 "#PWR0111" H 1600 5400 50  0001 C CNN
+F 1 "+3.3V" H 1615 5723 50  0000 C CNN
+F 2 "" H 1600 5550 50  0001 C CNN
+F 3 "" H 1600 5550 50  0001 C CNN
+	1    1600 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1000 5550 1000 5600
-Wire Wire Line
-	1000 5600 1050 5600
 $Comp
 L power:GND #PWR0112
 U 1 1 5EBA240B
-P 1000 6050
-F 0 "#PWR0112" H 1000 5800 50  0001 C CNN
-F 1 "GND" H 1005 5877 50  0000 C CNN
-F 2 "" H 1000 6050 50  0001 C CNN
-F 3 "" H 1000 6050 50  0001 C CNN
-	1    1000 6050
+P 1600 6050
+F 0 "#PWR0112" H 1600 5800 50  0001 C CNN
+F 1 "GND" H 1605 5877 50  0000 C CNN
+F 2 "" H 1600 6050 50  0001 C CNN
+F 3 "" H 1600 6050 50  0001 C CNN
+	1    1600 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 5700 1000 5700
-Wire Wire Line
-	1000 5700 1000 5800
-Wire Wire Line
-	1050 5800 1000 5800
-Connection ~ 1000 5800
-Wire Wire Line
-	1000 5800 1000 5900
-Wire Wire Line
-	1050 5900 1000 5900
-Connection ~ 1000 5900
-Wire Wire Line
-	1000 5900 1000 6000
-Wire Wire Line
-	1050 6000 1000 6000
-Connection ~ 1000 6000
-Wire Wire Line
-	1000 6000 1000 6050
-NoConn ~ 1550 5800
-NoConn ~ 1550 5900
 NoConn ~ 5900 4600
 $Comp
 L dk_PMIC-Voltage-Regulators-Linear:L7805CV U2
@@ -482,33 +381,33 @@ Connection ~ 1500 1250
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5EBC5A89
-P 7750 4600
-F 0 "SW1" H 7750 4835 50  0000 C CNN
-F 1 "RST" H 7750 4744 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 7750 4600 50  0001 C CNN
-F 3 "~" H 7750 4600 50  0001 C CNN
-	1    7750 4600
+P 1850 6400
+F 0 "SW1" H 1850 6635 50  0000 C CNN
+F 1 "RST" H 1850 6544 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H5mm" H 1850 6400 50  0001 C CNN
+F 3 "~" H 1850 6400 50  0001 C CNN
+	1    1850 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0116
 U 1 1 5EBC6918
-P 8000 4650
-F 0 "#PWR0116" H 8000 4400 50  0001 C CNN
-F 1 "GND" H 8005 4477 50  0000 C CNN
-F 2 "" H 8000 4650 50  0001 C CNN
-F 3 "" H 8000 4650 50  0001 C CNN
-	1    8000 4650
+P 2100 6450
+F 0 "#PWR0116" H 2100 6200 50  0001 C CNN
+F 1 "GND" H 2105 6277 50  0000 C CNN
+F 2 "" H 2100 6450 50  0001 C CNN
+F 3 "" H 2100 6450 50  0001 C CNN
+	1    2100 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 4600 8000 4600
+	2050 6400 2100 6400
 Wire Wire Line
-	8000 4600 8000 4650
-Text GLabel 7500 4600 0    50   Input ~ 0
+	2100 6400 2100 6450
+Text GLabel 1600 6400 0    50   Input ~ 0
 RST
 Wire Wire Line
-	7500 4600 7550 4600
+	1600 6400 1650 6400
 $Comp
 L Device:LED D2
 U 1 1 5EBDE7D5
@@ -569,11 +468,11 @@ Wire Wire Line
 	1200 1650 1500 1650
 Connection ~ 1500 1650
 Wire Wire Line
-	1550 6000 1600 6000
+	1050 6000 1000 6000
 Wire Wire Line
-	1550 5700 1600 5700
+	1050 5600 1000 5600
 Wire Wire Line
-	1550 5600 1600 5600
+	1050 5700 1000 5700
 Text Notes 700  700  0    100  ~ 0
 Power Supply 
 Wire Notes Line
@@ -596,4 +495,132 @@ Wire Notes Line
 	3150 6800 500  6800
 Text Notes 650  5200 0    100  ~ 0
 Test Points and Programmer\nHeaders
+Wire Wire Line
+	2600 7550 2800 7550
+Connection ~ 2600 7550
+Wire Wire Line
+	2600 7450 2600 7550
+Wire Wire Line
+	2400 7550 2500 7550
+Connection ~ 2400 7550
+Wire Wire Line
+	2400 7450 2400 7550
+Connection ~ 2500 7550
+Wire Wire Line
+	2800 7550 2800 7450
+Wire Wire Line
+	2500 7550 2600 7550
+Wire Wire Line
+	2200 7550 2400 7550
+Wire Wire Line
+	2200 7450 2200 7550
+$Comp
+L power:GND #PWR0101
+U 1 1 5EB65E32
+P 2500 7550
+F 0 "#PWR0101" H 2500 7300 50  0001 C CNN
+F 1 "GND" H 2505 7377 50  0000 C CNN
+F 2 "" H 2500 7550 50  0001 C CNN
+F 3 "" H 2500 7550 50  0001 C CNN
+	1    2500 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5EB6488B
+P 2400 7350
+F 0 "H2" H 2500 7399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2050 7150 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2400 7350 50  0001 C CNN
+F 3 "~" H 2400 7350 50  0001 C CNN
+	1    2400 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5EB64DA3
+P 2800 7350
+F 0 "H4" H 2900 7399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 7150 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2800 7350 50  0001 C CNN
+F 3 "~" H 2800 7350 50  0001 C CNN
+	1    2800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5EB64B63
+P 2600 7350
+F 0 "H3" H 2700 7399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2800 7550 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2600 7350 50  0001 C CNN
+F 3 "~" H 2600 7350 50  0001 C CNN
+	1    2600 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5EB64044
+P 2200 7350
+F 0 "H1" H 2300 7399 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2050 7550 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad_Via" H 2200 7350 50  0001 C CNN
+F 3 "~" H 2200 7350 50  0001 C CNN
+	1    2200 7350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	500  7050 3150 7050
+Wire Notes Line
+	3150 7050 3150 7800
+Text Notes 550  7250 0    100  ~ 0
+Mounting Holes
+$Comp
+L Device:C C3
+U 1 1 5EB75675
+P 2550 3600
+F 0 "C3" V 2500 3800 50  0000 C CNN
+F 1 "0.1u" V 2600 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 3450 50  0001 C CNN
+F 3 "~" H 2550 3600 50  0001 C CNN
+	1    2550 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3600 2900 3600
+Wire Wire Line
+	2900 3600 2900 3450
+Connection ~ 2900 3450
+Wire Wire Line
+	2400 3600 2200 3600
+Wire Wire Line
+	2200 3600 2200 3650
+Wire Wire Line
+	2200 3450 2200 3600
+Connection ~ 2200 3600
+Wire Wire Line
+	1550 5600 1600 5600
+Wire Wire Line
+	1600 5600 1600 5550
+NoConn ~ 1050 5800
+NoConn ~ 1050 5900
+Wire Wire Line
+	1550 6000 1600 6000
+Wire Wire Line
+	1600 6000 1600 6050
+Wire Wire Line
+	1550 5900 1600 5900
+Wire Wire Line
+	1600 5900 1600 6000
+Connection ~ 1600 6000
+Wire Wire Line
+	1550 5800 1600 5800
+Wire Wire Line
+	1600 5800 1600 5900
+Connection ~ 1600 5900
+Wire Wire Line
+	1550 5700 1600 5700
+Wire Wire Line
+	1600 5700 1600 5800
+Connection ~ 1600 5800
 $EndSCHEMATC

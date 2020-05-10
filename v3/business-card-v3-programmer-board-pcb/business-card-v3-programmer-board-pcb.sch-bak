@@ -39,8 +39,8 @@ $Comp
 L Amplifier_Operational:LM2904 U1
 U 3 1 5EB879B3
 P 2550 3550
-F 0 "U1" V 2225 3550 50  0000 C CNN
-F 1 "LM2904" V 2316 3550 50  0000 C CNN
+F 0 "U1" V 2250 3550 50  0000 C CNN
+F 1 "LM2904" V 2350 3550 50  0000 C CNN
 F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 2550 3550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm358.pdf" H 2550 3550 50  0001 C CNN
 	3    2550 3550
@@ -230,82 +230,55 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0110
 U 1 1 5EB9E378
-P 2200 3500
-F 0 "#PWR0110" H 2200 3250 50  0001 C CNN
-F 1 "GND" H 2205 3327 50  0000 C CNN
-F 2 "" H 2200 3500 50  0001 C CNN
-F 3 "" H 2200 3500 50  0001 C CNN
-	1    2200 3500
+P 2200 3650
+F 0 "#PWR0110" H 2200 3400 50  0001 C CNN
+F 1 "GND" V 2100 3600 50  0000 C CNN
+F 2 "" H 2200 3650 50  0001 C CNN
+F 3 "" H 2200 3650 50  0001 C CNN
+	1    2200 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2250 3450 2200 3450
-Wire Wire Line
-	2200 3450 2200 3500
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
 U 1 1 5EB9F754
-P 1250 5800
-F 0 "J3" H 1300 6217 50  0000 C CNN
-F 1 "Programmer_Conn" H 1300 6126 50  0000 C CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_2x05_P1.27mm_Vertical" H 1250 5800 50  0001 C CNN
-F 3 "~" H 1250 5800 50  0001 C CNN
-	1    1250 5800
-	1    0    0    -1  
+P 1350 5800
+F 0 "J3" H 1400 6200 50  0000 C CNN
+F 1 "Programmer_Conn" H 1550 6100 50  0000 C CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_2x05_P1.27mm_Vertical" H 1350 5800 50  0001 C CNN
+F 3 "~" H 1350 5800 50  0001 C CNN
+	1    1350 5800
+	-1   0    0    1   
 $EndComp
-Text GLabel 1600 5600 2    50   Input ~ 0
+Text GLabel 1000 5600 0    50   Input ~ 0
 SWDIO
-Text GLabel 1600 5700 2    50   Input ~ 0
+Text GLabel 1000 5700 0    50   Input ~ 0
 SWCLK
-Text GLabel 1600 6000 2    50   Input ~ 0
+Text GLabel 1000 6000 0    50   Input ~ 0
 RST
 $Comp
 L power:+3.3V #PWR0111
 U 1 1 5EBA0E25
-P 1000 5550
-F 0 "#PWR0111" H 1000 5400 50  0001 C CNN
-F 1 "+3.3V" H 1015 5723 50  0000 C CNN
-F 2 "" H 1000 5550 50  0001 C CNN
-F 3 "" H 1000 5550 50  0001 C CNN
-	1    1000 5550
+P 1600 5550
+F 0 "#PWR0111" H 1600 5400 50  0001 C CNN
+F 1 "+3.3V" H 1615 5723 50  0000 C CNN
+F 2 "" H 1600 5550 50  0001 C CNN
+F 3 "" H 1600 5550 50  0001 C CNN
+	1    1600 5550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1000 5550 1000 5600
-Wire Wire Line
-	1000 5600 1050 5600
 $Comp
 L power:GND #PWR0112
 U 1 1 5EBA240B
-P 1000 6050
-F 0 "#PWR0112" H 1000 5800 50  0001 C CNN
-F 1 "GND" H 1005 5877 50  0000 C CNN
-F 2 "" H 1000 6050 50  0001 C CNN
-F 3 "" H 1000 6050 50  0001 C CNN
-	1    1000 6050
+P 1600 6050
+F 0 "#PWR0112" H 1600 5800 50  0001 C CNN
+F 1 "GND" H 1605 5877 50  0000 C CNN
+F 2 "" H 1600 6050 50  0001 C CNN
+F 3 "" H 1600 6050 50  0001 C CNN
+	1    1600 6050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 5700 1000 5700
-Wire Wire Line
-	1000 5700 1000 5800
-Wire Wire Line
-	1050 5800 1000 5800
-Connection ~ 1000 5800
-Wire Wire Line
-	1000 5800 1000 5900
-Wire Wire Line
-	1050 5900 1000 5900
-Connection ~ 1000 5900
-Wire Wire Line
-	1000 5900 1000 6000
-Wire Wire Line
-	1050 6000 1000 6000
-Connection ~ 1000 6000
-Wire Wire Line
-	1000 6000 1000 6050
-NoConn ~ 1550 5800
-NoConn ~ 1550 5900
 NoConn ~ 5900 4600
 $Comp
 L dk_PMIC-Voltage-Regulators-Linear:L7805CV U2
@@ -495,11 +468,11 @@ Wire Wire Line
 	1200 1650 1500 1650
 Connection ~ 1500 1650
 Wire Wire Line
-	1550 6000 1600 6000
+	1050 6000 1000 6000
 Wire Wire Line
-	1550 5700 1600 5700
+	1050 5600 1000 5600
 Wire Wire Line
-	1550 5600 1600 5600
+	1050 5700 1000 5700
 Text Notes 700  700  0    100  ~ 0
 Power Supply 
 Wire Notes Line
@@ -602,4 +575,52 @@ Wire Notes Line
 	3150 7050 3150 7800
 Text Notes 550  7250 0    100  ~ 0
 Mounting Holes
+$Comp
+L Device:C C3
+U 1 1 5EB75675
+P 2550 3600
+F 0 "C3" V 2500 3800 50  0000 C CNN
+F 1 "0.1u" V 2600 3800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 3450 50  0001 C CNN
+F 3 "~" H 2550 3600 50  0001 C CNN
+	1    2550 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2700 3600 2900 3600
+Wire Wire Line
+	2900 3600 2900 3450
+Connection ~ 2900 3450
+Wire Wire Line
+	2400 3600 2200 3600
+Wire Wire Line
+	2200 3600 2200 3650
+Wire Wire Line
+	2200 3450 2200 3600
+Connection ~ 2200 3600
+Wire Wire Line
+	1550 5600 1600 5600
+Wire Wire Line
+	1600 5600 1600 5550
+NoConn ~ 1050 5800
+NoConn ~ 1050 5900
+Wire Wire Line
+	1550 6000 1600 6000
+Wire Wire Line
+	1600 6000 1600 6050
+Wire Wire Line
+	1550 5900 1600 5900
+Wire Wire Line
+	1600 5900 1600 6000
+Connection ~ 1600 6000
+Wire Wire Line
+	1550 5800 1600 5800
+Wire Wire Line
+	1600 5800 1600 5900
+Connection ~ 1600 5900
+Wire Wire Line
+	1550 5700 1600 5700
+Wire Wire Line
+	1600 5700 1600 5800
+Connection ~ 1600 5800
 $EndSCHEMATC
