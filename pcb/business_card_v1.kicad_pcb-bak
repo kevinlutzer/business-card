@@ -104,7 +104,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "business-card-v3-gerbers/"))
+      (outputdirectory "../business-card-v3-gerbers/"))
   )
 
   (net 0 "")
@@ -3579,7 +3579,7 @@
   (segment (start 136.289999 119.652999) (end 136.289999 124.097999) (width 0.25) (layer Bottom) (net 22))
   (segment (start 135.89 119.253) (end 136.289999 119.652999) (width 0.25) (layer Bottom) (net 22))
 
-  (zone (net 11) (net_name +3V3) (layer Top) (tstamp 5EB7A7B9) (hatch edge 0.508)
+  (zone (net 11) (net_name +3V3) (layer Top) (tstamp 5EB7A859) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3779,7 +3779,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer Bottom) (tstamp 5EB7A7B6) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer Bottom) (tstamp 5EB7A856) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
