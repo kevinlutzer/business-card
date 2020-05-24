@@ -1,4 +1,0 @@
-(sym_lib_table
-  (lib (name business_card_v1-eagle-import)(type Legacy)(uri ${KIPRJMOD}/business_card_v1-eagle-import.lib)(options "")(descr ""))
-  (lib (name business_card_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/business_card_v1-rescue.lib)(options "")(descr ""))
-)
