@@ -1,0 +1,1773 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 11774 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x05_Male J1
+U 1 1 5F19B99F
+P 450 2700
+F 0 "J1" H 500 3000 50  0000 C CNN
+F 1 "Conn_01x05_Male" V 400 2700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 450 2700 50  0001 C CNN
+F 3 "~" H 450 2700 50  0001 C CNN
+	1    450  2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F19DC82
+P 700 2500
+F 0 "#PWR0101" H 700 2250 50  0001 C CNN
+F 1 "GND" V 800 2450 50  0000 C CNN
+F 2 "" H 700 2500 50  0001 C CNN
+F 3 "" H 700 2500 50  0001 C CNN
+	1    700  2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0102
+U 1 1 5F1B93C9
+P 700 2900
+F 0 "#PWR0102" H 700 2750 50  0001 C CNN
+F 1 "+3.3V" V 800 2950 50  0000 C CNN
+F 2 "" H 700 2900 50  0001 C CNN
+F 3 "" H 700 2900 50  0001 C CNN
+	1    700  2900
+	0    1    1    0   
+$EndComp
+Text GLabel 700  2800 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	650  2600 700  2600
+Wire Wire Line
+	650  2700 700  2700
+Wire Wire Line
+	650  2800 700  2800
+$Comp
+L Regulator_Linear:MIC5504-3.3YM5 U1
+U 1 1 5F22A956
+P 950 4550
+F 0 "U1" H 950 4917 50  0000 C CNN
+F 1 "MIC5504-3.3YM5" H 950 4826 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 950 4150 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/MIC550X.pdf" H 700 4800 50  0001 C CNN
+	1    950  4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5F22D657
+P 1550 4800
+F 0 "C3" H 1665 4846 50  0000 L CNN
+F 1 "1u" H 1665 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1588 4650 50  0001 C CNN
+F 3 "~" H 1550 4800 50  0001 C CNN
+	1    1550 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5F22E761
+P 350 4800
+F 0 "C2" H 465 4846 50  0000 L CNN
+F 1 "1u" H 465 4755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 388 4650 50  0001 C CNN
+F 3 "~" H 350 4800 50  0001 C CNN
+	1    350  4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4450 1350 4450
+Wire Wire Line
+	550  4450 350  4450
+$Comp
+L power:GND #PWR0103
+U 1 1 5F2A3ACD
+P 950 4950
+F 0 "#PWR0103" H 950 4700 50  0001 C CNN
+F 1 "GND" H 955 4777 50  0000 C CNN
+F 2 "" H 950 4950 50  0001 C CNN
+F 3 "" H 950 4950 50  0001 C CNN
+	1    950  4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0104
+U 1 1 5F2C1588
+P 1550 4400
+F 0 "#PWR0104" H 1550 4250 50  0001 C CNN
+F 1 "+3.3V" H 1565 4573 50  0000 C CNN
+F 2 "" H 1550 4400 50  0001 C CNN
+F 3 "" H 1550 4400 50  0001 C CNN
+	1    1550 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 4450 1550 4400
+$Comp
+L power:+5V #PWR0106
+U 1 1 5F41DE1B
+P 350 4400
+F 0 "#PWR0106" H 350 4250 50  0001 C CNN
+F 1 "+5V" H 365 4573 50  0000 C CNN
+F 2 "" H 350 4400 50  0001 C CNN
+F 3 "" H 350 4400 50  0001 C CNN
+	1    350  4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	350  4400 350  4450
+Connection ~ 350  4450
+$Comp
+L business_card_v1-rescue:STM32G030F6P6-MCU_ST_STM32G0 U2
+U 1 1 5F5B83E8
+P 2200 2000
+F 0 "U2" H 1700 3050 50  0000 C CNN
+F 1 "STM32G030F6P6" H 2500 1050 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 2100 2400 50  0001 C CNN
+F 3 "" H 2100 2400 50  0001 C CNN
+	1    2200 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0105
+U 1 1 5F5B93E5
+P 2100 900
+F 0 "#PWR0105" H 2100 750 50  0001 C CNN
+F 1 "+3.3V" H 2115 1073 50  0000 C CNN
+F 2 "" H 2100 900 50  0001 C CNN
+F 3 "" H 2100 900 50  0001 C CNN
+	1    2100 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 900  2100 950 
+$Comp
+L power:GND #PWR0107
+U 1 1 5F5D3F27
+P 2100 3050
+F 0 "#PWR0107" H 2100 2800 50  0001 C CNN
+F 1 "GND" H 2105 2877 50  0000 C CNN
+F 2 "" H 2100 3050 50  0001 C CNN
+F 3 "" H 2100 3050 50  0001 C CNN
+	1    2100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3050 2100 3000
+Text GLabel 1500 1400 0    50   Input ~ 0
+RST
+Wire Wire Line
+	1500 1400 1550 1400
+$Comp
+L Device:R_US R1
+U 1 1 5F6098BE
+P 1350 1800
+F 0 "R1" V 1250 1700 50  0000 C CNN
+F 1 "10K" V 1250 1850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1390 1790 50  0001 C CNN
+F 3 "~" H 1350 1800 50  0001 C CNN
+	1    1350 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F60A4C9
+P 1350 2000
+F 0 "#PWR0108" H 1350 1750 50  0001 C CNN
+F 1 "GND" H 1355 1827 50  0000 C CNN
+F 2 "" H 1350 2000 50  0001 C CNN
+F 3 "" H 1350 2000 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2000 1350 1950
+Text GLabel 2950 2650 2    50   Input ~ 0
+SWDIO
+Wire Wire Line
+	2850 2650 2950 2650
+Text GLabel 1250 1600 0    50   Input ~ 0
+SWDCLK-BOOT0
+$Comp
+L power:GND #PWR0109
+U 1 1 5F6CA1A0
+P 1150 1150
+F 0 "#PWR0109" H 1150 900 50  0001 C CNN
+F 1 "GND" H 1155 977 50  0000 C CNN
+F 2 "" H 1150 1150 50  0001 C CNN
+F 3 "" H 1150 1150 50  0001 C CNN
+	1    1150 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	500  1150 600  1150
+$Comp
+L Device:R_US R10
+U 1 1 5F71E102
+P 500 950
+F 0 "R10" V 400 900 50  0000 C CNN
+F 1 "10K" V 600 950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 540 940 50  0001 C CNN
+F 3 "~" H 500 950 50  0001 C CNN
+	1    500  950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5F71F832
+P 500 700
+F 0 "#PWR0110" H 500 550 50  0001 C CNN
+F 1 "+3.3V" H 515 873 50  0000 C CNN
+F 2 "" H 500 700 50  0001 C CNN
+F 3 "" H 500 700 50  0001 C CNN
+	1    500  700 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	500  700  500  800 
+Wire Wire Line
+	500  1100 500  1150
+Connection ~ 500  1150
+Wire Wire Line
+	500  1150 400  1150
+Text GLabel 400  1150 0    50   Input ~ 0
+RST
+Text GLabel 2950 1650 2    50   Input ~ 0
+PINA
+Text GLabel 2950 1750 2    50   Input ~ 0
+PINB
+Text GLabel 2950 1850 2    50   Input ~ 0
+PINC
+Text GLabel 2950 1950 2    50   Input ~ 0
+PIND
+Text GLabel 2950 2050 2    50   Input ~ 0
+PINE
+Text GLabel 2950 2150 2    50   Input ~ 0
+PINF
+Text GLabel 2950 2250 2    50   Input ~ 0
+PING
+Text GLabel 2950 2350 2    50   Input ~ 0
+PINH
+Wire Wire Line
+	2850 1650 2950 1650
+Wire Wire Line
+	2850 1750 2950 1750
+Wire Wire Line
+	2850 1850 2950 1850
+Wire Wire Line
+	2950 1950 2850 1950
+Wire Wire Line
+	2850 2050 2950 2050
+Wire Wire Line
+	2950 2150 2850 2150
+Wire Wire Line
+	2850 2250 2950 2250
+Wire Wire Line
+	2850 2350 2950 2350
+Wire Wire Line
+	650  2500 700  2500
+Wire Wire Line
+	650  2900 700  2900
+Wire Wire Line
+	1250 1600 1350 1600
+Wire Wire Line
+	1350 1600 1350 1650
+Connection ~ 1350 1600
+Wire Wire Line
+	1350 1600 1550 1600
+Text GLabel 700  2600 2    50   Input ~ 0
+SWDCLK-BOOT0
+Text GLabel 700  2700 2    50   Input ~ 0
+RST
+$Comp
+L power:GND #PWR0112
+U 1 1 5ED9E13B
+P 2300 4850
+F 0 "#PWR0112" H 2300 4600 50  0001 C CNN
+F 1 "GND" H 2305 4677 50  0000 C CNN
+F 2 "" H 2300 4850 50  0001 C CNN
+F 3 "" H 2300 4850 50  0001 C CNN
+	1    2300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 4650 2500 4650
+Wire Wire Line
+	2300 4750 2500 4750
+Wire Wire Line
+	2300 4550 2300 4650
+Wire Wire Line
+	2300 4750 2300 4850
+$Comp
+L power:+5V #PWR0111
+U 1 1 5EE81479
+P 2300 4550
+F 0 "#PWR0111" H 2300 4400 50  0001 C CNN
+F 1 "+5V" H 2315 4723 50  0000 C CNN
+F 2 "" H 2300 4550 50  0001 C CNN
+F 3 "" H 2300 4550 50  0001 C CNN
+	1    2300 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	550  4650 350  4650
+Wire Wire Line
+	350  4450 350  4650
+Connection ~ 350  4650
+Wire Wire Line
+	1550 4450 1550 4650
+Connection ~ 1550 4450
+Wire Wire Line
+	350  4950 950  4950
+Wire Wire Line
+	950  4950 950  4850
+Wire Wire Line
+	950  4950 1550 4950
+Connection ~ 950  4950
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5F0FC071
+P 800 1150
+F 0 "SW1" H 800 1385 50  0000 C CNN
+F 1 "SW_SPST" H 800 1294 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KMR2" H 800 1150 50  0001 C CNN
+F 3 "~" H 800 1150 50  0001 C CNN
+	1    800  1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1150 1150 1150
+Wire Notes Line
+	0    3350 3400 3350
+Wire Notes Line
+	3400 3350 3400 0   
+Text Notes 100  200  0    100  ~ 0
+Microcontroller & Peripherals
+Wire Notes Line
+	0    3750 3400 3750
+Wire Notes Line
+	3400 3750 3400 5400
+Wire Notes Line
+	3400 5400 0    5400
+Text Notes 100  3950 0    100  ~ 0
+PSU
+Wire Wire Line
+	4550 700  4450 700 
+Wire Wire Line
+	4450 700  4450 1300
+Wire Wire Line
+	4450 1300 4450 1900
+Wire Wire Line
+	4450 1900 4450 2500
+Wire Wire Line
+	4450 2500 4450 3100
+Wire Wire Line
+	4450 3100 4450 3700
+Wire Wire Line
+	4450 3700 4450 4300
+Wire Wire Line
+	4550 1300 4450 1300
+Wire Wire Line
+	4550 1900 4450 1900
+Wire Wire Line
+	4550 2500 4450 2500
+Wire Wire Line
+	4550 3100 4450 3100
+Wire Wire Line
+	4550 3700 4450 3700
+Wire Wire Line
+	4550 4300 4450 4300
+Wire Wire Line
+	4750 4600 5750 4600
+Wire Wire Line
+	5750 4600 6550 4600
+Wire Wire Line
+	6550 4600 7350 4600
+Wire Wire Line
+	7350 4600 8150 4600
+Wire Wire Line
+	8150 4600 8950 4600
+Wire Wire Line
+	8950 4600 9750 4600
+Wire Wire Line
+	9750 4600 10550 4600
+Wire Wire Line
+	10550 4600 10550 4300
+Wire Wire Line
+	10550 4300 10450 4300
+Wire Wire Line
+	5650 4300 5750 4300
+Wire Wire Line
+	5750 4300 5750 4600
+Wire Wire Line
+	6450 4300 6550 4300
+Wire Wire Line
+	6550 4300 6550 4600
+Wire Wire Line
+	7250 4300 7350 4300
+Wire Wire Line
+	7350 4300 7350 4600
+Wire Wire Line
+	8050 4300 8150 4300
+Wire Wire Line
+	8150 4300 8150 4600
+Wire Wire Line
+	8850 4300 8950 4300
+Wire Wire Line
+	8950 4300 8950 4600
+Wire Wire Line
+	9650 4300 9750 4300
+Wire Wire Line
+	9750 4300 9750 4600
+Connection ~ 4450 1300
+Connection ~ 4450 1900
+Connection ~ 4450 2500
+Connection ~ 4450 3100
+Connection ~ 4450 3700
+Connection ~ 5750 4600
+Connection ~ 6550 4600
+Connection ~ 7350 4600
+Connection ~ 8150 4600
+Connection ~ 8950 4600
+Connection ~ 9750 4600
+Wire Wire Line
+	5350 700  5250 700 
+Wire Wire Line
+	5250 700  5250 1300
+Wire Wire Line
+	5250 1300 5250 1900
+Wire Wire Line
+	5250 1900 5250 2500
+Wire Wire Line
+	5250 2500 5250 3100
+Wire Wire Line
+	5250 3100 5250 3700
+Wire Wire Line
+	5250 4000 5250 4300
+Wire Wire Line
+	5350 1300 5250 1300
+Wire Wire Line
+	5350 1900 5250 1900
+Wire Wire Line
+	5350 2500 5250 2500
+Wire Wire Line
+	5350 3100 5250 3100
+Wire Wire Line
+	5350 3700 5250 3700
+Wire Wire Line
+	5350 4300 5250 4300
+Wire Wire Line
+	4850 4300 5250 4300
+Wire Wire Line
+	5250 4000 6550 4000
+Wire Wire Line
+	6550 4000 7350 4000
+Wire Wire Line
+	7350 4000 8150 4000
+Wire Wire Line
+	8150 4000 8950 4000
+Wire Wire Line
+	8950 4000 9750 4000
+Wire Wire Line
+	9750 4000 10550 4000
+Wire Wire Line
+	10550 4000 10550 3700
+Wire Wire Line
+	10550 3700 10450 3700
+Wire Wire Line
+	9650 3700 9750 3700
+Wire Wire Line
+	9750 3700 9750 4000
+Wire Wire Line
+	8850 3700 8950 3700
+Wire Wire Line
+	8950 3700 8950 4000
+Wire Wire Line
+	8050 3700 8150 3700
+Wire Wire Line
+	8150 3700 8150 4000
+Wire Wire Line
+	7250 3700 7350 3700
+Wire Wire Line
+	7350 3700 7350 4000
+Wire Wire Line
+	6450 3700 6550 3700
+Wire Wire Line
+	6550 3700 6550 4000
+Connection ~ 5250 1300
+Connection ~ 5250 1900
+Connection ~ 5250 2500
+Connection ~ 5250 3100
+Connection ~ 5250 3700
+Connection ~ 5250 4300
+Connection ~ 5250 4000
+Connection ~ 9750 4000
+Connection ~ 8950 4000
+Connection ~ 8150 4000
+Connection ~ 7350 4000
+Connection ~ 6550 4000
+Wire Wire Line
+	6150 700  6050 700 
+Wire Wire Line
+	6050 700  6050 1300
+Wire Wire Line
+	6050 1300 6050 1900
+Wire Wire Line
+	6050 1900 6050 2500
+Wire Wire Line
+	6050 2500 6050 3100
+Wire Wire Line
+	6050 3100 6050 3400
+Wire Wire Line
+	6050 3400 6050 3700
+Wire Wire Line
+	6150 4300 6050 4300
+Wire Wire Line
+	6150 3700 6050 3700
+Wire Wire Line
+	6150 3100 6050 3100
+Wire Wire Line
+	6150 2500 6050 2500
+Wire Wire Line
+	6150 1900 6050 1900
+Wire Wire Line
+	6150 1300 6050 1300
+Wire Wire Line
+	5650 3700 6050 3700
+Wire Wire Line
+	4850 3700 4950 3700
+Wire Wire Line
+	4950 3700 4950 3400
+Wire Wire Line
+	4950 3400 6050 3400
+Wire Wire Line
+	6050 3400 7350 3400
+Wire Wire Line
+	7350 3400 8150 3400
+Wire Wire Line
+	8150 3400 8950 3400
+Wire Wire Line
+	8950 3400 9750 3400
+Wire Wire Line
+	9750 3400 10550 3400
+Wire Wire Line
+	10550 3400 10550 3100
+Wire Wire Line
+	10550 3100 10450 3100
+Wire Wire Line
+	7250 3100 7350 3100
+Wire Wire Line
+	7350 3100 7350 3400
+Wire Wire Line
+	8050 3100 8150 3100
+Wire Wire Line
+	8150 3100 8150 3400
+Wire Wire Line
+	8850 3100 8950 3100
+Wire Wire Line
+	8950 3100 8950 3400
+Wire Wire Line
+	9650 3100 9750 3100
+Wire Wire Line
+	9750 3100 9750 3400
+Connection ~ 6050 3700
+Connection ~ 6050 3100
+Connection ~ 6050 2500
+Connection ~ 6050 1900
+Connection ~ 6050 1300
+Connection ~ 6050 3400
+Connection ~ 7350 3400
+Connection ~ 8150 3400
+Connection ~ 8950 3400
+Connection ~ 9750 3400
+Wire Wire Line
+	6950 700  6850 700 
+Wire Wire Line
+	6850 700  6850 1300
+Wire Wire Line
+	6850 1300 6850 1900
+Wire Wire Line
+	6850 1900 6850 2500
+Wire Wire Line
+	6850 2500 6850 2800
+Wire Wire Line
+	6850 2800 6850 3100
+Wire Wire Line
+	6850 3100 6850 3700
+Wire Wire Line
+	6950 1300 6850 1300
+Wire Wire Line
+	6950 1900 6850 1900
+Wire Wire Line
+	6950 2500 6850 2500
+Wire Wire Line
+	6950 3100 6850 3100
+Wire Wire Line
+	6950 3700 6850 3700
+Wire Wire Line
+	6950 4300 6850 4300
+Wire Wire Line
+	6450 3100 6850 3100
+Wire Wire Line
+	4850 3100 4950 3100
+Wire Wire Line
+	4950 3100 4950 2800
+Wire Wire Line
+	4950 2800 5750 2800
+Wire Wire Line
+	5750 2800 6850 2800
+Wire Wire Line
+	6850 2800 8150 2800
+Wire Wire Line
+	8150 2800 8950 2800
+Wire Wire Line
+	8950 2800 9750 2800
+Wire Wire Line
+	9750 2800 10550 2800
+Wire Wire Line
+	10550 2800 10550 2500
+Wire Wire Line
+	10550 2500 10450 2500
+Wire Wire Line
+	9650 2500 9750 2500
+Wire Wire Line
+	9750 2500 9750 2800
+Wire Wire Line
+	8850 2500 8950 2500
+Wire Wire Line
+	8950 2500 8950 2800
+Wire Wire Line
+	8050 2500 8150 2500
+Wire Wire Line
+	8150 2500 8150 2800
+Wire Wire Line
+	5650 3100 5750 3100
+Wire Wire Line
+	5750 3100 5750 2800
+Connection ~ 6850 1300
+Connection ~ 6850 1900
+Connection ~ 6850 2500
+Connection ~ 6850 3100
+Connection ~ 6850 3700
+Connection ~ 6850 2800
+Connection ~ 9750 2800
+Connection ~ 8950 2800
+Connection ~ 8150 2800
+Connection ~ 5750 2800
+Wire Wire Line
+	10150 700  10050 700 
+Wire Wire Line
+	10050 700  10050 1300
+Wire Wire Line
+	10050 1300 10050 1900
+Wire Wire Line
+	10050 1900 10050 2500
+Wire Wire Line
+	10050 2500 10050 3100
+Wire Wire Line
+	10050 3700 10050 4300
+Wire Wire Line
+	10150 1300 10050 1300
+Wire Wire Line
+	10150 1900 10050 1900
+Wire Wire Line
+	10150 2500 10050 2500
+Wire Wire Line
+	10150 3100 10050 3100
+Wire Wire Line
+	10150 3700 10050 3700
+Wire Wire Line
+	10150 4300 10050 4300
+Wire Wire Line
+	4950 400  5750 400 
+Wire Wire Line
+	5750 400  6550 400 
+Wire Wire Line
+	6550 400  7350 400 
+Wire Wire Line
+	7350 400  8150 400 
+Wire Wire Line
+	8150 400  8950 400 
+Wire Wire Line
+	8950 400  10050 400 
+Wire Wire Line
+	10050 400  10050 700 
+Wire Wire Line
+	4850 700  4950 700 
+Wire Wire Line
+	4950 700  4950 400 
+Wire Wire Line
+	5650 700  5750 700 
+Wire Wire Line
+	5750 700  5750 400 
+Wire Wire Line
+	6450 700  6550 700 
+Wire Wire Line
+	6550 700  6550 400 
+Wire Wire Line
+	7250 700  7350 700 
+Wire Wire Line
+	7350 700  7350 400 
+Wire Wire Line
+	8050 700  8150 700 
+Wire Wire Line
+	8150 700  8150 400 
+Wire Wire Line
+	8850 700  8950 700 
+Wire Wire Line
+	8950 700  8950 400 
+Wire Wire Line
+	9650 700  10050 700 
+Connection ~ 10050 1300
+Connection ~ 10050 1900
+Connection ~ 10050 2500
+Connection ~ 10050 3100
+Connection ~ 10050 3700
+Connection ~ 10050 700 
+Connection ~ 5750 400 
+Connection ~ 6550 400 
+Connection ~ 7350 400 
+Connection ~ 8150 400 
+Connection ~ 8950 400 
+Wire Wire Line
+	4850 1300 4950 1300
+Wire Wire Line
+	4950 1300 4950 1000
+Wire Wire Line
+	4950 1000 5750 1000
+Wire Wire Line
+	5750 1000 6550 1000
+Wire Wire Line
+	6550 1000 7350 1000
+Wire Wire Line
+	7350 1000 8150 1000
+Wire Wire Line
+	8150 1000 9250 1000
+Wire Wire Line
+	9250 1000 10550 1000
+Wire Wire Line
+	10550 1000 10550 700 
+Wire Wire Line
+	10550 700  10450 700 
+Wire Wire Line
+	5650 1300 5750 1300
+Wire Wire Line
+	5750 1300 5750 1000
+Wire Wire Line
+	6450 1300 6550 1300
+Wire Wire Line
+	6550 1300 6550 1000
+Wire Wire Line
+	7250 1300 7350 1300
+Wire Wire Line
+	7350 1300 7350 1000
+Wire Wire Line
+	8050 1300 8150 1300
+Wire Wire Line
+	8150 1300 8150 1000
+Wire Wire Line
+	9350 700  9250 700 
+Wire Wire Line
+	9250 700  9250 1000
+Wire Wire Line
+	9250 1300 9250 1900
+Wire Wire Line
+	9250 1900 9250 2500
+Wire Wire Line
+	9250 2500 9250 3100
+Wire Wire Line
+	9250 3700 9250 4300
+Wire Wire Line
+	9350 4300 9250 4300
+Wire Wire Line
+	9350 3700 9250 3700
+Wire Wire Line
+	9350 3100 9250 3100
+Wire Wire Line
+	9350 2500 9250 2500
+Wire Wire Line
+	9350 1900 9250 1900
+Wire Wire Line
+	9350 1300 9250 1300
+Wire Wire Line
+	8850 1300 9250 1300
+Wire Wire Line
+	9250 1000 9250 1300
+Connection ~ 5750 1000
+Connection ~ 6550 1000
+Connection ~ 7350 1000
+Connection ~ 8150 1000
+Connection ~ 9250 1000
+Connection ~ 9250 3700
+Connection ~ 9250 3100
+Connection ~ 9250 2500
+Connection ~ 9250 1900
+Connection ~ 9250 1300
+Wire Wire Line
+	6550 1900 6450 1900
+Wire Wire Line
+	8550 700  8450 700 
+Wire Wire Line
+	8450 700  8450 1300
+Wire Wire Line
+	8450 1300 8450 1600
+Wire Wire Line
+	8450 1600 8450 1900
+Wire Wire Line
+	8450 1900 8450 2500
+Wire Wire Line
+	8450 2500 8450 3100
+Wire Wire Line
+	8450 3700 8450 4300
+Wire Wire Line
+	8550 1300 8450 1300
+Wire Wire Line
+	8550 1900 8450 1900
+Wire Wire Line
+	8550 2500 8450 2500
+Wire Wire Line
+	8550 3100 8450 3100
+Wire Wire Line
+	8550 3700 8450 3700
+Wire Wire Line
+	8550 4300 8450 4300
+Wire Wire Line
+	8050 1900 8450 1900
+Wire Wire Line
+	4850 1900 4950 1900
+Wire Wire Line
+	4950 1900 4950 1600
+Wire Wire Line
+	4950 1600 5750 1600
+Wire Wire Line
+	5750 1600 6550 1600
+Wire Wire Line
+	6550 1600 7350 1600
+Wire Wire Line
+	7350 1600 8450 1600
+Wire Wire Line
+	8450 1600 9750 1600
+Wire Wire Line
+	9750 1600 10550 1600
+Wire Wire Line
+	10550 1600 10550 1300
+Wire Wire Line
+	10550 1300 10450 1300
+Wire Wire Line
+	9650 1300 9750 1300
+Wire Wire Line
+	9750 1300 9750 1600
+Wire Wire Line
+	5650 1900 5750 1900
+Wire Wire Line
+	5750 1900 5750 1600
+Wire Wire Line
+	6550 1900 6550 1600
+Wire Wire Line
+	7250 1900 7350 1900
+Wire Wire Line
+	7350 1900 7350 1600
+Connection ~ 8450 1300
+Connection ~ 8450 1900
+Connection ~ 8450 2500
+Connection ~ 8450 3100
+Connection ~ 8450 3700
+Connection ~ 9750 1600
+Connection ~ 8450 1600
+Connection ~ 5750 1600
+Connection ~ 6550 1600
+Connection ~ 7350 1600
+Wire Wire Line
+	6450 2500 6550 2500
+Wire Wire Line
+	7750 700  7650 700 
+Wire Wire Line
+	7650 700  7650 1300
+Wire Wire Line
+	7650 1300 7650 1900
+Wire Wire Line
+	7650 1900 7650 2200
+Wire Wire Line
+	7650 2200 7650 2500
+Wire Wire Line
+	7650 2500 7650 3100
+Wire Wire Line
+	7650 3700 7650 4300
+Wire Wire Line
+	7750 4300 7650 4300
+Wire Wire Line
+	7750 3700 7650 3700
+Wire Wire Line
+	7750 3100 7650 3100
+Wire Wire Line
+	7750 2500 7650 2500
+Wire Wire Line
+	7750 1900 7650 1900
+Wire Wire Line
+	7750 1300 7650 1300
+Wire Wire Line
+	7250 2500 7650 2500
+Wire Wire Line
+	4850 2500 4950 2500
+Wire Wire Line
+	4950 2500 4950 2200
+Wire Wire Line
+	4950 2200 5750 2200
+Wire Wire Line
+	5750 2200 6550 2200
+Wire Wire Line
+	6550 2200 7650 2200
+Wire Wire Line
+	7650 2200 8950 2200
+Wire Wire Line
+	8950 2200 9750 2200
+Wire Wire Line
+	9750 2200 10550 2200
+Wire Wire Line
+	10550 2200 10550 1900
+Wire Wire Line
+	10550 1900 10450 1900
+Wire Wire Line
+	9650 1900 9750 1900
+Wire Wire Line
+	9750 1900 9750 2200
+Wire Wire Line
+	5650 2500 5750 2500
+Wire Wire Line
+	5750 2500 5750 2200
+Wire Wire Line
+	8850 1900 8950 1900
+Wire Wire Line
+	8950 1900 8950 2200
+Wire Wire Line
+	6550 2500 6550 2200
+Connection ~ 7650 3700
+Connection ~ 7650 3100
+Connection ~ 7650 2500
+Connection ~ 7650 1900
+Connection ~ 7650 1300
+Connection ~ 7650 2200
+Connection ~ 9750 2200
+Connection ~ 5750 2200
+Connection ~ 8950 2200
+Connection ~ 6550 2200
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED2
+U 1 1 01E2EC58
+P 5450 700
+F 0 "LED2" V 5590 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 700 50  0001 C CNN
+F 3 "" H 5450 700 50  0001 C CNN
+	1    5450 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED3
+U 1 1 6770364D
+P 6250 700
+F 0 "LED3" V 6390 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 700 50  0001 C CNN
+F 3 "" H 6250 700 50  0001 C CNN
+	1    6250 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED4
+U 1 1 E117CAA2
+P 7050 700
+F 0 "LED4" V 7190 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 700 50  0001 C CNN
+F 3 "" H 7050 700 50  0001 C CNN
+	1    7050 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED5
+U 1 1 41BD10E0
+P 7850 700
+F 0 "LED5" V 7990 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 700 50  0001 C CNN
+F 3 "" H 7850 700 50  0001 C CNN
+	1    7850 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED6
+U 1 1 FAAADBB7
+P 8650 700
+F 0 "LED6" V 8790 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 700 50  0001 C CNN
+F 3 "" H 8650 700 50  0001 C CNN
+	1    8650 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED7
+U 1 1 1611C8DB
+P 9450 700
+F 0 "LED7" V 9590 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 700 50  0001 C CNN
+F 3 "" H 9450 700 50  0001 C CNN
+	1    9450 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED8
+U 1 1 6DDE30CE
+P 10250 700
+F 0 "LED8" V 10390 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 700 50  0001 C CNN
+F 3 "" H 10250 700 50  0001 C CNN
+	1    10250 700 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED9
+U 1 1 5ADA8C51
+P 4650 1300
+F 0 "LED9" V 4790 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 1300 50  0001 C CNN
+F 3 "" H 4650 1300 50  0001 C CNN
+	1    4650 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED10
+U 1 1 E4E960EB
+P 5450 1300
+F 0 "LED10" V 5590 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 1300 50  0001 C CNN
+F 3 "" H 5450 1300 50  0001 C CNN
+	1    5450 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED11
+U 1 1 8D152250
+P 6250 1300
+F 0 "LED11" V 6390 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 1300 50  0001 C CNN
+F 3 "" H 6250 1300 50  0001 C CNN
+	1    6250 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED12
+U 1 1 312C59EE
+P 7050 1300
+F 0 "LED12" V 7190 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 1300 50  0001 C CNN
+F 3 "" H 7050 1300 50  0001 C CNN
+	1    7050 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED13
+U 1 1 F555B91C
+P 7850 1300
+F 0 "LED13" V 7990 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 1300 50  0001 C CNN
+F 3 "" H 7850 1300 50  0001 C CNN
+	1    7850 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED14
+U 1 1 EAD0E356
+P 8650 1300
+F 0 "LED14" V 8790 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 1300 50  0001 C CNN
+F 3 "" H 8650 1300 50  0001 C CNN
+	1    8650 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED15
+U 1 1 867DFBDF
+P 9450 1300
+F 0 "LED15" V 9590 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 1300 50  0001 C CNN
+F 3 "" H 9450 1300 50  0001 C CNN
+	1    9450 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED16
+U 1 1 B9A45AB4
+P 10250 1300
+F 0 "LED16" V 10390 1120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 1120 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 1300 50  0001 C CNN
+F 3 "" H 10250 1300 50  0001 C CNN
+	1    10250 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED17
+U 1 1 387FC03B
+P 4650 1900
+F 0 "LED17" V 4790 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 1720 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 1900 50  0001 C CNN
+F 3 "" H 4650 1900 50  0001 C CNN
+F 4 "L" V 4875 1720 59  0001 L BNN "SPICEPREFIX"
+	1    4650 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED18
+U 1 1 1EAD7B7C
+P 5450 1900
+F 0 "LED18" V 5590 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 1720 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 1900 50  0001 C CNN
+F 3 "" H 5450 1900 50  0001 C CNN
+	1    5450 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED19
+U 1 1 2BDBCCD6
+P 6250 1900
+F 0 "LED19" V 6390 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 1720 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 1900 50  0001 C CNN
+F 3 "" H 6250 1900 50  0001 C CNN
+	1    6250 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED20
+U 1 1 5FC47E19
+P 7050 1900
+F 0 "LED20" V 7190 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 1720 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 1900 50  0001 C CNN
+F 3 "" H 7050 1900 50  0001 C CNN
+	1    7050 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED21
+U 1 1 F760E146
+P 7850 1900
+F 0 "LED21" V 7990 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 1720 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 1900 50  0001 C CNN
+F 3 "" H 7850 1900 50  0001 C CNN
+	1    7850 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED22
+U 1 1 FE946E7E
+P 8650 1900
+F 0 "LED22" V 8790 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 1720 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 1900 50  0001 C CNN
+F 3 "" H 8650 1900 50  0001 C CNN
+	1    8650 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED23
+U 1 1 55ED2150
+P 9450 1900
+F 0 "LED23" V 9590 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 1720 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 1900 50  0001 C CNN
+F 3 "" H 9450 1900 50  0001 C CNN
+	1    9450 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED24
+U 1 1 D8A7E76E
+P 10250 1900
+F 0 "LED24" V 10390 1720 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 1720 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 1900 50  0001 C CNN
+F 3 "" H 10250 1900 50  0001 C CNN
+	1    10250 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED25
+U 1 1 4E040796
+P 4650 2500
+F 0 "LED25" V 4790 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 2500 50  0001 C CNN
+F 3 "" H 4650 2500 50  0001 C CNN
+	1    4650 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED26
+U 1 1 EE4CDDE1
+P 5450 2500
+F 0 "LED26" V 5590 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 2500 50  0001 C CNN
+F 3 "" H 5450 2500 50  0001 C CNN
+	1    5450 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED27
+U 1 1 CDF8A716
+P 6250 2500
+F 0 "LED27" V 6390 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 2500 50  0001 C CNN
+F 3 "" H 6250 2500 50  0001 C CNN
+	1    6250 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED28
+U 1 1 81F27818
+P 7050 2500
+F 0 "LED28" V 7190 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 2500 50  0001 C CNN
+F 3 "" H 7050 2500 50  0001 C CNN
+	1    7050 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED29
+U 1 1 ADEF5848
+P 7850 2500
+F 0 "LED29" V 7990 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 2500 50  0001 C CNN
+F 3 "" H 7850 2500 50  0001 C CNN
+	1    7850 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED30
+U 1 1 60A1D307
+P 8650 2500
+F 0 "LED30" V 8790 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 2500 50  0001 C CNN
+F 3 "" H 8650 2500 50  0001 C CNN
+	1    8650 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED31
+U 1 1 E88B2FFE
+P 9450 2500
+F 0 "LED31" V 9590 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 2500 50  0001 C CNN
+F 3 "" H 9450 2500 50  0001 C CNN
+	1    9450 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED32
+U 1 1 7AEF422A
+P 10250 2500
+F 0 "LED32" V 10390 2320 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 2320 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 2500 50  0001 C CNN
+F 3 "" H 10250 2500 50  0001 C CNN
+	1    10250 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED33
+U 1 1 EA9FE965
+P 4650 3100
+F 0 "LED33" V 4790 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 3100 50  0001 C CNN
+F 3 "" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED34
+U 1 1 9EA9E2DB
+P 5450 3100
+F 0 "LED34" V 5590 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 3100 50  0001 C CNN
+F 3 "" H 5450 3100 50  0001 C CNN
+	1    5450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED35
+U 1 1 C9A735BC
+P 6250 3100
+F 0 "LED35" V 6390 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 3100 50  0001 C CNN
+F 3 "" H 6250 3100 50  0001 C CNN
+	1    6250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED36
+U 1 1 9E02BFF1
+P 7050 3100
+F 0 "LED36" V 7190 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 3100 50  0001 C CNN
+F 3 "" H 7050 3100 50  0001 C CNN
+	1    7050 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED37
+U 1 1 E8CC6EA2
+P 7850 3100
+F 0 "LED37" V 7990 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 3100 50  0001 C CNN
+F 3 "" H 7850 3100 50  0001 C CNN
+	1    7850 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED38
+U 1 1 D5409E4A
+P 8650 3100
+F 0 "LED38" V 8790 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 3100 50  0001 C CNN
+F 3 "" H 8650 3100 50  0001 C CNN
+	1    8650 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED39
+U 1 1 984C328C
+P 9450 3100
+F 0 "LED39" V 9590 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 3100 50  0001 C CNN
+F 3 "" H 9450 3100 50  0001 C CNN
+	1    9450 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED40
+U 1 1 E6D2E239
+P 10250 3100
+F 0 "LED40" V 10390 2920 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 2920 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 3100 50  0001 C CNN
+F 3 "" H 10250 3100 50  0001 C CNN
+	1    10250 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED41
+U 1 1 96012BFE
+P 4650 3700
+F 0 "LED41" V 4790 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 3700 50  0001 C CNN
+F 3 "" H 4650 3700 50  0001 C CNN
+	1    4650 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED42
+U 1 1 B586558F
+P 5450 3700
+F 0 "LED42" V 5590 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 3700 50  0001 C CNN
+F 3 "" H 5450 3700 50  0001 C CNN
+	1    5450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED43
+U 1 1 4EDF97B5
+P 6250 3700
+F 0 "LED43" V 6390 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 3700 50  0001 C CNN
+F 3 "" H 6250 3700 50  0001 C CNN
+	1    6250 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED44
+U 1 1 B136C42F
+P 7050 3700
+F 0 "LED44" V 7190 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 3700 50  0001 C CNN
+F 3 "" H 7050 3700 50  0001 C CNN
+	1    7050 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED45
+U 1 1 AE923DAB
+P 7850 3700
+F 0 "LED45" V 7990 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 3700 50  0001 C CNN
+F 3 "" H 7850 3700 50  0001 C CNN
+	1    7850 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED46
+U 1 1 C62E2DDF
+P 8650 3700
+F 0 "LED46" V 8790 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 3700 50  0001 C CNN
+F 3 "" H 8650 3700 50  0001 C CNN
+	1    8650 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED47
+U 1 1 DE9C3FE7
+P 9450 3700
+F 0 "LED47" V 9590 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 3700 50  0001 C CNN
+F 3 "" H 9450 3700 50  0001 C CNN
+	1    9450 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED48
+U 1 1 FC5C1A71
+P 10250 3700
+F 0 "LED48" V 10390 3520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 3520 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 3700 50  0001 C CNN
+F 3 "" H 10250 3700 50  0001 C CNN
+	1    10250 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED49
+U 1 1 217F7F02
+P 4650 4300
+F 0 "LED49" V 4790 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 4300 50  0001 C CNN
+F 3 "" H 4650 4300 50  0001 C CNN
+	1    4650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED50
+U 1 1 D997EB3F
+P 5450 4300
+F 0 "LED50" V 5590 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 5675 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 5450 4300 50  0001 C CNN
+F 3 "" H 5450 4300 50  0001 C CNN
+	1    5450 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED51
+U 1 1 5667E4A1
+P 6250 4300
+F 0 "LED51" V 6390 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 6475 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 6250 4300 50  0001 C CNN
+F 3 "" H 6250 4300 50  0001 C CNN
+	1    6250 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED52
+U 1 1 F8AB9CC1
+P 7050 4300
+F 0 "LED52" V 7190 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 7275 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7050 4300 50  0001 C CNN
+F 3 "" H 7050 4300 50  0001 C CNN
+	1    7050 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED53
+U 1 1 4235559A
+P 7850 4300
+F 0 "LED53" V 7990 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8075 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 7850 4300 50  0001 C CNN
+F 3 "" H 7850 4300 50  0001 C CNN
+	1    7850 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED54
+U 1 1 981A6703
+P 8650 4300
+F 0 "LED54" V 8790 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 8875 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 8650 4300 50  0001 C CNN
+F 3 "" H 8650 4300 50  0001 C CNN
+	1    8650 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED55
+U 1 1 9FE1A326
+P 9450 4300
+F 0 "LED55" V 9590 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 9675 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 9450 4300 50  0001 C CNN
+F 3 "" H 9450 4300 50  0001 C CNN
+	1    9450 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED56
+U 1 1 5012055C
+P 10250 4300
+F 0 "LED56" V 10390 4120 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 10475 4120 59  0000 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 10250 4300 50  0001 C CNN
+F 3 "" H 10250 4300 50  0001 C CNN
+	1    10250 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L business_card_v1-eagle-import:LEDCHIPLED_0805 LED1
+U 1 1 84EE1AB4
+P 4650 700
+F 0 "LED1" V 4790 520 59  0000 L BNN
+F 1 "LEDCHIPLED_0805" V 4875 520 59  0001 L BNN
+F 2 "business_card_v1:CHIPLED_0805" H 4650 700 50  0001 C CNN
+F 3 "" H 4650 700 50  0001 C CNN
+	1    4650 700 
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5500 5800 3    50   Input ~ 0
+PINA
+Text GLabel 5600 5800 3    50   Input ~ 0
+PINB
+Text GLabel 5700 5800 3    50   Input ~ 0
+PINC
+Text GLabel 5800 5800 3    50   Input ~ 0
+PIND
+Text GLabel 8700 5800 3    50   Input ~ 0
+PINE
+Text GLabel 8800 5800 3    50   Input ~ 0
+PINF
+Text GLabel 8900 5800 3    50   Input ~ 0
+PING
+Text GLabel 9000 5800 3    50   Input ~ 0
+PINH
+Wire Wire Line
+	5500 5800 5500 5700
+Wire Wire Line
+	5600 5800 5600 5700
+Wire Wire Line
+	5700 5800 5700 5700
+Wire Wire Line
+	5800 5800 5800 5700
+Wire Wire Line
+	8700 5700 8700 5800
+Wire Wire Line
+	8800 5800 8800 5700
+Wire Wire Line
+	8900 5700 8900 5800
+Wire Wire Line
+	9000 5800 9000 5700
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5FB87CE1
+P 5700 5500
+F 0 "RN1" V 5283 5500 50  0000 C CNN
+F 1 "R_Pack04" V 5374 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 5975 5500 50  0001 C CNN
+F 3 "~" H 5700 5500 50  0001 C CNN
+	1    5700 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5FB889DC
+P 8900 5500
+F 0 "RN2" V 9200 5500 50  0000 C CNN
+F 1 "R_Pack04" V 9100 5500 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9175 5500 50  0001 C CNN
+F 3 "~" H 8900 5500 50  0001 C CNN
+	1    8900 5500
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 4300
+Connection ~ 9250 4300
+Connection ~ 8450 4300
+Connection ~ 7650 4300
+Wire Wire Line
+	8900 5300 8900 5050
+Wire Wire Line
+	8900 5050 9250 5050
+Wire Wire Line
+	9000 5300 9000 5150
+Wire Wire Line
+	9000 5150 10050 5150
+Wire Wire Line
+	8800 5300 8800 5050
+Wire Wire Line
+	8800 5050 8450 5050
+Wire Wire Line
+	8700 5300 8700 5150
+Wire Wire Line
+	8700 5150 7650 5150
+Wire Wire Line
+	10050 4300 10050 5150
+Wire Wire Line
+	9250 4300 9250 5050
+Wire Wire Line
+	8450 4300 8450 5050
+Wire Wire Line
+	7650 4300 7650 5150
+Wire Wire Line
+	5700 5300 5700 5050
+Wire Wire Line
+	5700 5050 6050 5050
+Wire Wire Line
+	5800 5300 5800 5150
+Wire Wire Line
+	5800 5150 6850 5150
+Wire Wire Line
+	5600 5300 5600 5050
+Wire Wire Line
+	5600 5050 5250 5050
+Wire Wire Line
+	5500 5300 5500 5150
+Wire Wire Line
+	5500 5150 4750 5150
+Wire Wire Line
+	6050 3700 6050 4300
+Wire Wire Line
+	6850 3700 6850 4300
+Wire Wire Line
+	4750 4600 4750 5150
+Wire Wire Line
+	5250 5050 5250 4300
+Wire Wire Line
+	6050 5050 6050 4300
+Connection ~ 6050 4300
+Wire Wire Line
+	6850 5150 6850 4300
+Connection ~ 6850 4300
+Wire Wire Line
+	4750 4600 4450 4600
+Wire Wire Line
+	4450 4600 4450 4300
+Connection ~ 4750 4600
+Connection ~ 4450 4300
+Wire Notes Line
+	3800 6400 11050 6400
+Wire Notes Line
+	11050 6400 11050 0   
+Wire Notes Line
+	3800 0    3800 6400
+Text Notes 3900 200  0    100  ~ 0
+LED Grid
+Wire Wire Line
+	5250 3950 5250 4000
+Wire Wire Line
+	7650 3500 7650 3700
+Wire Wire Line
+	8450 3500 8450 3700
+Wire Wire Line
+	9250 3500 9250 3700
+Wire Wire Line
+	10050 3500 10050 3700
+Wire Wire Line
+	5250 3700 5250 4000
+Wire Wire Line
+	7650 3100 7650 3700
+Wire Wire Line
+	8450 3100 8450 3700
+Wire Wire Line
+	9250 3100 9250 3700
+Wire Wire Line
+	10050 3100 10050 3700
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5F6135F3
+P 450 2050
+F 0 "J2" H 558 2231 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 500 1950 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 450 2050 50  0001 C CNN
+F 3 "~" H 450 2050 50  0001 C CNN
+	1    450  2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0113
+U 1 1 5F6141B8
+P 700 2050
+F 0 "#PWR0113" H 700 1900 50  0001 C CNN
+F 1 "+5V" V 600 2100 50  0000 C CNN
+F 2 "" H 700 2050 50  0001 C CNN
+F 3 "" H 700 2050 50  0001 C CNN
+	1    700  2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  2050 700  2050
+NoConn ~ 2850 2450
+NoConn ~ 2850 2550
+NoConn ~ 1550 2350
+NoConn ~ 1550 2250
+NoConn ~ 1550 2150
+NoConn ~ 1550 1900
+NoConn ~ 1550 1800
+NoConn ~ 2500 4550
+NoConn ~ 2500 4450
+$Comp
+L business_card_v1-eagle-import:USBPCB JP1
+U 1 1 5EB91CEE
+P 2600 4750
+F 0 "JP1" H 2828 4958 59  0000 L CNN
+F 1 "USBPCB" H 2828 4853 59  0000 L CNN
+F 2 "business_card_v1:USB-A-PCB" H 2600 4750 50  0001 C CNN
+F 3 "" H 2600 4750 50  0001 C CNN
+	1    2600 4750
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
