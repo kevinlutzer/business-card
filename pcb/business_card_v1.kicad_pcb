@@ -172,11 +172,11 @@
     (add_net SWDIO)
   )
 
-  (module Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm (layer Top) (tedit 5E476F32) (tstamp 5ECA31B3)
+  (module Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm (layer Top) (tedit 5E476F32) (tstamp 5ECA0640)
     (at 138.7475 124.6505 270)
     (descr "TSSOP, 20 Pin (JEDEC MO-153 Var AC https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "TSSOP SO")
-    (path /5ED2CF40)
+    (path /5ED1EB15)
     (attr smd)
     (fp_text reference U2 (at 0 -4.2 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
