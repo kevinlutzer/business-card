@@ -1,4 +1,4 @@
-update=Saturday, May 09, 2020 at 10:08:33 pm
+update=Saturday, May 23, 2020 at 07:05:50 pm
 version=1
 last_client=kicad
 [general]
@@ -242,7 +242,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [schematic_editor]
 version=1
-PageLayoutDescrFile=empty.kicad_wks
+PageLayoutDescrFile=
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
