@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name business_card_v1-eagle-import)(type Legacy)(uri ${KIPRJMOD}/business_card_v1-eagle-import.lib)(options "")(descr ""))
-  (lib (name business_card_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/business_card_v1-rescue.lib)(options "")(descr ""))
+  (lib (name business_card_v1-rescue)(type Legacy)(uri ${KIPRJMOD}/business_card_v1-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name MCU_ST_STM32G0)(type Legacy)(uri ${KIPRJMOD}/MCU_ST_STM32G0.lib)(options "")(descr ""))
 )
