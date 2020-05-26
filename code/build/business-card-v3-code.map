@@ -1092,7 +1092,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
  .debug_line    0x0000000000002e91       0x6c /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
  .debug_line    0x0000000000002efd       0x60 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
-.debug_str      0x0000000000000000     0x1d46
+.debug_str      0x0000000000000000     0x1d6e
  .debug_str     0x0000000000000000      0x54e build/main.o
                                         0x59b (size before relaxing)
  .debug_str     0x000000000000054e       0x68 build/stm32g0xx_it.o
@@ -1111,15 +1111,14 @@ LOAD /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
                                         0x83e (size before relaxing)
  .debug_str     0x00000000000013dd       0x38 build/system_stm32g0xx.o
                                         0x390 (size before relaxing)
- .debug_str     0x0000000000001415       0x22 build/startup_stm32g030xx.o
-                                         0x5e (size before relaxing)
- .debug_str     0x0000000000001437      0x187 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
+ .debug_str     0x0000000000001415       0x4a build/startup_stm32g030xx.o
+ .debug_str     0x000000000000145f      0x187 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-init.o)
                                         0x222 (size before relaxing)
- .debug_str     0x00000000000015be      0x6f1 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_str     0x00000000000015e6      0x6f1 /usr/lib/gcc/arm-none-eabi/9.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
                                         0x908 (size before relaxing)
- .debug_str     0x0000000000001caf       0x97 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_str     0x0000000000001cd7       0x97 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
                                          0xa3 (size before relaxing)
- .debug_str     0x0000000000001d46       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x0000000000001d6e       0xa3 /usr/lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
 
 .debug_frame    0x0000000000000000      0x824
  .debug_frame   0x0000000000000000       0x70 build/main.o
