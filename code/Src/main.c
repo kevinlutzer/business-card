@@ -44,6 +44,9 @@
 
 /* USER CODE BEGIN PV */
 
+const uint16_t pins[8] = {PINA_Pin, PINB_Pin, PINC_Pin, PIND_Pin, PINE_Pin, PINF_Pin, PING_Pin, PINH_Pin};
+void print_column(uint16_t column);
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -97,6 +100,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    for (int i = 0; i < 7; i ++) {
+      print_column((uint16_t)(i));
+    }
+
   }
   /* USER CODE END 3 */
 }
@@ -151,10 +158,13 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, PINA_Pin|PINB_Pin|PINC_Pin|PIND_Pin 
+                          |PINE_Pin|PINF_Pin|PING_Pin|PINH_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : PA7 */
-  GPIO_InitStruct.Pin = GPIO_PIN_7;
+  /*Configure GPIO pins : PINA_Pin PINB_Pin PINC_Pin PIND_Pin 
+                           PINE_Pin PINF_Pin PING_Pin PINH_Pin */
+  GPIO_InitStruct.Pin = PINA_Pin|PINB_Pin|PINC_Pin|PIND_Pin 
+                          |PINE_Pin|PINF_Pin|PING_Pin|PINH_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -162,8 +172,22 @@ static void MX_GPIO_Init(void)
 
 }
 
-/* USER CODE BEGIN 4 */
 
+void reset_mode(uint16_t pin) {
+  GPIOA->MODER &= ~(GPIO_MODER_MODE0 << (pin * 2u));
+}
+
+void set_output_pp(uint16_t pin) {
+  GPIOA->MODER |= ((GPIO_MODE_OUTPUT_PP & 0x00000003u) << (pin * 2u));
+}
+/* USER CODE BEGIN 4 */
+void print_column(uint16_t row) {
+  set_output_pp(row);
+  GPIOA->BSRR = 0x1 << row;
+  HAL_Delay(100);
+  GPIOA->BRR = 0x1 << row;
+  reset_mode(row);
+}
 /* USER CODE END 4 */
 
 /**

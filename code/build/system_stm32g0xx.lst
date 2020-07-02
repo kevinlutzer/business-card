@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccx56pnE.s 			page 1
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
   30:Src/system_stm32g0xx.c ****   *        SYSCLK(Hz)                             | 16000000
   31:Src/system_stm32g0xx.c ****   *-----------------------------------------------------------------------------
   32:Src/system_stm32g0xx.c ****   *        HCLK(Hz)                               | 16000000
-ARM GAS  /tmp/ccx56pnE.s 			page 2
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 2
 
 
   33:Src/system_stm32g0xx.c ****   *-----------------------------------------------------------------------------
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
   87:Src/system_stm32g0xx.c **** #endif /* HSI_VALUE */
   88:Src/system_stm32g0xx.c **** 
   89:Src/system_stm32g0xx.c **** #if !defined  (LSI_VALUE)
-ARM GAS  /tmp/ccx56pnE.s 			page 3
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 3
 
 
   90:Src/system_stm32g0xx.c ****  #define LSI_VALUE   (32000UL)     /*!< Value of LSI in Hz*/
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
  144:Src/system_stm32g0xx.c **** 
  145:Src/system_stm32g0xx.c ****   const uint32_t AHBPrescTable[16UL] = {0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 0UL, 1UL, 2UL, 3UL, 4UL,
  146:Src/system_stm32g0xx.c ****   const uint32_t APBPrescTable[8UL] =  {0UL, 0UL, 0UL, 0UL, 1UL, 2UL, 3UL, 4UL};
-ARM GAS  /tmp/ccx56pnE.s 			page 4
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 4
 
 
  147:Src/system_stm32g0xx.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
   51              		.global	SystemCoreClockUpdate
   52              		.syntax unified
   53              		.code	16
-ARM GAS  /tmp/ccx56pnE.s 			page 5
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 5
 
 
   54              		.thumb_func
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
   66              		.cfi_offset 4, -8
   67              		.cfi_offset 14, -4
  221:Src/system_stm32g0xx.c ****   uint32_t tmp;
-ARM GAS  /tmp/ccx56pnE.s 			page 6
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 6
 
 
   68              		.loc 1 221 3 view .LVU5
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
   96              	.LVL0:
  248:Src/system_stm32g0xx.c ****       pllm = ((RCC->PLLCFGR & RCC_PLLCFGR_PLLM) >> RCC_PLLCFGR_PLLM_Pos) + 1UL;
   97              		.loc 1 248 7 is_stmt 1 view .LVU18
-ARM GAS  /tmp/ccx56pnE.s 			page 7
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 7
 
 
   98              		.loc 1 248 19 is_stmt 0 view .LVU19
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
  139              	.LVL5:
  140              		.loc 1 261 23 view .LVU36
  141 004a 184B     		ldr	r3, .L15+8
-ARM GAS  /tmp/ccx56pnE.s 			page 8
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 8
 
 
  142 004c 1860     		str	r0, [r3]
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
  273:Src/system_stm32g0xx.c ****   /* HCLK clock frequency */
  274:Src/system_stm32g0xx.c ****   SystemCoreClock >>= tmp;
  178              		.loc 1 274 3 is_stmt 1 view .LVU49
-ARM GAS  /tmp/ccx56pnE.s 			page 9
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 9
 
 
  179              		.loc 1 274 19 is_stmt 0 view .LVU50
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
  267:Src/system_stm32g0xx.c ****       break;
  221              		.loc 1 267 23 view .LVU63
  222 009e 034A     		ldr	r2, .L15+8
-ARM GAS  /tmp/ccx56pnE.s 			page 10
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 10
 
 
  223              	.LVL12:
@@ -598,34 +598,35 @@ ARM GAS  /tmp/ccx56pnE.s 			page 1
  282 0018 03000000 		.word	3
  283 001c 04000000 		.word	4
  284              		.text
-ARM GAS  /tmp/ccx56pnE.s 			page 11
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 11
 
 
  285              	.Letext0:
- 286              		.file 2 "Drivers/CMSIS/Include/core_cm0plus.h"
- 287              		.file 3 "/usr/lib/gcc/arm-none-eabi/9.2.1/include/stdint.h"
- 288              		.file 4 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h"
- 289              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h"
- 290              		.file 6 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
- 291              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h"
- 292              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h"
-ARM GAS  /tmp/ccx56pnE.s 			page 12
+ 286              		.file 2 "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/machine/_de
+ 287              		.file 3 "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/sys/_stdint
+ 288              		.file 4 "Drivers/CMSIS/Include/core_cm0plus.h"
+ 289              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h"
+ 290              		.file 6 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h"
+ 291              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
+ 292              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h"
+ 293              		.file 9 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h"
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s 			page 12
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 system_stm32g0xx.c
-     /tmp/ccx56pnE.s:16     .text.SystemInit:0000000000000000 $t
-     /tmp/ccx56pnE.s:24     .text.SystemInit:0000000000000000 SystemInit
-     /tmp/ccx56pnE.s:44     .text.SystemInit:000000000000000c $d
-     /tmp/ccx56pnE.s:50     .text.SystemCoreClockUpdate:0000000000000000 $t
-     /tmp/ccx56pnE.s:57     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
-     /tmp/ccx56pnE.s:231    .text.SystemCoreClockUpdate:00000000000000a4 $d
-     /tmp/ccx56pnE.s:275    .rodata.APBPrescTable:0000000000000000 APBPrescTable
-     /tmp/ccx56pnE.s:254    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
-     /tmp/ccx56pnE.s:247    .data.SystemCoreClock:0000000000000000 SystemCoreClock
-     /tmp/ccx56pnE.s:243    .data.SystemCoreClock:0000000000000000 $d
-     /tmp/ccx56pnE.s:250    .rodata.AHBPrescTable:0000000000000000 $d
-     /tmp/ccx56pnE.s:272    .rodata.APBPrescTable:0000000000000000 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:16     .text.SystemInit:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:24     .text.SystemInit:0000000000000000 SystemInit
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:44     .text.SystemInit:000000000000000c $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:50     .text.SystemCoreClockUpdate:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:57     .text.SystemCoreClockUpdate:0000000000000000 SystemCoreClockUpdate
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:231    .text.SystemCoreClockUpdate:00000000000000a4 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:275    .rodata.APBPrescTable:0000000000000000 APBPrescTable
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:254    .rodata.AHBPrescTable:0000000000000000 AHBPrescTable
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:247    .data.SystemCoreClock:0000000000000000 SystemCoreClock
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:243    .data.SystemCoreClock:0000000000000000 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:250    .rodata.AHBPrescTable:0000000000000000 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc5tgPCZ.s:272    .rodata.APBPrescTable:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv
