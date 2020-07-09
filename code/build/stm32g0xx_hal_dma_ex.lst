@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
   29:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   ******************************************************************************
   30:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   * @attention
   31:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   *
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 2
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 2
 
 
   32:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   * <h2><center>&copy; Copyright (c) 2018 STMicroelectronics. 
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
   86:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   */
   87:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c **** 
   88:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c **** /**
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 3
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 3
 
 
   89:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   * @brief  Configure the DMAMUX synchronization parameters for a given DMA channel (instance).
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
   59              		.loc 1 111 5 discriminator 2 view .LVU13
   60 0012 2425     		movs	r5, #36
   61 0014 0123     		movs	r3, #1
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 4
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 4
 
 
   62 0016 4355     		strb	r3, [r0, r5]
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
   99 0048 0120     		movs	r0, #1
  100              	.LVL3:
  101              	.L2:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 5
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 5
 
 
  129:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   }
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  146:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   assert_param(IS_DMAMUX_REQUEST_GEN_SIGNAL_ID(pRequestGeneratorConfig->SignalID));
  139              		.loc 1 146 3 view .LVU29
  147:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 6
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 6
 
 
  148:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   assert_param(IS_DMAMUX_REQUEST_GEN_POLARITY(pRequestGeneratorConfig->Polarity));
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  178              	.LVL8:
  161:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****                                    ((pRequestGeneratorConfig->RequestNumber - 1U) << DMAMUX_RGxCR_G
  179              		.loc 1 161 111 discriminator 2 view .LVU46
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 7
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 7
 
 
  180 002e 0A43     		orrs	r2, r1
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  177:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   *                     the configuration information for the specified DMA channel.
  178:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   * @retval HAL status
  179:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 8
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 8
 
 
  180:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c **** HAL_StatusTypeDef HAL_DMAEx_EnableMuxRequestGenerator(DMA_HandleTypeDef *hdma)
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  253              	.LVL14:
  254              	.L11:
  198:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c ****   }
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 9
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 9
 
 
  255              		.loc 1 198 12 view .LVU68
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  292 0004 002B     		cmp	r3, #0
  293 0006 08D0     		beq	.L15
  294              		.loc 1 216 52 discriminator 1 view .LVU77
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 10
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 10
 
 
  295 0008 036D     		ldr	r3, [r0, #80]
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  334              		.section	.text.HAL_DMAEx_MUX_IRQHandler,"ax",%progbits
  335              		.align	1
  336              		.global	HAL_DMAEx_MUX_IRQHandler
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 11
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 11
 
 
  337              		.syntax unified
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  375 0018 836C     		ldr	r3, [r0, #72]
  376              		.loc 1 245 36 view .LVU99
  377 001a C26C     		ldr	r2, [r0, #76]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 12
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 12
 
 
  378 001c 5A60     		str	r2, [r3, #4]
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  414 0042 0849     		ldr	r1, .L22
  415 0044 0A40     		ands	r2, r1
  416 0046 1A60     		str	r2, [r3]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 13
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 13
 
 
  264:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma_ex.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  457              		.file 4 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h"
  458              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h"
  459              		.file 6 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g0xx.h"
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 14
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 14
 
 
  460              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_def.h"
@@ -786,22 +786,22 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 1
  462              		.file 9 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma_ex.h"
  463              		.file 10 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h"
  464              		.file 11 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h"
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s 			page 15
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32g0xx_hal_dma_ex.c
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:16     .text.HAL_DMAEx_ConfigMuxSync:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:24     .text.HAL_DMAEx_ConfigMuxSync:0000000000000000 HAL_DMAEx_ConfigMuxSync
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:116    .text.HAL_DMAEx_ConfigMuxRequestGenerator:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:123    .text.HAL_DMAEx_ConfigMuxRequestGenerator:0000000000000000 HAL_DMAEx_ConfigMuxRequestGenerator
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:210    .text.HAL_DMAEx_EnableMuxRequestGenerator:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:217    .text.HAL_DMAEx_EnableMuxRequestGenerator:0000000000000000 HAL_DMAEx_EnableMuxRequestGenerator
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:271    .text.HAL_DMAEx_DisableMuxRequestGenerator:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:278    .text.HAL_DMAEx_DisableMuxRequestGenerator:0000000000000000 HAL_DMAEx_DisableMuxRequestGenerator
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:330    .text.HAL_DMAEx_DisableMuxRequestGenerator:0000000000000024 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:335    .text.HAL_DMAEx_MUX_IRQHandler:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:342    .text.HAL_DMAEx_MUX_IRQHandler:0000000000000000 HAL_DMAEx_MUX_IRQHandler
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cct7HcZi.s:449    .text.HAL_DMAEx_MUX_IRQHandler:0000000000000064 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:16     .text.HAL_DMAEx_ConfigMuxSync:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:24     .text.HAL_DMAEx_ConfigMuxSync:0000000000000000 HAL_DMAEx_ConfigMuxSync
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:116    .text.HAL_DMAEx_ConfigMuxRequestGenerator:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:123    .text.HAL_DMAEx_ConfigMuxRequestGenerator:0000000000000000 HAL_DMAEx_ConfigMuxRequestGenerator
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:210    .text.HAL_DMAEx_EnableMuxRequestGenerator:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:217    .text.HAL_DMAEx_EnableMuxRequestGenerator:0000000000000000 HAL_DMAEx_EnableMuxRequestGenerator
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:271    .text.HAL_DMAEx_DisableMuxRequestGenerator:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:278    .text.HAL_DMAEx_DisableMuxRequestGenerator:0000000000000000 HAL_DMAEx_DisableMuxRequestGenerator
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:330    .text.HAL_DMAEx_DisableMuxRequestGenerator:0000000000000024 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:335    .text.HAL_DMAEx_MUX_IRQHandler:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:342    .text.HAL_DMAEx_MUX_IRQHandler:0000000000000000 HAL_DMAEx_MUX_IRQHandler
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cc3eAdYd.s:449    .text.HAL_DMAEx_MUX_IRQHandler:0000000000000064 $d
 
 NO UNDEFINED SYMBOLS
