@@ -95,8 +95,6 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-
-  display_led(1,1);
   
   /* USER CODE END 2 */
 
@@ -107,9 +105,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
-    
-    
+    for (int row = 0; row <= 6; row ++) {
+      for(int col = 0; col <= 7; col ++) {
+        display_led(row, col);
+       HAL_Delay(100);
+      }
+    }
+   //display_led(6,7);
 
   }
   /* USER CODE END 3 */
@@ -181,32 +183,18 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void reset_modes(uint16_t pin1, uint16_t pin2) {
-  GPIOA->MODER &= ~(((0x3UL << (0U))  << (pin1 * 2u)) | ((0x3UL << (0U))  << (pin2 * 2u)));
-}
-
-void set_output_pps(uint16_t pin1, uint16_t pin2) {
-  GPIOA->MODER |= ((GPIOA->MODER & 0x00000003u) << (pin1 * 2u)) | ((GPIOA->MODER & 0x00000003u) << (pin2 * 2u));
-  
-}
-
+/**
+ * @brief This function turns on the led corresponding to row and col. Note that the origin 
+ * for the led matrix is the top left corner of the display.
+ */
 void display_led(uint16_t row, uint16_t col) {
-  // uint16_t anode = 0x80;//  (uint16_t)(0x0001 << col);
-  // uint16_t cathode = 0x01; // 0x0000 | (uint16_t)((uint8_t)(0x01 >> row));
-  //GPIOA->MODER = (0x00000001u);
-  //GPIOA->OSPEEDR = 0;
-  //GPIOA->ODR = 0x00000001u;
-  //GPIOA->BRR = 0x01;
+  uint16_t cathode = 7 - row;
+  if (col >= cathode) {
+    cathode = ((uint8_t)(6)) - row; 
+  }
 
-  row = 0;
-
-  uint32_t temp;
-  uint16_t position = row;
-
-  temp = ((GPIO_MODE_OUTPUT_PP & 0x00000001u) << (position * 2u)) | ((GPIO_MODE_OUTPUT_PP & 0x00000003u) << (7 * 2u));
-  GPIOA->MODER = temp;
-
-  GPIOA->ODR = 0x1 << position;
+  GPIOA->MODER = ((0x1UL) << (col * 2u)) | ((0x1UL) << (cathode * 2u)); //  ((0x4000UL) >>(cathode * 2u));
+  GPIOA->ODR = 0x01 << col;
 }
 
 /* USER CODE END 4 */
