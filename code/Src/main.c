@@ -50,17 +50,17 @@
 void display_led(uint16_t col, uint16_t row);
 void display_8_bit_frame(uint8_t msg[7]);
 
-const uint8_t smile[7] = {
+uint8_t smile[7] = {
   0b00000000,
   0b01100110,
   0b01100110,
   0b00000000,
   0b01000010,
-  0b01111110,
-  0b00000000,
+  0b01000010,
+  0b00111100,
 };
 
-const uint8_t hi[7] = {
+uint8_t hi[7] = {
   0b10010111,
   0b10010010,
   0b10010010,
@@ -69,6 +69,27 @@ const uint8_t hi[7] = {
   0b10010010,
   0b10010111,
 };
+
+uint64_t website_url[7] = {
+	0b0000000000000000000000000000000000000000000000000000000000000000,
+	0b1010101010100010101110101010111010001010010011101110111000111011,
+	0b1010101010100011001110101010101010001010111001001110100000100010,
+	0b1110111011100011001000101010101010001010010010001000100000100010,
+	0b1010101010101010101110010010101011101110010011101110100010111011,
+  0b0000000000000000000000000000000000000000000000000000000000000000,
+  0b0000000000000000000000000000000000000000000000000000000000000000
+};
+
+uint64_t website_url2[7] = {
+    0b0000000000000000000000000000000000000000000000000000000000000000,
+    0b1101110101000000000000000000000000000000000000000000000000000000,
+    0b0001010111000000000000000000000000000000000000000000000000000000,
+    0b0001010101000000000000000000000000000000000000000000000000000000,
+    0b1101110101000000000000000000000000000000000000000000000000000000,
+    0b0000000000000000000000000000000000000000000000000000000000000000,
+    0b0000000000000000000000000000000000000000000000000000000000000000,
+};
+
 
 /* USER CODE END PV */
 
@@ -127,11 +148,43 @@ int main(void)
       display_8_bit_frame(smile);
     }
 
+    turn_off_display();
+    HAL_Delay(500);
+
     for(int i = 0; i < 10000; i ++ ) {
       display_8_bit_frame(hi);
     }
 
+    turn_off_display();
+    HAL_Delay(500);
+
+    uint8_t frame[7];
+    for (uint8_t i = 8; i <= 64; i ++) {
+
+      for (uint8_t j = 0; j <= 7; j ++) {
+        frame[j] = 0xFF & (website_url[j] >> (64 - i));
+      }
+      
+      for(int i = 0; i < 2500; i ++ ) {
+        display_8_bit_frame(frame);
+      } 
+
+    }
+
+    for (uint8_t i = 8; i <= 24; i ++) {
+
+      for (uint8_t j = 0; j <= 7; j ++) {
+        frame[j] = 0xFF & (website_url2[j] >> (64 - i));
+      }
+      
+      for(int i = 0; i < 2500; i ++ ) {
+        display_8_bit_frame(frame);
+      } 
+
+    }
+
   }
+
   /* USER CODE END 3 */
 }
 
@@ -219,6 +272,7 @@ void display_led(uint16_t row, uint16_t col) {
  * @brief Use to display an 8 bit frame
  */
 void display_8_bit_frame(uint8_t msg[7]) {
+  turn_off_display();
   for(uint8_t row = 0; row < 8; row ++ ) {
     for(uint8_t col = 0; col < 8; col ++ ) {
       if(0x80 & (msg[row] << col)) {
@@ -228,13 +282,14 @@ void display_8_bit_frame(uint8_t msg[7]) {
   }
 }
 
-// void display_spiral(uint16_t msg) {
-//   uint8_t row = 7; 
-//   uint8_t col = 6;
-//   while(row >= 0) {
-//     for(uint8_t i = 0; i <  )
-//   }
-// }
+/**
+ * @brief Use to turn off all the leds of the display. This resets the mode of the GPIO
+ * so you will have to use the display_led command or manually adjust the MODER Register.
+ */
+void turn_off_display() {
+  GPIOA->MODER = 0x0UL;
+}
+
 
 /* USER CODE END 4 */
 
