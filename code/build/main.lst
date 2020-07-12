@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
   31:Src/main.c    **** /* USER CODE BEGIN PTD */
   32:Src/main.c    **** 
   33:Src/main.c    **** /* USER CODE END PTD */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 2
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 2
 
 
   34:Src/main.c    **** 
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
   88:Src/main.c    ****   * @brief  The application entry point.
   89:Src/main.c    ****   * @retval int
   90:Src/main.c    ****   */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 3
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 3
 
 
   91:Src/main.c    **** int main(void)
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  145:Src/main.c    ****   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
  146:Src/main.c    **** 
  147:Src/main.c    ****   /** Configure the main internal regulator output voltage 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 4
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 4
 
 
  148:Src/main.c    ****   */
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
   45              	.LVL0:
  183:Src/main.c    **** 
  184:Src/main.c    ****   /* GPIO Ports Clock Enable */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 5
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 5
 
 
  185:Src/main.c    ****   __HAL_RCC_GPIOA_CLK_ENABLE();
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
   86 003a 01A9     		add	r1, sp, #4
   87 003c 2800     		movs	r0, r5
   88 003e FFF7FEFF 		bl	HAL_GPIO_Init
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 6
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 6
 
 
   89              	.LVL2:
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  137              		.loc 1 149 3 is_stmt 1 view .LVU25
  138 0018 8020     		movs	r0, #128
  139 001a 8000     		lsls	r0, r0, #2
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 7
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 7
 
 
  140 001c FFF7FEFF 		bl	HAL_PWREx_ControlVoltageScaling
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  167:Src/main.c    **** 
  176              		.loc 1 167 3 is_stmt 1 view .LVU44
  167:Src/main.c    **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 8
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 8
 
 
  177              		.loc 1 167 36 is_stmt 0 view .LVU45
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  220              		.loc 1 210 6 is_stmt 0 view .LVU54
  221 0008 8B42     		cmp	r3, r1
  222 000a 02D8     		bhi	.L6
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 9
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 9
 
 
  211:Src/main.c    ****     cathode = ((uint8_t)(6)) - row; 
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  273              	display_8_bit_frame:
  274              	.LVL14:
  275              	.LFB162:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 10
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 10
 
 
  217:Src/main.c    **** 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  316 0014 072C     		cmp	r4, #7
  317 0016 04D8     		bhi	.L13
  224:Src/main.c    ****         display_led(row, col);
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 11
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 11
 
 
  318              		.loc 1 224 7 is_stmt 1 view .LVU81
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  359              		.align	1
  360              		.global	main
  361              		.syntax unified
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 12
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 12
 
 
  362              		.code	16
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  126:Src/main.c    ****       display_8_bit_frame(smile);
  405              		.loc 1 126 33 is_stmt 0 discriminator 3 view .LVU106
  406 001c 0134     		adds	r4, r4, #1
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 13
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 13
 
 
  407              	.LVL29:
@@ -775,28 +775,36 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  451              	Error_Handler:
  452              	.LFB163:
  230:Src/main.c    **** 
- 231:Src/main.c    **** /* USER CODE END 4 */
- 232:Src/main.c    **** 
- 233:Src/main.c    **** /**
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 14
+ 231:Src/main.c    **** // void display_spiral(uint16_t msg) {
+ 232:Src/main.c    **** //   uint8_t row = 7; 
+ 233:Src/main.c    **** //   uint8_t col = 6;
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 14
 
 
- 234:Src/main.c    ****   * @brief  This function is executed in case of error occurrence.
- 235:Src/main.c    ****   * @retval None
- 236:Src/main.c    ****   */
- 237:Src/main.c    **** void Error_Handler(void)
- 238:Src/main.c    **** {
- 453              		.loc 1 238 1 is_stmt 1 view -0
+ 234:Src/main.c    **** //   while(row >= 0) {
+ 235:Src/main.c    **** //     for(uint8_t i = 0; i <  )
+ 236:Src/main.c    **** //   }
+ 237:Src/main.c    **** // }
+ 238:Src/main.c    **** 
+ 239:Src/main.c    **** /* USER CODE END 4 */
+ 240:Src/main.c    **** 
+ 241:Src/main.c    **** /**
+ 242:Src/main.c    ****   * @brief  This function is executed in case of error occurrence.
+ 243:Src/main.c    ****   * @retval None
+ 244:Src/main.c    ****   */
+ 245:Src/main.c    **** void Error_Handler(void)
+ 246:Src/main.c    **** {
+ 453              		.loc 1 246 1 is_stmt 1 view -0
  454              		.cfi_startproc
  455              		@ args = 0, pretend = 0, frame = 0
  456              		@ frame_needed = 0, uses_anonymous_args = 0
  457              		@ link register save eliminated.
- 239:Src/main.c    ****   /* USER CODE BEGIN Error_Handler_Debug */
- 240:Src/main.c    ****   /* User can add his own implementation to report the HAL error return state */
- 241:Src/main.c    **** 
- 242:Src/main.c    ****   /* USER CODE END Error_Handler_Debug */
- 243:Src/main.c    **** }
- 458              		.loc 1 243 1 view .LVU117
+ 247:Src/main.c    ****   /* USER CODE BEGIN Error_Handler_Debug */
+ 248:Src/main.c    ****   /* User can add his own implementation to report the HAL error return state */
+ 249:Src/main.c    **** 
+ 250:Src/main.c    ****   /* USER CODE END Error_Handler_Debug */
+ 251:Src/main.c    **** }
+ 458              		.loc 1 251 1 view .LVU117
  459              		@ sp needed
  460 0000 7047     		bx	lr
  461              		.cfi_endproc
@@ -828,29 +836,29 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 1
  490              		.file 10 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h"
  491              		.file 11 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_pwr_ex.h"
  492              		.file 12 "<built-in>"
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s 			page 15
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s 			page 15
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:16     .text.MX_GPIO_Init:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:23     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:97     .text.MX_GPIO_Init:0000000000000048 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:102    .text.SystemClock_Config:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:109    .text.SystemClock_Config:0000000000000000 SystemClock_Config
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:193    .text.display_led:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:200    .text.display_led:0000000000000000 display_led
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:266    .text.display_8_bit_frame:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:273    .text.display_8_bit_frame:0000000000000000 display_8_bit_frame
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:359    .text.main:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:366    .text.main:0000000000000000 main
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:436    .text.main:0000000000000034 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:444    .text.Error_Handler:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:451    .text.Error_Handler:0000000000000000 Error_Handler
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:471    .rodata.hi:0000000000000000 hi
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:478    .rodata.smile:0000000000000000 smile
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:467    .rodata.hi:0000000000000000 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccT0G2hg.s:474    .rodata.smile:0000000000000000 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:16     .text.MX_GPIO_Init:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:23     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:97     .text.MX_GPIO_Init:0000000000000048 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:102    .text.SystemClock_Config:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:109    .text.SystemClock_Config:0000000000000000 SystemClock_Config
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:193    .text.display_led:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:200    .text.display_led:0000000000000000 display_led
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:266    .text.display_8_bit_frame:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:273    .text.display_8_bit_frame:0000000000000000 display_8_bit_frame
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:359    .text.main:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:366    .text.main:0000000000000000 main
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:436    .text.main:0000000000000034 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:444    .text.Error_Handler:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:451    .text.Error_Handler:0000000000000000 Error_Handler
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:471    .rodata.hi:0000000000000000 hi
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:478    .rodata.smile:0000000000000000 smile
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:467    .rodata.hi:0000000000000000 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//cchuz2Q8.s:474    .rodata.smile:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 memset

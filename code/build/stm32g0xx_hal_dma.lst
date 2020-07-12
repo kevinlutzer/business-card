@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 1
 
 
    1              		.cpu cortex-m0plus
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
   30:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****    (#) Use HAL_DMA_GetState() function to return the DMA state and HAL_DMA_GetError() in case of er
   31:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****        detection.
   32:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 2
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 2
 
 
   33:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****    (#) Use HAL_DMA_Abort() function to abort the current transfer
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
   87:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
   88:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** /* Includes ------------------------------------------------------------------*/
   89:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** #include "stm32g0xx_hal.h"
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 3
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 3
 
 
   90:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  144:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** /**
  145:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   * @brief  Initialize the DMA according to the specified
  146:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   *         parameters in the DMA_InitTypeDef and initialize the associated handle.
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 4
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 4
 
 
  147:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   * @param  hdma  Pointer to a DMA_HandleTypeDef structure that contains
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  201:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   hdma->DMAmuxChannelStatus->CFR = hdma->DMAmuxChannelStatusMask;
  202:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  203:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   if (((hdma->Init.Request >  0UL) && (hdma->Init.Request <= DMA_REQUEST_GENERATOR3)))
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 5
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 5
 
 
  204:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   {
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  258:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   /* Reset DMA Channel control register */
  259:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   hdma->Instance->CCR  = 0U;
  260:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 6
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 6
 
 
  261:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   /* Clear all flags */
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  315:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  316:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** /** @defgroup DMA_Exported_Functions_Group2 Input and Output operation functions
  317:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****  *  @brief   Input and Output operation functions
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 7
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 7
 
 
  318:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****  *
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  372:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     __HAL_UNLOCK(hdma);
  373:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     status = HAL_BUSY;
  374:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   }
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 8
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 8
 
 
  375:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  429:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****       /* Enable DMAMUX sync overrun IT*/
  430:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****       hdma->DMAmuxChannel->CCR |= DMAMUX_CxCR_SOIE;
  431:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     }
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 9
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 9
 
 
  432:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  486:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  487:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     /* disable the DMAMUX sync overrun IT*/
  488:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     hdma->DMAmuxChannel->CCR &= ~DMAMUX_CxCR_SOIE;
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 10
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 10
 
 
  489:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  543:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     __HAL_DMA_DISABLE_IT(hdma, (DMA_IT_TC | DMA_IT_HT | DMA_IT_TE));
  544:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  545:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     /* Disable the channel */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 11
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 11
 
 
  546:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     __HAL_DMA_DISABLE(hdma);
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  600:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     /* no transfer ongoing */
  601:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     hdma->ErrorCode = HAL_DMA_ERROR_NO_XFER;
  602:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     __HAL_UNLOCK(hdma);
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 12
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 12
 
 
  603:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     return HAL_ERROR;
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  657:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         hdma->State = HAL_DMA_STATE_READY;
  658:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  659:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         /* Process Unlocked */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 13
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 13
 
 
  660:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         __HAL_UNLOCK(hdma);
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  714:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  715:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** /**
  716:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   * @brief  Handle DMA interrupt request.
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 14
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 14
 
 
  717:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   * @param  hdma: pointer to a DMA_HandleTypeDef structure that contains
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  771:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  772:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   /* Transfer Error Interrupt management **************************************/
  773:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   else if (((flag_it & (DMA_FLAG_TE1 << (hdma->ChannelIndex & 0x1cU)))!= 0U) && ((source_it & DMA_I
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 15
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 15
 
 
  774:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   {
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  828:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         break;
  829:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  830:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****       case  HAL_DMA_XFER_HALFCPLT_CB_ID:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 16
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 16
 
 
  831:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         hdma->XferHalfCpltCallback = pCallback;
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  885:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****       case  HAL_DMA_XFER_ERROR_CB_ID:
  886:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         hdma->XferErrorCallback = NULL;
  887:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         break;
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 17
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 17
 
 
  888:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  942:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   * @retval HAL state
  943:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   */
  944:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** HAL_DMA_StateTypeDef HAL_DMA_GetState(DMA_HandleTypeDef *hdma)
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 18
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 18
 
 
  945:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** {
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
   40              		.loc 1 985 3 is_stmt 1 view .LVU2
   41              		.loc 1 985 7 is_stmt 0 view .LVU3
   42 0002 846C     		ldr	r4, [r0, #72]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 19
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 19
 
 
   43              		.loc 1 985 34 view .LVU4
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
 1003:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     hdma->Instance->CPAR = DstAddress;
 1004:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
 1005:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     /* Configure DMA Channel source address */
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 20
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 20
 
 
 1006:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     hdma->Instance->CMAR = SrcAddress;
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  117              		.section	.text.DMA_CalcDMAMUXChannelBaseAndMask,"ax",%progbits
  118              		.align	1
  119              		.syntax unified
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 21
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 21
 
 
  120              		.code	16
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  162 001e 6364     		str	r3, [r4, #68]
 1031:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   hdma->DMAmuxChannelStatus = DMAMUX1_ChannelStatus;
  163              		.loc 1 1031 3 is_stmt 1 view .LVU42
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 22
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 22
 
 
  164              		.loc 1 1031 29 is_stmt 0 view .LVU43
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  207 0000 FF23     		movs	r3, #255
  208 0002 4268     		ldr	r2, [r0, #4]
  209 0004 1340     		ands	r3, r2
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 23
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 23
 
 
  210              	.LVL11:
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  257              	.LFB158:
  152:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   /* Check the DMA handle allocation */
  258              		.loc 1 152 1 is_stmt 1 view -0
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 24
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 24
 
 
  259              		.cfi_startproc
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  296 0014 2064     		str	r0, [r4, #64]
  173:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  297              		.loc 1 173 3 is_stmt 1 view .LVU83
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 25
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 25
 
 
  173:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  343 005c 0B40     		ands	r3, r1
  198:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  344              		.loc 1 198 28 view .LVU93
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 26
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 26
 
 
  345 005e 1360     		str	r3, [r2]
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  381 0080 013A     		subs	r2, r2, #1
  382 0082 A354     		strb	r3, [r4, r2]
  230:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 27
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 27
 
 
  383              		.loc 1 230 3 view .LVU112
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  156:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   }
  423              		.loc 1 156 12 view .LVU127
  424 00a4 EFE7     		b	.L15
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 28
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 28
 
 
  425              	.L23:
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  472              		.loc 1 256 51 view .LVU136
  473 0012 1C4B     		ldr	r3, .L29
  474 0014 F818     		adds	r0, r7, r3
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 29
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 29
 
 
  475              	.LVL24:
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  514 0044 6368     		ldr	r3, [r4, #4]
  515 0046 013B     		subs	r3, r3, #1
  276:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   {
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 30
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 30
 
 
  516              		.loc 1 276 6 view .LVU152
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  550              		.loc 1 307 3 view .LVU172
  551 0062 013A     		subs	r2, r2, #1
  552 0064 A354     		strb	r3, [r4, r2]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 31
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 31
 
 
  307:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  593 0088 00000240 		.word	1073872896
  594              		.cfi_endproc
  595              	.LFE159:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 32
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 32
 
 
  597              		.section	.text.HAL_DMA_Start,"ax",%progbits
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  354:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   {
  641              		.loc 1 354 6 discriminator 2 view .LVU198
  642 0016 0128     		cmp	r0, #1
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 33
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 33
 
 
  643 0018 04D0     		beq	.L36
@@ -1978,7 +1978,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  683              		.loc 1 367 5 view .LVU212
  684 003e 2268     		ldr	r2, [r4]
  685 0040 1368     		ldr	r3, [r2]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 34
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 34
 
 
  686 0042 2B43     		orrs	r3, r5
@@ -2038,7 +2038,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  733 000a 43D0     		beq	.L44
  399:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  734              		.loc 1 399 3 is_stmt 1 discriminator 2 view .LVU222
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 35
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 35
 
 
  735 000c 2420     		movs	r0, #36
@@ -2098,7 +2098,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  774 002c E063     		str	r0, [r4, #60]
  408:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  775              		.loc 1 408 5 is_stmt 1 view .LVU238
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 36
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 36
 
 
  776 002e 2568     		ldr	r5, [r4]
@@ -2158,7 +2158,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  817 0062 002B     		cmp	r3, #0
  818 0064 04D0     		beq	.L43
  437:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     }
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 37
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 37
 
 
  819              		.loc 1 437 7 is_stmt 1 view .LVU252
@@ -2218,7 +2218,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  465:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   /* Check the DMA peripheral handle */
  869              		.loc 1 465 1 is_stmt 1 view -0
  870              		.cfi_startproc
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 38
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 38
 
 
  871              		@ args = 0, pretend = 0, frame = 0
@@ -2278,7 +2278,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  485:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  911              		.loc 1 485 5 is_stmt 1 view .LVU274
  912 001c 0268     		ldr	r2, [r0]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 39
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 39
 
 
  913 001e 1368     		ldr	r3, [r2]
@@ -2338,7 +2338,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  954 0056 1A68     		ldr	r2, [r3]
  955 0058 0749     		ldr	r1, .L52
  956 005a 0A40     		ands	r2, r1
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 40
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 40
 
 
  957 005c 1A60     		str	r2, [r3]
@@ -2398,7 +2398,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  999              		.global	HAL_DMA_Abort_IT
  1000              		.syntax unified
  1001              		.code	16
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 41
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 41
 
 
  1002              		.thumb_func
@@ -2458,7 +2458,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1042 0012 C363     		str	r3, [r0, #60]
  538:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   }
  1043              		.loc 1 538 5 is_stmt 1 view .LVU316
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 42
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 42
 
 
  1044              	.LVL58:
@@ -2518,7 +2518,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  555:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  1087              		.loc 1 555 36 view .LVU328
  1088 0048 C26C     		ldr	r2, [r0, #76]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 43
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 43
 
 
  1089 004a 5A60     		str	r2, [r3, #4]
@@ -2578,7 +2578,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1126              		.loc 1 576 7 is_stmt 1 view .LVU345
  1127 0072 9847     		blx	r3
  1128              	.LVL61:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 44
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 44
 
 
  527:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -2638,7 +2638,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1178              		.loc 1 593 3 view .LVU352
  596:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  1179              		.loc 1 596 3 view .LVU353
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 45
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 45
 
 
  596:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -2698,7 +2698,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1217 0022 0368     		ldr	r3, [r0]
  607:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   {
  1218              		.loc 1 607 22 view .LVU371
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 46
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 46
 
 
  1219 0024 1B68     		ldr	r3, [r3]
@@ -2758,7 +2758,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1258 004c 316C     		ldr	r1, [r6, #64]
  1259 004e 0B40     		ands	r3, r1
  1260 0050 0821     		movs	r1, #8
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 47
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 47
 
 
  1261 0052 9940     		lsls	r1, r1, r3
@@ -2818,7 +2818,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  662:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****       }
  1299              		.loc 1 662 16 is_stmt 0 view .LVU403
  1300 007c 0120     		movs	r0, #1
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 48
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 48
 
 
  1301 007e CEE7     		b	.L63
@@ -2878,7 +2878,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  641:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  1343              		.loc 1 641 7 is_stmt 1 view .LVU416
  641:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 49
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 49
 
 
  1344              		.loc 1 641 19 is_stmt 0 view .LVU417
@@ -2938,7 +2938,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1382              		.loc 1 677 11 is_stmt 0 view .LVU433
  1383 00d0 736D     		ldr	r3, [r6, #84]
  677:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 50
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 50
 
 
  1384              		.loc 1 677 43 view .LVU434
@@ -2998,7 +2998,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1424 0100 326C     		ldr	r2, [r6, #64]
  1425 0102 1140     		ands	r1, r2
  1426 0104 0222     		movs	r2, #2
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 51
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 51
 
 
  1427 0106 8A40     		lsls	r2, r2, r1
@@ -3058,7 +3058,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1473              		.code	16
  1474              		.thumb_func
  1475              		.fpu softvfp
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 52
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 52
 
 
  1477              	HAL_DMA_IRQHandler:
@@ -3118,7 +3118,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  730:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     {
  1518              		.loc 1 730 24 is_stmt 0 view .LVU471
  1519 001c 2368     		ldr	r3, [r4]
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 53
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 53
 
 
  730:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     {
@@ -3178,7 +3178,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1562 004c 1CD0     		beq	.L85
  749:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****   {
  1563              		.loc 1 749 79 discriminator 1 view .LVU484
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 54
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 54
 
 
  1564 004e AA07     		lsls	r2, r5, #30
@@ -3238,7 +3238,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1604              		.loc 1 765 8 view .LVU498
  1605 0080 002B     		cmp	r3, #0
  1606 0082 DFD0     		beq	.L81
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 55
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 55
 
 
  768:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****     }
@@ -3298,7 +3298,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  787:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  1648              		.loc 1 787 17 is_stmt 0 view .LVU512
  1649 00b2 2522     		movs	r2, #37
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 56
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 56
 
 
  1650 00b4 8354     		strb	r3, [r0, r2]
@@ -3358,7 +3358,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1695              		.cfi_offset 4, -8
  1696              		.cfi_offset 14, -4
  1697 0002 0300     		movs	r3, r0
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 57
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 57
 
 
  817:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
@@ -3418,7 +3418,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1735              		.loc 1 856 1 is_stmt 0 view .LVU540
  1736              		@ sp needed
  1737 001e 10BD     		pop	{r4, pc}
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 58
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 58
 
 
  1738              	.LVL103:
@@ -3478,7 +3478,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1775              		.loc 1 828 9 view .LVU557
  1776 0042 E9E7     		b	.L91
  1777              	.L92:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 59
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 59
 
 
  835:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c ****         break;
@@ -3538,7 +3538,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1822              	.LVL106:
  871:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  1823              		.loc 1 871 3 is_stmt 0 discriminator 2 view .LVU570
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 60
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 60
 
 
  1824 000e 9854     		strb	r0, [r3, r2]
@@ -3598,7 +3598,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1866 0008 40000000 		.word	.L106
  1867 000c 48000000 		.word	.L105
  1868 0010 50000000 		.word	.L103
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 61
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 61
 
 
  1869              		.section	.text.HAL_DMA_UnRegisterCallback
@@ -3658,7 +3658,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1905              		.loc 1 891 9 is_stmt 1 view .LVU600
  868:Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_dma.c **** 
  1906              		.loc 1 868 21 is_stmt 0 view .LVU601
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 62
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 62
 
 
  1907 004c 0020     		movs	r0, #0
@@ -3718,7 +3718,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  1948              		.thumb_func
  1949              		.fpu softvfp
  1951              	HAL_DMA_GetState:
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 63
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 63
 
 
  1952              	.LVL113:
@@ -3778,7 +3778,7 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  2000              		.file 2 "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/machine/_de
  2001              		.file 3 "/usr/local/Cellar/arm-none-eabi-gcc/9-2019-q4-major/gcc/arm-none-eabi/include/sys/_stdint
  2002              		.file 4 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/system_stm32g0xx.h"
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 64
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 64
 
 
  2003              		.file 5 "Drivers/CMSIS/Device/ST/STM32G0xx/Include/stm32g030xx.h"
@@ -3786,52 +3786,52 @@ ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 1
  2005              		.file 7 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_dma.h"
  2006              		.file 8 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal_flash.h"
  2007              		.file 9 "Drivers/STM32G0xx_HAL_Driver/Inc/stm32g0xx_hal.h"
-ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s 			page 65
+ARM GAS  /var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s 			page 65
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32g0xx_hal_dma.c
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:16     .text.DMA_SetConfig:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:23     .text.DMA_SetConfig:0000000000000000 DMA_SetConfig
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:112    .text.DMA_SetConfig:0000000000000044 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:118    .text.DMA_CalcDMAMUXChannelBaseAndMask:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:124    .text.DMA_CalcDMAMUXChannelBaseAndMask:0000000000000000 DMA_CalcDMAMUXChannelBaseAndMask
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:185    .text.DMA_CalcDMAMUXChannelBaseAndMask:0000000000000030 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:191    .text.DMA_CalcDMAMUXRequestGenBaseAndMask:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:197    .text.DMA_CalcDMAMUXRequestGenBaseAndMask:0000000000000000 DMA_CalcDMAMUXRequestGenBaseAndMask
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:242    .text.DMA_CalcDMAMUXRequestGenBaseAndMask:0000000000000020 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:248    .text.HAL_DMA_Init:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:255    .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:428    .text.HAL_DMA_Init:00000000000000a8 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:434    .text.HAL_DMA_DeInit:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:441    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:592    .text.HAL_DMA_DeInit:0000000000000084 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:598    .text.HAL_DMA_Start:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:605    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:700    .text.HAL_DMA_Start_IT:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:707    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:859    .text.HAL_DMA_Abort:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:866    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:992    .text.HAL_DMA_Abort:0000000000000078 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:998    .text.HAL_DMA_Abort_IT:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1005   .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1142   .text.HAL_DMA_Abort_IT:000000000000007c $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1148   .text.HAL_DMA_PollForTransfer:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1155   .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1465   .text.HAL_DMA_PollForTransfer:0000000000000130 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1470   .text.HAL_DMA_IRQHandler:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1477   .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1672   .text.HAL_DMA_IRQHandler:00000000000000c8 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1677   .text.HAL_DMA_RegisterCallback:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1684   .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1794   .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1801   .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1862   .rodata.HAL_DMA_UnRegisterCallback:0000000000000000 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1939   .text.HAL_DMA_UnRegisterCallback:0000000000000064 $d
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1944   .text.HAL_DMA_GetState:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1951   .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1973   .text.HAL_DMA_GetError:0000000000000000 $t
-/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccaDvLNA.s:1980   .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:16     .text.DMA_SetConfig:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:23     .text.DMA_SetConfig:0000000000000000 DMA_SetConfig
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:112    .text.DMA_SetConfig:0000000000000044 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:118    .text.DMA_CalcDMAMUXChannelBaseAndMask:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:124    .text.DMA_CalcDMAMUXChannelBaseAndMask:0000000000000000 DMA_CalcDMAMUXChannelBaseAndMask
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:185    .text.DMA_CalcDMAMUXChannelBaseAndMask:0000000000000030 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:191    .text.DMA_CalcDMAMUXRequestGenBaseAndMask:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:197    .text.DMA_CalcDMAMUXRequestGenBaseAndMask:0000000000000000 DMA_CalcDMAMUXRequestGenBaseAndMask
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:242    .text.DMA_CalcDMAMUXRequestGenBaseAndMask:0000000000000020 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:248    .text.HAL_DMA_Init:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:255    .text.HAL_DMA_Init:0000000000000000 HAL_DMA_Init
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:428    .text.HAL_DMA_Init:00000000000000a8 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:434    .text.HAL_DMA_DeInit:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:441    .text.HAL_DMA_DeInit:0000000000000000 HAL_DMA_DeInit
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:592    .text.HAL_DMA_DeInit:0000000000000084 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:598    .text.HAL_DMA_Start:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:605    .text.HAL_DMA_Start:0000000000000000 HAL_DMA_Start
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:700    .text.HAL_DMA_Start_IT:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:707    .text.HAL_DMA_Start_IT:0000000000000000 HAL_DMA_Start_IT
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:859    .text.HAL_DMA_Abort:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:866    .text.HAL_DMA_Abort:0000000000000000 HAL_DMA_Abort
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:992    .text.HAL_DMA_Abort:0000000000000078 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:998    .text.HAL_DMA_Abort_IT:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1005   .text.HAL_DMA_Abort_IT:0000000000000000 HAL_DMA_Abort_IT
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1142   .text.HAL_DMA_Abort_IT:000000000000007c $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1148   .text.HAL_DMA_PollForTransfer:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1155   .text.HAL_DMA_PollForTransfer:0000000000000000 HAL_DMA_PollForTransfer
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1465   .text.HAL_DMA_PollForTransfer:0000000000000130 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1470   .text.HAL_DMA_IRQHandler:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1477   .text.HAL_DMA_IRQHandler:0000000000000000 HAL_DMA_IRQHandler
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1672   .text.HAL_DMA_IRQHandler:00000000000000c8 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1677   .text.HAL_DMA_RegisterCallback:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1684   .text.HAL_DMA_RegisterCallback:0000000000000000 HAL_DMA_RegisterCallback
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1794   .text.HAL_DMA_UnRegisterCallback:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1801   .text.HAL_DMA_UnRegisterCallback:0000000000000000 HAL_DMA_UnRegisterCallback
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1862   .rodata.HAL_DMA_UnRegisterCallback:0000000000000000 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1939   .text.HAL_DMA_UnRegisterCallback:0000000000000064 $d
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1944   .text.HAL_DMA_GetState:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1951   .text.HAL_DMA_GetState:0000000000000000 HAL_DMA_GetState
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1973   .text.HAL_DMA_GetError:0000000000000000 $t
+/var/folders/j2/07tr89tn2r16dm4cxglllf3h0000gn/T//ccHrUHgS.s:1980   .text.HAL_DMA_GetError:0000000000000000 HAL_DMA_GetError
 
 UNDEFINED SYMBOLS
 __aeabi_uidiv
