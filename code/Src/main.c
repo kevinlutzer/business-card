@@ -47,16 +47,35 @@
 
 /* USER CODE BEGIN PV */
 
-const uint16_t pins[8] = {PINA_Pin, PINB_Pin, PINC_Pin, PIND_Pin, PINE_Pin, PINF_Pin, PING_Pin, PINH_Pin};
 void display_led(uint16_t col, uint16_t row);
-void reset_modes(uint16_t pin1, uint16_t pin2);
-void set_output_pps(uint16_t pin1, uint16_t pin2);
+void display_8_bit_frame(uint8_t msg[7]);
+
+const uint8_t smile[7] = {
+  0b00000000,
+  0b01100110,
+  0b01100110,
+  0b00000000,
+  0b01000010,
+  0b01111110,
+  0b00000000,
+};
+
+const uint8_t hi[7] = {
+  0b10010111,
+  0b10010010,
+  0b10010010,
+  0b11110010,
+  0b10010010,
+  0b10010010,
+  0b10010111,
+};
 
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -105,13 +124,13 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    for (int row = 0; row <= 6; row ++) {
-      for(int col = 0; col <= 7; col ++) {
-        display_led(row, col);
-       HAL_Delay(100);
-      }
+    for(int i = 0; i < 10000; i ++ ) {
+      display_8_bit_frame(smile);
     }
-   //display_led(6,7);
+
+    for(int i = 0; i < 10000; i ++ ) {
+      display_8_bit_frame(hi);
+    }
 
   }
   /* USER CODE END 3 */
@@ -196,6 +215,27 @@ void display_led(uint16_t row, uint16_t col) {
   GPIOA->MODER = ((0x1UL) << (col * 2u)) | ((0x1UL) << (cathode * 2u)); //  ((0x4000UL) >>(cathode * 2u));
   GPIOA->ODR = 0x01 << col;
 }
+
+/**
+ * @brief Use to display an 8 bit frame
+ */
+void display_8_bit_frame(uint8_t msg[7]) {
+  for(uint8_t row = 0; row < 8; row ++ ) {
+    for(uint8_t col = 0; col < 8; col ++ ) {
+      if(0x80 & (msg[row] << col)) {
+        display_led(row, col);
+      }
+    }
+  }
+}
+
+// void display_spiral(uint16_t msg) {
+//   uint8_t row = 7; 
+//   uint8_t col = 6;
+//   while(row >= 0) {
+//     for(uint8_t i = 0; i <  )
+//   }
+// }
 
 /* USER CODE END 4 */
 
