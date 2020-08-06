@@ -1,4 +1,4 @@
-18308203248092549
+18317787406240029
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -47263,13 +47263,6 @@ Fuse Fuseholder TR5 Littelfuse/Wickmann No. 460 No560
 0
 2
 2
-GP1S092HCPIF (1)
-PHOTOINTERRUPTER_GP1S092HCPIF
-
-
-0
-4
-4
 Heatsink
 Heatsink_35x26mm_1xFixation3mm_Fischer-SK486-35
 Heatsink, 35mm x 26mm, 1x Fixation 3mm, Fischer SK486-35
@@ -50693,6 +50686,36 @@ solder jumper open
 0
 5
 3
+Kevin-Lutzer-Kicad-Lbr
+SGP30
+
+
+0
+7
+7
+Kevin-Lutzer-Kicad-Lbr
+TSL2591
+
+
+0
+6
+6
+Kevin-Lutzer-Kicad-Lbr
+USB-A-PCB
+Card-edge USB A connector.
+
+For boards designed to be plugged directly into a USB slot. If possible, ensure that your PCB is about 2.4mm thick to fit snugly.
+
+0
+4
+4
+Kevin-Lutzer-Kicad-Lbr
+USB-A-PCB-EDGE
+
+
+0
+0
+0
 LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
@@ -70930,6 +70953,13 @@ rotary encoder
 0
 5
 4
+SGP30 (1)
+SGP30
+
+
+0
+7
+7
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf
@@ -77545,6 +77575,23 @@ varistor SIOV
 0
 2
 2
+business_card_v1
+CHIPLED_0805
+<b>CHIPLED</b><p>
+Source: http://www.osram.convergy.de/ ... LG_R971.pdf
+
+0
+2
+2
+business_card_v1
+USB-A-PCB
+Card-edge USB A connector.
+
+For boards designed to be plugged directly into a USB slot. If possible, ensure that your PCB is about 2.4mm thick to fit snugly.
+
+0
+4
+4
 digikey-footprints
 3-SIP_Module_TM1000Q
 

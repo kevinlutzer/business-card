@@ -49,6 +49,8 @@
 
 void display_led(uint16_t col, uint16_t row);
 void display_8_bit_frame(uint8_t msg[7]);
+void turn_off_display(void);
+void scroll_64_bit_msg(uint64_t msg[7], int maxIndex);
 
 uint8_t smile[7] = {
   0b00000000,
@@ -72,8 +74,8 @@ uint8_t hi[7] = {
 
 uint64_t website_url[7] = {
 	0b0000000000000000000000000000000000000000000000000000000000000000,
-	0b1010101010100010101110101010111010001010010011101110111000111011,
-	0b1010101010100011001110101010101010001010111001001110100000100010,
+	0b1010101010100010101110101010111010001010111011101110111000111011,
+	0b1010101010100011001110101010101010001010010001001110100000100010,
 	0b1110111011100011001000101010101010001010010010001000100000100010,
 	0b1010101010101010101110010010101011101110010011101110100010111011,
   0b0000000000000000000000000000000000000000000000000000000000000000,
@@ -158,30 +160,9 @@ int main(void)
     turn_off_display();
     HAL_Delay(500);
 
-    uint8_t frame[7];
-    for (uint8_t i = 8; i <= 64; i ++) {
-
-      for (uint8_t j = 0; j <= 7; j ++) {
-        frame[j] = 0xFF & (website_url[j] >> (64 - i));
-      }
-      
-      for(int i = 0; i < 2500; i ++ ) {
-        display_8_bit_frame(frame);
-      } 
-
-    }
-
-    for (uint8_t i = 8; i <= 24; i ++) {
-
-      for (uint8_t j = 0; j <= 7; j ++) {
-        frame[j] = 0xFF & (website_url2[j] >> (64 - i));
-      }
-      
-      for(int i = 0; i < 2500; i ++ ) {
-        display_8_bit_frame(frame);
-      } 
-
-    }
+    
+    scroll_64_bit_msg(website_url, 64);
+    scroll_64_bit_msg(website_url2, 24);
 
   }
 
@@ -280,6 +261,26 @@ void display_8_bit_frame(uint8_t msg[7]) {
       }
     }
   }
+}
+
+/**
+ * @brief Display a 64 bit message by scrolling it across the display. There is a delay for each
+ * frame that is rendered that is fixed within the code. Adjust the outer loop that calls the
+ * display_8_bit_frame function.
+ */
+void scroll_64_bit_msg(uint64_t msg[7], int maxIndex) {
+  uint8_t frame[7];
+  for (uint8_t i = 8; i <= maxIndex; i ++) {
+      
+      for (uint8_t j = 0; j < 7; j ++) {
+        frame[j] = 0xFF & (msg[j] >> (64 - i));
+      }
+      
+      for(int i = 0; i < 2500; i ++ ) {
+        display_8_bit_frame(frame);
+      }
+
+ }
 }
 
 /**
