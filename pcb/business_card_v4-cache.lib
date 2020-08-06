@@ -269,25 +269,6 @@ X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# business_card_v1-eagle-import_USBPCB
-#
-DEF business_card_v1-eagle-import_USBPCB JP 0 40 Y Y 1 L N
-F0 "JP" 0 375 59 H V L BNN
-F1 "business_card_v1-eagle-import_USBPCB" 0 -150 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-T 900 150 0 85 0 1 0 USB Normal 0 L B
-P 2 1 0 0 0 -50 200 -50 N
-P 2 1 0 0 0 350 0 -50 N
-P 2 1 0 0 200 350 0 350 N
-X VBUS 5V -100 100 100 R 50 0 1 0 w
-X GND GND -100 0 100 R 50 0 1 0 w
-X D- USB_M -100 200 100 R 50 0 1 0 B
-X D+ USB_P -100 300 100 R 50 0 1 0 B
-ENDDRAW
-ENDDEF
-#
 # power_+3.3V
 #
 DEF power_+3.3V #PWR 0 0 Y Y 1 F P
