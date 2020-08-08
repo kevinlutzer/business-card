@@ -107,7 +107,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "business-card-v3-gerbers/"))
+      (outputdirectory "../gerbers/pcb_v4/"))
   )
 
   (net 0 "")
@@ -3259,7 +3259,6 @@
   (gr_line (start 104.0127 130.497741) (end 104.01265 130.49716) (layer Dwgs.User) (width 0.025) (tstamp 1B9C870))
   (gr_line (start 104.01265 130.49716) (end 104.012509 130.496419) (layer Dwgs.User) (width 0.025) (tstamp 1B9C900))
 
-  (via (at 160.7 113.3) (size 0.8) (drill 0.4) (layers Top Bottom) (net 15))
   (segment (start 109.334205 120.221548) (end 109.334205 120.218295) (width 0.25) (layer Top) (net 1) (status 30))
   (segment (start 109.334205 120.218295) (end 109.397705 120.218295) (width 0.25) (layer Top) (net 1) (status 30))
   (segment (start 109.334205 120.221548) (end 109.394452 120.221548) (width 0.4) (layer Top) (net 1) (status 30))
@@ -3367,6 +3366,7 @@
   (segment (start 140.8725 112.759242) (end 140.241742 113.39) (width 0.25) (layer Top) (net 14) (status 10))
   (segment (start 140.8725 112.138) (end 140.8725 112.759242) (width 0.25) (layer Top) (net 14) (status 30))
   (segment (start 140.8725 110) (end 140.8725 112.138) (width 0.25) (layer Top) (net 14) (status 30))
+  (via (at 160.7 113.3) (size 0.8) (drill 0.4) (layers Top Bottom) (net 15))
   (segment (start 153.9625 112) (end 153.9625 111.525) (width 0.25) (layer Top) (net 15) (tstamp 5F2A2AFB) (status 30))
   (segment (start 153.95 112.0125) (end 153.9625 112) (width 0.25) (layer Top) (net 15) (status 30))
   (segment (start 153.8125 82) (end 153.8125 112) (width 0.25) (layer Top) (net 15) (status 30))
@@ -3642,7 +3642,7 @@
   (segment (start 175.0625 115.75) (end 178.8125 112) (width 0.25) (layer Top) (net 22) (status 20))
   (segment (start 149.85 115.75) (end 175.0625 115.75) (width 0.25) (layer Top) (net 22) (status 10))
 
-  (zone (net 3) (net_name +3V3) (layer Top) (tstamp 5F2AEAE6) (hatch edge 0.508)
+  (zone (net 3) (net_name +3V3) (layer Top) (tstamp 5F2B841C) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3806,7 +3806,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer Bottom) (tstamp 5F2AEAE3) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer Bottom) (tstamp 5F2B8419) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
