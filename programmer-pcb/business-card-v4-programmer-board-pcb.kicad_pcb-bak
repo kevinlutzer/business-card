@@ -121,7 +121,7 @@
     (add_net SWDIO)
   )
 
-  (module Symbol:Symbol_Barrel_Polarity (layer F.Cu) (tedit 5765E9A7) (tstamp 5F2F823E)
+  (module Symbol:Symbol_Barrel_Polarity locked (layer F.Cu) (tedit 5765E9A7) (tstamp 5F2F823E)
     (at 158.5 64.25)
     (descr "Barrel connector polarity indicator")
     (tags "barrel polarity")
@@ -140,7 +140,7 @@
     (fp_circle (center 0 0.075) (end 0 0.25) (layer F.SilkS) (width 0.5))
   )
 
-  (module Symbol:KiCad-Logo2_8mm_SilkScreen (layer F.Cu) (tedit 0) (tstamp 5F2F75AA)
+  (module Symbol:KiCad-Logo2_8mm_SilkScreen locked (layer F.Cu) (tedit 0) (tstamp 5F2F75AA)
     (at 177.5 145.5)
     (descr "KiCad Logo")
     (tags "Logo KiCad")
@@ -880,7 +880,7 @@
     (descr "Through hole straight socket strip, 1x01, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x01 2.54mm single row")
     (path /5EB92E80)
-    (fp_text reference J2 (at 0 -2.77) (layer F.SilkS)
+    (fp_text reference J2 (at 0 -2.77) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Power_TP (at 0 2.77) (layer F.Fab) hide
@@ -917,7 +917,7 @@
     (descr "Through hole straight socket strip, 1x05, 2.54mm pitch, single row (from Kicad 4.0.7), script generated")
     (tags "Through hole socket strip THT 1x05 2.54mm single row")
     (path /5EB8EC61)
-    (fp_text reference J1 (at 0 -2.77) (layer F.SilkS)
+    (fp_text reference J1 (at 0 -2.77) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Pogo_Pin_Conn (at 0 12.93) (layer F.Fab) hide
