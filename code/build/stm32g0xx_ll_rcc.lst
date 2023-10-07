@@ -1,25 +1,28 @@
-ARM GAS  /tmp/ccw15NOA.s 			page 1
+ARM GAS  /var/folders/cw/6cmm0b_n7yj10n1wx8hfx52r0000gn/T//ccEKK2ca.s 			page 1
 
 
    1              		.cpu cortex-m0plus
-   2              		.eabi_attribute 20, 1
-   3              		.eabi_attribute 21, 1
-   4              		.eabi_attribute 23, 3
-   5              		.eabi_attribute 24, 1
-   6              		.eabi_attribute 25, 1
-   7              		.eabi_attribute 26, 1
-   8              		.eabi_attribute 30, 1
-   9              		.eabi_attribute 34, 0
-  10              		.eabi_attribute 18, 4
-  11              		.file	"stm32g0xx_ll_rcc.c"
-  12              		.text
-  13              	.Ltext0:
-  14              		.cfi_sections	.debug_frame
-  15              	.Letext0:
-ARM GAS  /tmp/ccw15NOA.s 			page 2
+   2              		.arch armv6s-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.file	"stm32g0xx_ll_rcc.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.file 1 "Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.c"
+  18              	.Letext0:
+ARM GAS  /var/folders/cw/6cmm0b_n7yj10n1wx8hfx52r0000gn/T//ccEKK2ca.s 			page 2
 
 
 DEFINED SYMBOLS
-                            *ABS*:0000000000000000 stm32g0xx_ll_rcc.c
+                            *ABS*:00000000 stm32g0xx_ll_rcc.c
 
 NO UNDEFINED SYMBOLS
