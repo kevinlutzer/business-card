@@ -2873,7 +2873,7 @@
     (pin "1" (uuid 3f654b19-c24d-4a7e-9723-d79660bb39de))
     (pin "2" (uuid 8232da8b-4392-459f-967d-e7f7385e90dc))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "LED2") (unit 1)
         )
@@ -2890,7 +2890,7 @@
     (property "Value" "LED" (at 254 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 30.48 0)
@@ -2899,7 +2899,7 @@
     (pin "1" (uuid 4b5c1d3e-f1b8-4f30-a2d8-d503f7c3b417))
     (pin "2" (uuid 1d36c89c-4b2e-4ae3-83ad-5689400759eb))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D23") (unit 1)
         )
@@ -2916,7 +2916,7 @@
     (property "Value" "LED" (at 152.4 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 60.96 0)
@@ -2925,7 +2925,7 @@
     (pin "1" (uuid d945cd57-a660-487d-ab12-d16345f6385e))
     (pin "2" (uuid 4f30a3ed-499b-4c36-a2e5-96ad3997224b))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D5") (unit 1)
         )
@@ -2942,7 +2942,7 @@
     (property "Value" "LED" (at 132.08 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 121.92 0)
@@ -2951,7 +2951,7 @@
     (pin "1" (uuid 9566f28c-c21d-4f4c-bf7b-993195415f1a))
     (pin "2" (uuid b4233c8c-279c-4808-b56a-b83d7efaa701))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D31") (unit 1)
         )
@@ -2968,7 +2968,7 @@
     (property "Value" "LED" (at 172.72 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 60.96 0)
@@ -2977,7 +2977,7 @@
     (pin "1" (uuid b2689bf1-aabf-4ae0-b5e8-93472d9cc65e))
     (pin "2" (uuid f6c53319-b888-4dde-a4a9-eb8c043fde99))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D9") (unit 1)
         )
@@ -2994,7 +2994,7 @@
     (property "Value" "LED" (at 193.04 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 45.72 0)
@@ -3003,7 +3003,7 @@
     (pin "1" (uuid 49b63ed4-a9e2-4719-af3c-d1437af54112))
     (pin "2" (uuid d9f07565-fed2-473c-b381-f76d129f4264))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D12") (unit 1)
         )
@@ -3020,7 +3020,7 @@
     (property "Value" "LED" (at 132.08 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 60.96 0)
@@ -3032,7 +3032,7 @@
     (pin "1" (uuid 28f1535e-da92-4cf3-af03-e50ef9d3b4b5))
     (pin "2" (uuid b6cc48a4-c0dd-41b8-9f48-2a8d20548ed3))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D2") (unit 1)
         )
@@ -3049,7 +3049,7 @@
     (property "Value" "LED" (at 213.36 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 30.48 0)
@@ -3058,7 +3058,7 @@
     (pin "1" (uuid 041472ad-97dd-40d5-9686-2c6a0313391c))
     (pin "2" (uuid a4665719-1428-4d56-9813-b8754182a4ba))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D15") (unit 1)
         )
@@ -3075,7 +3075,7 @@
     (property "Value" "LED" (at 213.36 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 121.92 0)
@@ -3084,7 +3084,7 @@
     (pin "1" (uuid c1d14f0c-7eb0-4f60-9969-d9c447aa0d9c))
     (pin "2" (uuid 6575d7a5-7742-43c7-adf4-a55209b965e1))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D43") (unit 1)
         )
@@ -3101,7 +3101,7 @@
     (property "Value" "LED" (at 132.08 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 76.2 0)
@@ -3110,7 +3110,7 @@
     (pin "1" (uuid 8d83949b-d838-40c4-a32f-d8b7fe0ebea9))
     (pin "2" (uuid 9e873f2e-698b-4072-8c75-048788475822))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D3") (unit 1)
         )
@@ -3127,7 +3127,7 @@
     (property "Value" "LED" (at 172.72 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 106.68 0)
@@ -3136,7 +3136,7 @@
     (pin "1" (uuid 9f8d5140-1f4b-468a-a5d5-8f67e13edd71))
     (pin "2" (uuid 3a471fd0-3296-4de4-a60f-bc4c2d592607))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D36") (unit 1)
         )
@@ -3153,7 +3153,7 @@
     (property "Value" "LED" (at 274.32 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 121.92 0)
@@ -3162,7 +3162,7 @@
     (pin "1" (uuid 5877b713-8a25-4442-ab5b-4422b45d72e1))
     (pin "2" (uuid ea04d0e2-706a-4914-b744-bd5207d010e9))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D54") (unit 1)
         )
@@ -3179,7 +3179,7 @@
     (property "Value" "LED" (at 254 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 60.96 0)
@@ -3188,7 +3188,7 @@
     (pin "1" (uuid bcf1c40b-b54e-439b-be16-03dad7016d4a))
     (pin "2" (uuid 2df52acc-11c3-455c-a245-c0b3cdc46340))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D25") (unit 1)
         )
@@ -3205,7 +3205,7 @@
     (property "Value" "LED" (at 172.72 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 121.92 0)
@@ -3214,7 +3214,7 @@
     (pin "1" (uuid a02d76f2-faab-4dd4-8c6c-4789ff7a6404))
     (pin "2" (uuid f81446bf-81c2-4d8f-b5fd-3adac4b08470))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D37") (unit 1)
         )
@@ -3231,7 +3231,7 @@
     (property "Value" "LED" (at 132.08 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 45.72 0)
@@ -3240,7 +3240,7 @@
     (pin "1" (uuid f2487b93-91b7-42f6-8126-7fb4877d0c90))
     (pin "2" (uuid 526eb25a-f68f-436f-9919-2fd934a5c300))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D1") (unit 1)
         )
@@ -3265,7 +3265,7 @@
     )
     (pin "1" (uuid 16da4df5-fed7-4bd9-b7dc-4f0109b56dcf))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0112") (unit 1)
         )
@@ -3290,7 +3290,7 @@
     )
     (pin "1" (uuid 4ce30ce1-24e2-4d72-ab44-f2b263119ca1))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0111") (unit 1)
         )
@@ -3316,7 +3316,7 @@
     (pin "1" (uuid 4658a191-a454-4724-a3f7-85c73a454a2d))
     (pin "2" (uuid 801c76da-dd75-4022-99d5-4866461d2367))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "SW1") (unit 1)
         )
@@ -3341,7 +3341,7 @@
     )
     (pin "1" (uuid eca6cd56-9c8f-4a8b-8b6d-d10636c58e92))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0101") (unit 1)
         )
@@ -3366,7 +3366,7 @@
     )
     (pin "1" (uuid f171d16b-2865-4b97-ae4c-deb0795f6c23))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0102") (unit 1)
         )
@@ -3391,7 +3391,7 @@
     )
     (pin "1" (uuid a4e888ea-b81a-4a66-8954-73b5e0d51aae))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0103") (unit 1)
         )
@@ -3416,7 +3416,7 @@
     )
     (pin "1" (uuid d1ed5a84-ef88-45d3-ad68-571cd2f71aeb))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0104") (unit 1)
         )
@@ -3441,7 +3441,7 @@
     )
     (pin "1" (uuid 9c5b6547-43c3-482f-beac-cbff535ca301))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0106") (unit 1)
         )
@@ -3466,7 +3466,7 @@
     )
     (pin "1" (uuid c76459c3-69e6-478d-b66f-c3db480977f9))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0105") (unit 1)
         )
@@ -3491,7 +3491,7 @@
     )
     (pin "1" (uuid 3d4f862a-44a9-4371-b613-6e0598634f6d))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0107") (unit 1)
         )
@@ -3516,7 +3516,7 @@
     )
     (pin "1" (uuid cadeeded-cd7a-4258-b7ef-d3a1c1b7a562))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0108") (unit 1)
         )
@@ -3541,7 +3541,7 @@
     )
     (pin "1" (uuid e2fd1c27-4529-439b-9aae-3f0f95002369))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0109") (unit 1)
         )
@@ -3566,7 +3566,7 @@
     )
     (pin "1" (uuid b5a64261-bdf8-48f4-a59b-b2d29691033a))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR0110") (unit 1)
         )
@@ -3598,7 +3598,7 @@
     (pin "7" (uuid 254e4ce7-feaf-496e-aed7-de55c71ed28b))
     (pin "8" (uuid 8018fbd4-1c63-4395-afd8-7f020445d06d))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "RN1") (unit 1)
         )
@@ -3630,7 +3630,7 @@
     (pin "7" (uuid 410bed9f-dcae-447a-83fe-d393816401ec))
     (pin "8" (uuid 279401ed-5b58-43d2-9887-b9396b31820b))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "RN2") (unit 1)
         )
@@ -3647,7 +3647,7 @@
     (property "Value" "LED" (at 193.04 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 60.96 0)
@@ -3656,7 +3656,7 @@
     (pin "1" (uuid 4a69d6a9-5b7b-486c-b3b9-8c025b572b41))
     (pin "2" (uuid a66e97ff-123d-4f07-8426-f65faefb46ef))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D13") (unit 1)
         )
@@ -3673,7 +3673,7 @@
     (property "Value" "LED" (at 233.68 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 76.2 0)
@@ -3682,7 +3682,7 @@
     (pin "1" (uuid 68c0f44e-5cc7-44e2-9dcf-849a086947a4))
     (pin "2" (uuid 44ccf657-f56e-4842-93ce-57b559fe1c92))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D22") (unit 1)
         )
@@ -3699,7 +3699,7 @@
     (property "Value" "LED" (at 172.72 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 30.48 0)
@@ -3708,7 +3708,7 @@
     (pin "1" (uuid 01a09bf7-4d7a-45c7-b75f-e5862298bccf))
     (pin "2" (uuid 2e8f1b5b-8914-45aa-a247-6d750a952bc4))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D7") (unit 1)
         )
@@ -3725,7 +3725,7 @@
     (property "Value" "LED" (at 274.32 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 30.48 0)
@@ -3734,7 +3734,7 @@
     (pin "1" (uuid 3cb24b5c-3ea3-45cb-aa1a-52bc884a6559))
     (pin "2" (uuid 53f3d5a4-8bff-4d60-9df9-20f08c5de185))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D26") (unit 1)
         )
@@ -3751,7 +3751,7 @@
     (property "Value" "LED" (at 274.32 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 76.2 0)
@@ -3760,7 +3760,7 @@
     (pin "1" (uuid 288e2212-0e1c-4738-9437-ae3baff338cc))
     (pin "2" (uuid 3ab252c0-f5a0-47bf-b942-7f28c2a44a5b))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D51") (unit 1)
         )
@@ -3777,7 +3777,7 @@
     (property "Value" "LED" (at 193.04 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 76.2 0)
@@ -3786,7 +3786,7 @@
     (pin "1" (uuid 6fa93f22-93ff-44fb-a17e-65ffe582e9bc))
     (pin "2" (uuid 8b64ce7a-eed1-4541-a9c0-9f5443498015))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D14") (unit 1)
         )
@@ -3803,7 +3803,7 @@
     (property "Value" "LED" (at 126.365 25.908 90)
       (effects (font (size 1.4986 1.4986)) (justify left bottom) hide)
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 30.48 0)
@@ -3812,7 +3812,7 @@
     (pin "1" (uuid 4619f1a3-bb8e-42ec-81d1-0e53e8b29898))
     (pin "2" (uuid c02b439c-5864-4100-b2f4-fdab6536d7fc))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "LED1") (unit 1)
         )
@@ -3829,7 +3829,7 @@
     (property "Value" "LED" (at 254 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 45.72 0)
@@ -3838,7 +3838,7 @@
     (pin "1" (uuid b2172e87-6497-4007-bf69-5885489428ac))
     (pin "2" (uuid 4d8533d3-3ea2-4d7b-9e78-e881f8403ed0))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D24") (unit 1)
         )
@@ -3855,7 +3855,7 @@
     (property "Value" "LED" (at 172.72 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 45.72 0)
@@ -3864,7 +3864,7 @@
     (pin "1" (uuid da089fca-9be8-4129-b029-e913bd21778e))
     (pin "2" (uuid f5345900-bfe1-4337-908d-4da91b372f0f))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D8") (unit 1)
         )
@@ -3881,7 +3881,7 @@
     (property "Value" "LED" (at 132.08 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 106.68 0)
@@ -3890,7 +3890,7 @@
     (pin "1" (uuid 88656943-efd9-461b-becd-f802331cae5b))
     (pin "2" (uuid ad1e31b1-4752-4695-b54c-01ba4dda7be1))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D30") (unit 1)
         )
@@ -3907,7 +3907,7 @@
     (property "Value" "LED" (at 233.68 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 121.92 0)
@@ -3916,7 +3916,7 @@
     (pin "1" (uuid 36d5112b-8048-4c91-93d8-12e783e6f8c0))
     (pin "2" (uuid 6b4991e0-7b7c-499e-988e-bbbbcd535d55))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D46") (unit 1)
         )
@@ -3933,7 +3933,7 @@
     (property "Value" "LED" (at 254 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 91.44 0)
@@ -3942,7 +3942,7 @@
     (pin "1" (uuid 223dcd3f-de77-4769-b855-e7aba55be25a))
     (pin "2" (uuid 65717dd8-a78d-4a1c-8a4a-e6552f94759a))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D48") (unit 1)
         )
@@ -3959,7 +3959,7 @@
     (property "Value" "LED" (at 193.04 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 91.44 0)
@@ -3968,7 +3968,7 @@
     (pin "1" (uuid 2d36a8d9-ae59-46bc-af8d-86268aee85a7))
     (pin "2" (uuid 09b46800-49f1-4a93-ab55-ea2b9284b746))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D38") (unit 1)
         )
@@ -3985,7 +3985,7 @@
     (property "Value" "LED" (at 152.4 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 91.44 0)
@@ -3994,7 +3994,7 @@
     (pin "1" (uuid 53e74810-a591-4b79-8c24-89e747f2a307))
     (pin "2" (uuid 922b0be4-a6eb-4d44-b604-56cc8d65c275))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D32") (unit 1)
         )
@@ -4011,7 +4011,7 @@
     (property "Value" "LED" (at 254 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 121.92 0)
@@ -4020,7 +4020,7 @@
     (pin "1" (uuid a982e260-02ba-4c42-a765-8a94692ec994))
     (pin "2" (uuid 96eb4ace-a64d-493c-a855-23647bc0f591))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D50") (unit 1)
         )
@@ -4037,7 +4037,7 @@
     (property "Value" "LED" (at 213.36 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 76.2 0)
@@ -4046,7 +4046,7 @@
     (pin "1" (uuid c5e3b0ef-2461-412a-9ce2-ef1dedc77e40))
     (pin "2" (uuid b73b290c-b278-4de3-b796-0e2606be000b))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D18") (unit 1)
         )
@@ -4063,7 +4063,7 @@
     (property "Value" "LED" (at 213.36 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 106.68 0)
@@ -4072,7 +4072,7 @@
     (pin "1" (uuid f8f91d84-73e7-47e1-9869-7ab68ad7bb30))
     (pin "2" (uuid 2f54c324-5497-4a20-b9b6-0eec3359fb6c))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D42") (unit 1)
         )
@@ -4089,7 +4089,7 @@
     (property "Value" "LED" (at 193.04 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 106.68 0)
@@ -4098,7 +4098,7 @@
     (pin "1" (uuid 497006b8-186b-48fd-bd88-2aa76786613b))
     (pin "2" (uuid 2bbc428d-05d4-41a5-b491-1f3c152e944c))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D39") (unit 1)
         )
@@ -4115,7 +4115,7 @@
     (property "Value" "LED" (at 152.4 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 106.68 0)
@@ -4124,7 +4124,7 @@
     (pin "1" (uuid 46890d54-8a80-4682-a463-7235f13aca19))
     (pin "2" (uuid 7cbba816-1302-4d80-b441-4a408bf5aeb3))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D33") (unit 1)
         )
@@ -4141,7 +4141,7 @@
     (property "Value" "LED" (at 274.32 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 45.72 0)
@@ -4150,7 +4150,7 @@
     (pin "1" (uuid 2fa9ed6a-5ddc-42e2-a558-aa5a5ad39898))
     (pin "2" (uuid 44f50c93-0db4-4b5f-8ac1-b089f0b6b6f9))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D27") (unit 1)
         )
@@ -4167,7 +4167,7 @@
     (property "Value" "LED" (at 233.68 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 106.68 0)
@@ -4176,7 +4176,7 @@
     (pin "1" (uuid cb0a1934-776c-4444-94ff-4c418833c5b9))
     (pin "2" (uuid 2144b7bb-324d-4cd0-b4b7-4a9ebdea4dfe))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D45") (unit 1)
         )
@@ -4193,7 +4193,7 @@
     (property "Value" "LED" (at 172.72 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 91.44 0)
@@ -4202,7 +4202,7 @@
     (pin "1" (uuid 84836826-6bf8-43af-9474-c109953b3747))
     (pin "2" (uuid 363c858e-2de7-4234-ac9c-fb16cdb9db87))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D35") (unit 1)
         )
@@ -4219,7 +4219,7 @@
     (property "Value" "LED" (at 172.72 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 172.72 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 172.72 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 76.2 0)
@@ -4228,7 +4228,7 @@
     (pin "1" (uuid c71d79c9-3602-48b7-ad0b-c408db78129b))
     (pin "2" (uuid 64b7a5b1-4bcf-4003-bb97-f97ad123574a))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D10") (unit 1)
         )
@@ -4245,7 +4245,7 @@
     (property "Value" "LED" (at 233.68 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 91.44 0)
@@ -4254,7 +4254,7 @@
     (pin "1" (uuid 32770411-2537-4db1-8aef-39e634b66fc1))
     (pin "2" (uuid 49450676-01cc-46b9-96f5-14aa2488897d))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D44") (unit 1)
         )
@@ -4271,7 +4271,7 @@
     (property "Value" "LED" (at 274.32 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 60.96 0)
@@ -4280,7 +4280,7 @@
     (pin "1" (uuid 3a107384-78df-41a3-8fae-7a020d6dad2c))
     (pin "2" (uuid 420b6e6a-ee03-4770-aeac-40e4c7b9c89f))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D28") (unit 1)
         )
@@ -4297,7 +4297,7 @@
     (property "Value" "LED" (at 152.4 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 121.92 0)
@@ -4306,7 +4306,7 @@
     (pin "1" (uuid 6c6c15cd-9fc0-42ea-80e0-1fdf801e4376))
     (pin "2" (uuid 065b7410-021a-41a5-a919-f30961137d16))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D34") (unit 1)
         )
@@ -4323,7 +4323,7 @@
     (property "Value" "LED" (at 254 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 106.68 0)
@@ -4332,7 +4332,7 @@
     (pin "1" (uuid 005bded4-314a-42b7-9dbf-06682a4995f7))
     (pin "2" (uuid 71c3c486-b52c-44cd-9c0b-569a1749421e))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D49") (unit 1)
         )
@@ -4349,7 +4349,7 @@
     (property "Value" "LED" (at 193.04 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 30.48 0)
@@ -4358,7 +4358,7 @@
     (pin "1" (uuid 0f8d5337-760e-4efc-82f4-bbba8ba96405))
     (pin "2" (uuid 1c6fc06f-fd6e-4ec4-9014-662ec188a99c))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D11") (unit 1)
         )
@@ -4375,7 +4375,7 @@
     (property "Value" "LED" (at 152.4 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 45.72 0)
@@ -4384,7 +4384,7 @@
     (pin "1" (uuid 0cb9f20b-6709-4bfe-a574-6b5b87b65a6e))
     (pin "2" (uuid d0e39483-6740-4b46-b1fb-b59ff0b6391d))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D4") (unit 1)
         )
@@ -4401,7 +4401,7 @@
     (property "Value" "LED" (at 274.32 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 91.44 0)
@@ -4410,7 +4410,7 @@
     (pin "1" (uuid a8c6237c-3c85-4918-813d-762b6d099dc0))
     (pin "2" (uuid 70952c40-8852-4713-88a8-dbbb7f63d711))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D52") (unit 1)
         )
@@ -4427,7 +4427,7 @@
     (property "Value" "LED" (at 254 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 254 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 254 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 254 76.2 0)
@@ -4436,7 +4436,7 @@
     (pin "1" (uuid e78a207b-5516-44dc-96ce-af2e3ebac62b))
     (pin "2" (uuid 0c7032a0-2b2d-4e12-b8d7-aa26d1ff397b))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D47") (unit 1)
         )
@@ -4453,7 +4453,7 @@
     (property "Value" "LED" (at 213.36 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 91.44 0)
@@ -4462,7 +4462,7 @@
     (pin "1" (uuid a6b2542e-8abf-4d8d-b66f-ded9cea67253))
     (pin "2" (uuid b9c67e0a-dc2e-40cb-b360-2d13bddbeb88))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D41") (unit 1)
         )
@@ -4479,7 +4479,7 @@
     (property "Value" "LED" (at 132.08 88.9 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 132.08 91.44 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 132.08 91.44 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 132.08 91.44 0)
@@ -4488,7 +4488,7 @@
     (pin "1" (uuid 3c1b3cdb-b98c-4255-9ec3-4b506375ed17))
     (pin "2" (uuid fb433835-bad6-4d4c-be24-614e5fd9836e))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D29") (unit 1)
         )
@@ -4505,7 +4505,7 @@
     (property "Value" "LED" (at 233.68 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 45.72 0)
@@ -4514,7 +4514,7 @@
     (pin "1" (uuid 3632a6f9-0860-4d31-bf98-296673ccd73e))
     (pin "2" (uuid b2de1996-5fa6-4a2c-8594-bc2db371ab91))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D20") (unit 1)
         )
@@ -4531,7 +4531,7 @@
     (property "Value" "LED" (at 152.4 73.66 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 76.2 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 76.2 0)
@@ -4540,7 +4540,7 @@
     (pin "1" (uuid e5455ad9-d104-47c3-8e0e-06ae3481974a))
     (pin "2" (uuid a58d184d-b698-4940-8bc6-2da28d0e8cf0))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D6") (unit 1)
         )
@@ -4557,7 +4557,7 @@
     (property "Value" "LED" (at 213.36 43.18 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 45.72 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 45.72 0)
@@ -4566,7 +4566,7 @@
     (pin "1" (uuid add2f8ee-76c0-47f3-978a-1e3725ba649e))
     (pin "2" (uuid a955067c-815d-4cd2-971a-72bed756edec))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D16") (unit 1)
         )
@@ -4583,7 +4583,7 @@
     (property "Value" "LED" (at 213.36 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 213.36 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 213.36 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 213.36 60.96 0)
@@ -4592,7 +4592,7 @@
     (pin "1" (uuid 20c3e86c-a131-41c4-b191-8a40ae7045ba))
     (pin "2" (uuid 4973b4b1-1720-4cd4-ad8a-91b301b496d0))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D17") (unit 1)
         )
@@ -4609,7 +4609,7 @@
     (property "Value" "LED" (at 193.04 119.38 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 193.04 121.92 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 193.04 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 193.04 121.92 0)
@@ -4618,7 +4618,7 @@
     (pin "1" (uuid 1eefbf3f-c716-4dfb-9f89-638a56c7da64))
     (pin "2" (uuid 81ed14aa-6409-458a-964b-4dbddfc5c05b))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D40") (unit 1)
         )
@@ -4635,7 +4635,7 @@
     (property "Value" "LED" (at 233.68 27.94 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 30.48 0)
@@ -4644,7 +4644,7 @@
     (pin "1" (uuid fe9fd14e-acd7-49d2-a79a-f19cde8c0a88))
     (pin "2" (uuid ec68dffd-9cd0-48a5-958f-5a29b266cb54))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D19") (unit 1)
         )
@@ -4661,7 +4661,7 @@
     (property "Value" "LED" (at 274.32 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 274.32 106.68 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 274.32 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 274.32 106.68 0)
@@ -4670,7 +4670,7 @@
     (pin "1" (uuid b81a1a3a-4632-45a7-8e53-216f70db265a))
     (pin "2" (uuid 5463d6d7-db51-4a24-8ea5-393722871414))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D53") (unit 1)
         )
@@ -4687,7 +4687,7 @@
     (property "Value" "LED" (at 233.68 58.42 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 233.68 60.96 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 233.68 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 233.68 60.96 0)
@@ -4696,7 +4696,7 @@
     (pin "1" (uuid a6dd171c-4e46-4837-aace-3a8c929e2f64))
     (pin "2" (uuid 869b2068-5908-4cee-a52e-58ea74551b05))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "D21") (unit 1)
         )
@@ -4722,7 +4722,7 @@
     (pin "1" (uuid 28135962-73b3-4cd5-a1c7-e1287dda7a73))
     (pin "2" (uuid 5f439a51-3ae3-43ec-9479-b75d0aba39eb))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "C1") (unit 1)
         )
@@ -4752,7 +4752,7 @@
     (pin "5" (uuid 9ed40164-6dab-4893-b0ad-b61af8de232d))
     (pin "6" (uuid 7e97fbbd-24b4-48bd-9ad9-245e25a88bd1))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "J4") (unit 1)
         )
@@ -4777,7 +4777,7 @@
     )
     (pin "1" (uuid 6de2687a-bb2f-4dd1-9953-bde9ff7a8f31))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "#PWR01") (unit 1)
         )
@@ -4806,7 +4806,7 @@
     (pin "4" (uuid 12d630a8-261d-4a75-85ae-f52b8db51128))
     (pin "5" (uuid 3e045333-3e67-45d6-a6d3-4fcd57ae547e))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "J3") (unit 1)
         )
@@ -4835,7 +4835,7 @@
     (pin "4" (uuid 510dcb12-62db-44c4-9ab3-1cce8e2ba4ba))
     (pin "5" (uuid 30cdcdd0-eebb-4b99-9f04-f4dc2e4b174a))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "U1") (unit 1)
         )
@@ -4861,7 +4861,7 @@
     (pin "1" (uuid 729a2303-399a-4975-81f3-65af398a15cf))
     (pin "2" (uuid 7497772b-1129-4431-b2a4-92a6c9984dc4))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "R1") (unit 1)
         )
@@ -4887,7 +4887,7 @@
     (pin "1" (uuid 76305911-73a9-46d8-b715-3e5fabe1d59c))
     (pin "2" (uuid 2b0d36b9-8fc3-4b4f-bb7f-9da6462db375))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "C2") (unit 1)
         )
@@ -4931,7 +4931,7 @@
     (pin "8" (uuid 1d536a33-a9f5-4832-baf5-e61af26498c1))
     (pin "9" (uuid e6ca3aa4-5d10-40a2-a2d7-d4701ed1512e))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "U2") (unit 1)
         )
@@ -4957,7 +4957,7 @@
     (pin "1" (uuid 110fa791-6827-421f-845d-ade62de88df8))
     (pin "2" (uuid 1a968dfa-9c23-4f52-b201-912927995ee7))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "C4") (unit 1)
         )
@@ -4983,7 +4983,7 @@
     (pin "1" (uuid dfb7d04e-5f37-4c17-b2f4-1de93d68d0e8))
     (pin "2" (uuid b85b53b4-7ebe-4eca-a6df-8e882f7f1fc1))
     (instances
-      (project "business_card_v1"
+      (project "business_card"
         (path "/851fe933-634d-449d-85ba-53641eb99853"
           (reference "R2") (unit 1)
         )
