@@ -2864,7 +2864,7 @@
     (property "Value" "LED" (at 146.685 25.908 90)
       (effects (font (size 1.4986 1.4986)) (justify left bottom) hide)
     )
-    (property "Footprint" "Diode_SMD:D_0805_2012Metric" (at 152.4 30.48 0)
+    (property "Footprint" "LED_SMD:LED_0805_2012Metric" (at 152.4 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 152.4 30.48 0)
