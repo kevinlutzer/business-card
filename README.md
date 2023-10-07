@@ -1,25 +1,12 @@
 # Electronic Business Card 
 
-The original intention of this project was to be able to demonstrate some of my skills as an Electrical Engineer to potential employers. This project required me to build and prototype a tri-state circuit, add controls with a ATMEL microcontroller and design/manufacture a custome printed circuit board. <b>What does it do?</b> Well when you plug the device it, it scrolls my website url across the matrix display. I designed this device to cost about $2.50 CAD with the most expensive part being the microcontroller.
+![V4 Business Card](./assets/v4_business_card_image.png "V4 Business Card")
 
-It would be used during interviews or meet-and-greet type events. I can gi ve the potential employer the device for the effect of driving interest. This idea was inspired by a piece of advice that Dave Jones, the owner of the [EEVblog](https://www.eevblog.com/) gave. He suggests that engineers should be bringing something to an interview to show that they can actually design and build things.
+The purpose of this project was to demonstrate some of my skills as an Electrical Engineer to potential employers. This project required me to build and prototype a tri-state circuit, add controls with a STM32G ARM microcontroller and design/manufacture a custom printed circuit board. When you plug the device into a standard USB2A port it scrolls my portfolio website's URL across the matrix display. I designed this device to cost about $2.50 CAD per populated board. 
 
-# V1 
+This idea was inspired by a piece of advice that Dave Jones, the owner of the [EEVblog](https://www.eevblog.com/) gave. He suggests that engineers should be bringing something to an interview to show that they can actually design and build things. I sent a later version of this project to Dave Jones with a programmer PCB which he opened on a [Mailbag Segment](https://youtu.be/45C6HFf2kIA?si=SCQMgJs3VvQc_wUq&t=3084). 
 
-The first prototype of this device came in late 2016, early 2017. The image of it operating is below.  
-
-![](https://storage.googleapis.com/website-klutzer-images/projects/business_card_446x298.jpg)
-
-One of the main problems with this version is that I wasn't able to incorporate the standard 7 bit dot matrix alphabet, so I had to make my own. The result was a display that was hard to read. 
-
-# V2
-
-Enter V2, I redesigned the device to have a slightly larger display so that users could actually clearly see the text scroll across the screen. At the time of this writing the boards are being manufatured. Bellow is an image demonstrating what it will look like: 
-
-![](https://storage.googleapis.com/website-klutzer-images/projects/v2_business_card_image.png)
-
-
-
+Currently I am using the project as a way to test and calibrate a pick and place machine. 
 
 
 
